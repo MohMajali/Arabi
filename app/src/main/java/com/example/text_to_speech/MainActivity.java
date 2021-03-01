@@ -15,6 +15,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     Button nextAlphabet ;
+    Button quizAlph ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,11 +24,19 @@ public class MainActivity extends AppCompatActivity {
 
 
         nextAlphabet = (Button) findViewById(R.id.nextAlphabet);
+        quizAlph = (Button) findViewById(R.id.quiz_alph);
 
     nextAlphabet.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
             Intent intent = new Intent(MainActivity.this,activity_alphabet.class);
+            startActivity(intent);
+        }
+    });
+    quizAlph.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            Intent intent = new Intent(MainActivity.this,Quiz_alph.class);
             startActivity(intent);
         }
     });

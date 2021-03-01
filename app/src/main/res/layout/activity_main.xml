@@ -20,5 +20,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="nextAlphabet" />
+
+        <Button
+            android:id="@+id/quiz_alph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="quiz alph" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Texttospeech">
-        <activity android:name=".activity_singleAlphabet"></activity>
+        <activity android:name=".Quiz_alph"></activity>
+        <activity android:name=".activity_singleAlphabet" />
         <activity android:name=".activity_alphabet" />
         <activity android:name=".MainActivity">
             <intent-filter>
