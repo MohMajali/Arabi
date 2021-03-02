@@ -50,24 +50,24 @@ public class activity_singleAlphabet extends AppCompatActivity {
         SharedPreferences sp =getApplicationContext().getSharedPreferences("MyUserPrefs", Context.MODE_PRIVATE);
         String str1 =sp.getString("thealphabet", "");
         String str2 =sp.getString("thepronunciation", "");
-        String str3 =sp.getString("thepronucVibrio", "");
-        String str4 =sp.getString("thepronucslot", "");
-        String str5 =sp.getString("thepronucbraek", "");
+        //String str3 =sp.getString("thepronucVibrio", "");
+        //String str4 =sp.getString("thepronucslot", "");
+        //String str5 =sp.getString("thepronucbraek", "");
 
 
         textView.setText(str1);
 
-        check.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(text.getText().toString().equals(str3+" "+str4+" "+str5)){
-                    Toast.makeText(activity_singleAlphabet.this,"correct",Toast.LENGTH_SHORT).show();
+        check.setOnClickListener(view -> {
+            /*
+            if(text.getText().toString().equals(str3+" "+str4+" "+str5)){
+                Toast.makeText(activity_singleAlphabet.this,"correct",Toast.LENGTH_SHORT).show();
 
-                }else if(text.getText().toString().equals(str2)){
-                    Toast.makeText(activity_singleAlphabet.this,"correct",Toast.LENGTH_SHORT).show();
-                }else{
-                    Toast.makeText(activity_singleAlphabet.this,"false",Toast.LENGTH_SHORT).show();
-                }
+            }*/
+            if(text.getText().toString().equals(str2)){
+
+                Toast.makeText(activity_singleAlphabet.this,"correct",Toast.LENGTH_SHORT).show();
+            }else{
+                Toast.makeText(activity_singleAlphabet.this,"false",Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -76,7 +76,7 @@ public class activity_singleAlphabet extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         if(requestCode==RECOGNIZER_RESULT && resultCode == RESULT_OK){
             ArrayList<String> matches = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
-            text.setText(matches.get(0).toString());
+            text.setText(matches.get(0));
         }
 
         super.onActivityResult(requestCode, resultCode, data);

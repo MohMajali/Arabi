@@ -26,19 +26,13 @@ public class MainActivity extends AppCompatActivity {
         nextAlphabet = (Button) findViewById(R.id.nextAlphabet);
         quizAlph = (Button) findViewById(R.id.quiz_alph);
 
-    nextAlphabet.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            Intent intent = new Intent(MainActivity.this,activity_alphabet.class);
-            startActivity(intent);
-        }
+    nextAlphabet.setOnClickListener(view -> {
+        Intent intent = new Intent(MainActivity.this,activity_alphabet.class);
+        startActivity(intent);
     });
-    quizAlph.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            Intent intent = new Intent(MainActivity.this,Quiz_alph.class);
-            startActivity(intent);
-        }
+    quizAlph.setOnClickListener(view -> {
+        Intent intent = new Intent(MainActivity.this,Quiz_alph.class);
+        startActivity(intent);
     });
     }
 
