@@ -4,6 +4,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ClipData;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,7 +13,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -23,6 +23,9 @@ public class Quiz_alph extends AppCompatActivity {
     TextView question;
     TextView score;
     TextView youranswer;
+
+    int max = 28;
+
     private static final int RECOGNIZER_RESULT = 1;
 
     private Quiz_alph_questions mQuestions = new Quiz_alph_questions();
@@ -32,7 +35,6 @@ public class Quiz_alph extends AppCompatActivity {
     private int mQuestionLength = mQuestions.mQuestions.length;
 
     Random r ;
-
     int counter = 28 ;
 
     @Override
@@ -41,6 +43,8 @@ public class Quiz_alph extends AppCompatActivity {
         setContentView(R.layout.activity_quiz_alph);
 
         r = new Random();
+
+
 
 
         answer = (Button)findViewById(R.id.answer);
@@ -69,6 +73,7 @@ public class Quiz_alph extends AppCompatActivity {
         nextqestion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 if(youranswer.getText().toString().equals(mAnswer)&& counter!=0){
                     mScore++;
                     score.setText("Score = "+mScore);
@@ -90,21 +95,14 @@ public class Quiz_alph extends AppCompatActivity {
     }
 
     private void updateQuestion(int num){
-        question.setText(mQuestions.getQuestion(num));
 
-        // int random []= new int[mQuestionLength];
-        ArrayList<Integer> numbers = new ArrayList<Integer>();
-        Random randomGenerator = new Random();
-        while (numbers.size() < mQuestionLength) {
 
-            int random = randomGenerator .nextInt(mQuestionLength);
-            if (!numbers.contains(random)) {
-                numbers.add(random);
-            }
+
+            question.setText(mQuestions.getQuestion(num));
+
+            mAnswer = mQuestions.getCorrectAnswer(num);
         }
 
-        mAnswer = mQuestions.getCorrectAnswer(num);
-    }
     private void quizFinished(){
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Quiz_alph.this);
         alertDialogBuilder

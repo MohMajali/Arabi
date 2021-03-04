@@ -1,5 +1,9 @@
 package com.example.text_to_speech;
 
+import android.view.View;
+
+import java.util.Random;
+
 public class Quiz_alph_questions {
 
 
@@ -66,6 +70,8 @@ public class Quiz_alph_questions {
 
     };
     public String getQuestion(int a){
+
+
         String question = mQuestions[a];
         return question ;
 
@@ -75,5 +81,6 @@ public class Quiz_alph_questions {
         return answer ;
 
     }
+
 
 }
