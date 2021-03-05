@@ -14,8 +14,8 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button nextAlphabet ;
-    Button quizAlph ;
+    Button nextAlphabet , quizAlph , login, signup;
+     ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
 
         nextAlphabet = (Button) findViewById(R.id.nextAlphabet);
         quizAlph = (Button) findViewById(R.id.quiz_alph);
+        login = (Button) findViewById(R.id.login);
+        signup = (Button) findViewById(R.id.sign);
 
     nextAlphabet.setOnClickListener(view -> {
         Intent intent = new Intent(MainActivity.this,activity_alphabet.class);
@@ -32,6 +34,16 @@ public class MainActivity extends AppCompatActivity {
     });
     quizAlph.setOnClickListener(view -> {
         Intent intent = new Intent(MainActivity.this,Quiz_alph.class);
+        startActivity(intent);
+    });
+
+    login.setOnClickListener(v -> {
+      Intent intent = new Intent(MainActivity.this, login_page.class);
+      startActivity(intent);
+    });
+
+    signup.setOnClickListener(v -> {
+        Intent intent = new Intent(MainActivity.this, signup.class);
         startActivity(intent);
     });
     }

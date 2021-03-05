@@ -4,38 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".login_page">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="206dp"
-        tools:layout_editor_absoluteY="245dp">
+        app:layout_editor_absoluteX="206dp"
+        app:layout_editor_absoluteY="245dp"
+        >
 
 
-
-        <Button
-            android:id="@+id/nextAlphabet"
+        <EditText
+            android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="nextAlphabet" />
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="username" />
 
-        <Button
-            android:id="@+id/quiz_alph"
+        <EditText
+            android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="quiz alph" />
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="password" />
 
         <Button
-            android:id="@+id/login"
+            android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login" />
-        <Button
-            android:id="@+id/sign"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="signup" />
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

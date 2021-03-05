@@ -4,38 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".signup">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="206dp"
-        tools:layout_editor_absoluteY="245dp">
+        app:layout_editor_absoluteX="206dp"
+        app:layout_editor_absoluteY="245dp">
 
-
-
-        <Button
-            android:id="@+id/nextAlphabet"
+        <EditText
+            android:id="@+id/Name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="nextAlphabet" />
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="username" />
 
-        <Button
-            android:id="@+id/quiz_alph"
+        <EditText
+            android:id="@+id/pass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="quiz alph" />
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="password" />
 
-        <Button
-            android:id="@+id/login"
+        <EditText
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login" />
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="email" />
+
         <Button
-            android:id="@+id/sign"
+            android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="signup" />
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
