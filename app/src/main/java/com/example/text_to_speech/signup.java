@@ -32,42 +32,48 @@ public class signup extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
-        username = (EditText) findViewById(R.id.Name);
+        username = (EditText) findViewById(R.id.Name);  // Defining the edittexts by their IDS
         password = (EditText) findViewById(R.id.pass);
         email = (EditText) findViewById(R.id.email);
-        signup = (Button) findViewById(R.id.button3);
 
-        signup.setOnClickListener(v -> {
+        signup = (Button) findViewById(R.id.button3); // Defining the button by ID
 
-            register();
-        });
+        signup.setOnClickListener(v -> register());  //setonclicklistiner --> when button clicked do the function " register() function"
     }
 
     private void register(){
-        String Username = username.getText().toString();
-        String pass = password.getText().toString();
+        String Username = username.getText().toString(); // When the user filled the data in the edittexts, we are taking the text from edittext
+        String pass = password.getText().toString();    // then converting it to strings
         String Email = email.getText().toString();
 
         if(Username.isEmpty() || pass.isEmpty() || Email.isEmpty()){
             if(Username.isEmpty()){
-                username.setError("fill in");
-            }
+                username.setError("fill in");     //checking if the edittext are not empty, if one of them or all all empty, we are setting an error
+            }                                    //on edittexts to notify him filed must not be empty
             if(pass.isEmpty()){
                 password.setError("fill in");
             }
             if(Email.isEmpty()){
                 email.setError("fill in");
             }
-            /*
-            if (Username.isEmpty() && pass.isEmpty() && Email.isEmpty()){
-                username.setError("fill in");
-                password.setError("fill in");
-                email.setError("fill in");
-            }
 
+        } else { // if no fileds are empty, then do the registeration process
+            /*
+            Volley is an HTTP library that makes networking for Android apps easier and most importantly, faster
+
+            Volley offers the following benefits:
+
+           Automatic scheduling of network requests.
+           Multiple concurrent network connections.
+           Transparent disk and memory response caching with standard HTTP cache coherence.
+           Support for request prioritization.
+           Cancellation request API. You can cancel a single request, or you can set blocks or scopes of requests to cancel.
+           Ease of customization, for example, for retry and backoff.
+           Strong ordering that makes it easy to correctly populate your UI with data fetched asynchronously from the network.
+           Debugging and tracing tools
              */
-        } else {
             RequestQueue rq = Volley.newRequestQueue(this);
+            //StringRequest. Specify a URL and receive a raw string in response
             final StringRequest stringRequest =new StringRequest(Request.Method.POST, "http://10.0.2.2/sign_up.php",
                     new Response.Listener<String>() {
                         @Override
@@ -75,14 +81,22 @@ public class signup extends AppCompatActivity {
                             try {
                                 JSONObject jsonObject = new JSONObject(response);
                                 if (!jsonObject.getBoolean("error")){
+
+                                    //By getting the boolean jsonobject which equals true from php file do the following:
+                                    // show a message from php if the user has registered with an existing username from other user "User already register"
+
+                                    //By getting the boolean jsonobject which equals false from php file do the following:
+                                    // show a message from php if the user has registered  successfully "User registered successfully"
                                     Toast.makeText(signup.this,jsonObject.getString("message"),Toast.LENGTH_LONG).show();
 
+                                    //When User registered successfully get the data from array called user in php
                                     JSONObject jsonObjectUser =  jsonObject.getJSONObject("user");
 
+                                    //By calling the class called user by making new object then getting the data to put in the user data(refer to user class)
                                     user user = new user(jsonObjectUser.getInt("userid"), jsonObjectUser.getString("username"),
                                             jsonObjectUser.getString("email"));
 
-                                    //store in sharedprefernces
+                                    //store the data in sharedprefernces
                                     sharedprefmanager.getInstance(getApplicationContext()).storeUserData(user);
 
                                     //let user in
@@ -99,8 +113,9 @@ public class signup extends AppCompatActivity {
                     }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
-                    Toast.makeText(signup.this,"hii",Toast.LENGTH_LONG).show();
-                    Log.i("msg",error.getMessage().toString());
+                    //When can't access to network, show a message
+                    Toast.makeText(signup.this,"Can't access to network",Toast.LENGTH_LONG).show();
+                    //Log.i("msg",error.getMessage().toString());
                 }
             })
             {
@@ -110,10 +125,11 @@ public class signup extends AppCompatActivity {
                     param.put("username",Username);
                     param.put("password",pass);
                     param.put("email",Email);
+                    // getting the strings from the user input, then send it to php file to starting processing of the User registeration
                     return param;
                 }
             };
-            rq.add(stringRequest);
+            rq.add(stringRequest); // start the volley new request queue
         }
     }
 }

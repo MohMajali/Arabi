@@ -7,7 +7,7 @@ public class sharedprefmanager {
     private static final String FILENAME = "ARABICLANG";
     private static final String USERNAME = "username";
     private static final String EMAIL = "email";
-    private static final String ID = "id";
+    private static final String ID = "userid";
 
     private static sharedprefmanager mSharedPrefreneManger;
     private static Context mContext;

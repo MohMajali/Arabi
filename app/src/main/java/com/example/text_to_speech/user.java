@@ -4,6 +4,9 @@ public class user {
     int userid;
     String username,email;
 
+    /*
+    Using getter and setter, to get the user data from jsonobject, then set it.
+     */
     public user(int userid,String username , String email){
         this.userid = userid;
         this.username = username;

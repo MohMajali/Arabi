@@ -32,50 +32,55 @@ public class login_page extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_page);
 
-        user = (EditText) findViewById(R.id.username);
+        user = (EditText) findViewById(R.id.username);// Defining the edittexts by their IDS
         pass = (EditText) findViewById(R.id.password);
-        login = (Button) findViewById(R.id.button2);
 
-        login.setOnClickListener(v -> {
+        login = (Button) findViewById(R.id.button2); // Defining the button by ID
 
-            Login();
-        });
+        login.setOnClickListener(v -> Login()); //setonclicklistiner --> when button clicked do the function " login() function"
     }
 
     private void Login(){
         RequestQueue rq = Volley.newRequestQueue(this);
-        final StringRequest stringRequest =new StringRequest(Request.Method.POST, "http://10.0.2.2/login.php", new Response.Listener<String>() {
-            @Override
-            public void onResponse(String response) {
-                try {
-                    JSONObject jsonObject =new JSONObject(response);
-                    if(!jsonObject.getBoolean("error")) {
-                        user user = new user(jsonObject.getInt("userid"), jsonObject.getString("username"),
-                                jsonObject.getString("email"));
+        final StringRequest stringRequest =new StringRequest(Request.Method.POST, "http://10.0.2.2/login.php", response -> {
+            try {
+                JSONObject jsonObject = new JSONObject(response);
+                if (!jsonObject.getBoolean("error")) {
+                    //By getting the boolean jsonobject which equals false from php file do the following:
 
-                        //store user data inside sharedprefrences
-                        sharedprefmanager.getInstance(getApplicationContext()).storeUserData(user);
+                    Toast.makeText(login_page.this, jsonObject.getString("message"), Toast.LENGTH_LONG).show();
+                    // show a message from php if the user has logged in successfully "Login successfully"
 
-                        //let user in
-                        finish();
-                        //move to alphabet activity
-                        startActivity(new Intent(login_page.this,activity_alphabet.class));
+                    //When User logged in successfully get the data from array called response in php
+                    user user = new user(jsonObject.getInt("userid"), jsonObject.getString("username"),
+                            jsonObject.getString("email"));
 
-                        Toast.makeText(login_page.this, jsonObject.getString("message"), Toast.LENGTH_LONG).show();
-                    } else {
-                        Toast.makeText(login_page.this, jsonObject.getString("message"), Toast.LENGTH_LONG).show();
-                    }
-                } catch (JSONException e) {
-                    e.printStackTrace();
+                    //store user data inside sharedprefrences
+                    sharedprefmanager.getInstance(getApplicationContext()).storeUserData(user);
+
+                    //let user in
+                    finish();
+                    //move to alphabet activity
+                    startActivity(new Intent(login_page.this, activity_alphabet.class));
+
+
+                } else {
+                    //By getting the boolean jsonobject which equals true from php file do the following:
+                    Toast.makeText(login_page.this, jsonObject.getString("message"), Toast.LENGTH_LONG).show();
+                    // show a message from php if the user hasn't logged in successfully "Invalid username or password"
                 }
-
+            } catch (JSONException e) {
+                e.printStackTrace();
             }
+
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Log.i("msg",error.getMessage().toString());
+                //When can't access to network, show a message
+                Toast.makeText(login_page.this,"Can't access to network",Toast.LENGTH_LONG).show();
             }
         }
+
         ){
             @Override
             protected Map<String,String> getParams() throws AuthFailureError{
