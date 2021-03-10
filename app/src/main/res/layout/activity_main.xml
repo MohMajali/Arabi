@@ -4,9 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/loginbackgound"
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:layout_marginTop="350dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -37,5 +39,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="signup" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
