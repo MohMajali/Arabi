@@ -61,7 +61,7 @@ public class login_page extends AppCompatActivity {
                     //let user in
                     finish();
                     //move to alphabet activity
-                    startActivity(new Intent(login_page.this, activity_alphabet.class));
+                    startActivity(new Intent(login_page.this, MainActivity.class));
 
 
                 } else {

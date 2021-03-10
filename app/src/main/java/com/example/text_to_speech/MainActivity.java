@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         nextAlphabet = (Button) findViewById(R.id.nextAlphabet);
         quizAlph = (Button) findViewById(R.id.quiz_alph);
         login = (Button) findViewById(R.id.login);

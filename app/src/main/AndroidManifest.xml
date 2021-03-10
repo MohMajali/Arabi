@@ -13,11 +13,11 @@
         android:theme="@style/Theme.Texttospeech"
         android:usesCleartextTraffic="true">
         <activity android:name=".signup"></activity>
-        <activity android:name=".login_page" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".Quiz_alph" />
         <activity android:name=".activity_singleAlphabet" />
         <activity android:name=".activity_alphabet" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".login_page">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
