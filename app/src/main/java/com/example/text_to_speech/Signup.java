@@ -23,7 +23,7 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-public class signup extends AppCompatActivity {
+public class Signup extends AppCompatActivity {
     EditText username,password,email;
     Button signup;
 
@@ -87,7 +87,7 @@ public class signup extends AppCompatActivity {
 
                                     //By getting the boolean jsonobject which equals false from php file do the following:
                                     // show a message from php if the user has registered  successfully "User registered successfully"
-                                    Toast.makeText(signup.this,jsonObject.getString("message"),Toast.LENGTH_LONG).show();
+                                    Toast.makeText(Signup.this,jsonObject.getString("message"),Toast.LENGTH_LONG).show();
 
                                     //When User registered successfully get the data from array called user in php
                                     JSONObject jsonObjectUser =  jsonObject.getJSONObject("user");
@@ -102,9 +102,9 @@ public class signup extends AppCompatActivity {
                                     //let user in
                                     finish();
                                     //move to alphabet activity
-                                    startActivity(new Intent(signup.this, activity_alphabet.class));
+                                    startActivity(new Intent(Signup.this, Alphabet.class));
                                 }else {
-                                    Toast.makeText(signup.this,jsonObject.getString("message"),Toast.LENGTH_LONG).show();
+                                    Toast.makeText(Signup.this,jsonObject.getString("message"),Toast.LENGTH_LONG).show();
                                 }
                             } catch (JSONException e) {
                                 Log.i("msg1",e.getMessage());
@@ -114,7 +114,7 @@ public class signup extends AppCompatActivity {
                 @Override
                 public void onErrorResponse(VolleyError error) {
                     //When can't access to network, show a message
-                    Toast.makeText(signup.this,"Can't access to network",Toast.LENGTH_LONG).show();
+                    Toast.makeText(Signup.this,"Can't access to network",Toast.LENGTH_LONG).show();
                     //Log.i("msg",error.getMessage().toString());
                 }
             })

@@ -6,12 +6,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
-import android.widget.GridView;
 import android.widget.Toast;
 
-public class activity_alphabet extends AppCompatActivity {
+public class Alphabet extends AppCompatActivity {
 
     Button backmain;
 
@@ -71,9 +69,9 @@ public class activity_alphabet extends AppCompatActivity {
            // editor.putString("thepronucbraek",pronucbraek);
             editor.apply();
 
-            Toast.makeText(activity_alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(activity_alphabet.this,activity_singleAlphabet.class);
+            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
             startActivity(intent);
 
         });
@@ -94,9 +92,9 @@ public class activity_alphabet extends AppCompatActivity {
             //editor.putString("thepronucbraek",pronucbraek);
             editor.apply();
 
-            Toast.makeText(activity_alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(activity_alphabet.this,activity_singleAlphabet.class);
+            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
             startActivity(intent);
 
 
@@ -113,9 +111,9 @@ public class activity_alphabet extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.apply();
 
-            Toast.makeText(activity_alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(activity_alphabet.this,activity_singleAlphabet.class);
+            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -129,9 +127,9 @@ public class activity_alphabet extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.apply();
 
-            Toast.makeText(activity_alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(activity_alphabet.this,activity_singleAlphabet.class);
+            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -145,9 +143,9 @@ public class activity_alphabet extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.apply();
 
-            Toast.makeText(activity_alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(activity_alphabet.this,activity_singleAlphabet.class);
+            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -161,9 +159,9 @@ public class activity_alphabet extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.apply();
 
-            Toast.makeText(activity_alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(activity_alphabet.this,activity_singleAlphabet.class);
+            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -177,9 +175,9 @@ public class activity_alphabet extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.apply();
 
-            Toast.makeText(activity_alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(activity_alphabet.this,activity_singleAlphabet.class);
+            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -193,9 +191,9 @@ public class activity_alphabet extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.apply();
 
-            Toast.makeText(activity_alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(activity_alphabet.this,activity_singleAlphabet.class);
+            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -209,9 +207,9 @@ public class activity_alphabet extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.apply();
 
-            Toast.makeText(activity_alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(activity_alphabet.this,activity_singleAlphabet.class);
+            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -225,9 +223,9 @@ public class activity_alphabet extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.apply();
 
-            Toast.makeText(activity_alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(activity_alphabet.this,activity_singleAlphabet.class);
+            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -241,9 +239,9 @@ public class activity_alphabet extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.apply();
 
-            Toast.makeText(activity_alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(activity_alphabet.this,activity_singleAlphabet.class);
+            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -257,9 +255,9 @@ public class activity_alphabet extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.apply();
 
-            Toast.makeText(activity_alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(activity_alphabet.this,activity_singleAlphabet.class);
+            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -273,9 +271,9 @@ public class activity_alphabet extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.apply();
 
-            Toast.makeText(activity_alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(activity_alphabet.this,activity_singleAlphabet.class);
+            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -289,9 +287,9 @@ public class activity_alphabet extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.apply();
 
-            Toast.makeText(activity_alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(activity_alphabet.this,activity_singleAlphabet.class);
+            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -305,9 +303,9 @@ public class activity_alphabet extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.apply();
 
-            Toast.makeText(activity_alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(activity_alphabet.this,activity_singleAlphabet.class);
+            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -321,9 +319,9 @@ public class activity_alphabet extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.apply();
 
-            Toast.makeText(activity_alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(activity_alphabet.this,activity_singleAlphabet.class);
+            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -337,9 +335,9 @@ public class activity_alphabet extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.apply();
 
-            Toast.makeText(activity_alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(activity_alphabet.this,activity_singleAlphabet.class);
+            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -353,9 +351,9 @@ public class activity_alphabet extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.apply();
 
-            Toast.makeText(activity_alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(activity_alphabet.this,activity_singleAlphabet.class);
+            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -369,9 +367,9 @@ public class activity_alphabet extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.apply();
 
-            Toast.makeText(activity_alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(activity_alphabet.this,activity_singleAlphabet.class);
+            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -385,9 +383,9 @@ public class activity_alphabet extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.apply();
 
-            Toast.makeText(activity_alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(activity_alphabet.this,activity_singleAlphabet.class);
+            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -401,9 +399,9 @@ public class activity_alphabet extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.apply();
 
-            Toast.makeText(activity_alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(activity_alphabet.this,activity_singleAlphabet.class);
+            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -417,9 +415,9 @@ public class activity_alphabet extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.apply();
 
-            Toast.makeText(activity_alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(activity_alphabet.this,activity_singleAlphabet.class);
+            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -433,9 +431,9 @@ public class activity_alphabet extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.apply();
 
-            Toast.makeText(activity_alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(activity_alphabet.this,activity_singleAlphabet.class);
+            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -449,9 +447,9 @@ public class activity_alphabet extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.apply();
 
-            Toast.makeText(activity_alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(activity_alphabet.this,activity_singleAlphabet.class);
+            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -465,9 +463,9 @@ public class activity_alphabet extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.apply();
 
-            Toast.makeText(activity_alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(activity_alphabet.this,activity_singleAlphabet.class);
+            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -481,9 +479,9 @@ public class activity_alphabet extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.apply();
 
-            Toast.makeText(activity_alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(activity_alphabet.this,activity_singleAlphabet.class);
+            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -497,9 +495,9 @@ public class activity_alphabet extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.apply();
 
-            Toast.makeText(activity_alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(activity_alphabet.this,activity_singleAlphabet.class);
+            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -513,14 +511,14 @@ public class activity_alphabet extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.apply();
 
-            Toast.makeText(activity_alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(activity_alphabet.this,activity_singleAlphabet.class);
+            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
         backmain.setOnClickListener(view -> {
-            Intent intent = new Intent(activity_alphabet.this,MainActivity.class);
+            Intent intent = new Intent(Alphabet.this, Levels.class);
             startActivity(intent);
         });
     }

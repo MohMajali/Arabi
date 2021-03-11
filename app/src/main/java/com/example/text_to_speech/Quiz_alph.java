@@ -4,7 +4,6 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.ClipData;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -86,7 +85,7 @@ public class Quiz_alph extends AppCompatActivity {
                     counter--;
                 }else{
                    // quizFinished();
-                    Intent intent = new Intent(Quiz_alph.this,MainActivity.class);
+                    Intent intent = new Intent(Quiz_alph.this, Levels.class);
                     startActivity(intent);
                     Toast.makeText(Quiz_alph.this,"Finish",Toast.LENGTH_SHORT).show();
                 }
@@ -117,7 +116,7 @@ public class Quiz_alph extends AppCompatActivity {
                 .setNegativeButton("Back", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        Intent intent = new Intent(Quiz_alph.this,MainActivity.class);
+                        Intent intent = new Intent(Quiz_alph.this, Levels.class);
                         startActivity(intent);
                     }
                 });

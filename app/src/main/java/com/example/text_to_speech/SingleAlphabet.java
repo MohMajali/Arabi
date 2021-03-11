@@ -7,7 +7,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.media.MediaPlayer;
-import android.net.Uri;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.view.View;
@@ -18,7 +17,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class activity_singleAlphabet extends AppCompatActivity {
+public class SingleAlphabet extends AppCompatActivity {
     EditText text ;
     Button button ;
     Button check ;
@@ -73,9 +72,9 @@ public class activity_singleAlphabet extends AppCompatActivity {
             }*/
             if(text.getText().toString().equals(str2)){
 
-                Toast.makeText(activity_singleAlphabet.this,"correct",Toast.LENGTH_SHORT).show();
+                Toast.makeText(SingleAlphabet.this,"correct",Toast.LENGTH_SHORT).show();
             }else{
-                Toast.makeText(activity_singleAlphabet.this,"false",Toast.LENGTH_SHORT).show();
+                Toast.makeText(SingleAlphabet.this,"false",Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -83,7 +82,7 @@ public class activity_singleAlphabet extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 mediaPlayer.start();
-                Toast.makeText(activity_singleAlphabet.this,str3,Toast.LENGTH_SHORT).show();
+                Toast.makeText(SingleAlphabet.this,str3,Toast.LENGTH_SHORT).show();
             }
         });
     }
