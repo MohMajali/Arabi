@@ -1,7 +1,9 @@
 package com.example.text_to_speech;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
@@ -180,18 +182,25 @@ public class SingleAlphabet extends AppCompatActivity {
 
     private void checkVoiceCommandPermission(){
 
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
-            if(!(ContextCompat.checkSelfPermission(SingleAlphabet.this, Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED))
-            {
-                Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS, Uri.parse("package:"+getPackageName()));
-                startActivity(intent);
-                finish();
+            if((ContextCompat.checkSelfPermission(SingleAlphabet.this, Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED)){
+
+                Toast.makeText(SingleAlphabet.this,"You are already got permission",Toast.LENGTH_LONG).show();
+            } else {
+                ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.RECORD_AUDIO}, 1 );
             }
-        }
+
     }
 
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
-
-
-
+        if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+            if(ContextCompat.checkSelfPermission(this,Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED){
+                Toast.makeText(SingleAlphabet.this,"You got permission",Toast.LENGTH_LONG).show();
+            }
+        } else {
+            Toast.makeText(SingleAlphabet.this,"Denied",Toast.LENGTH_LONG).show();
+        }
+    }
 }
