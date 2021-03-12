@@ -5,14 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Login_page"
-    android:background="@drawable/loginbackgroundfinal">
+    android:background="@drawable/loginbackgroundfinal"
+    >
+
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         app:layout_editor_absoluteX="206dp"
-        app:layout_editor_absoluteY="245dp"
-        >
+        app:layout_editor_absoluteY="245dp">
 
 
         <EditText
