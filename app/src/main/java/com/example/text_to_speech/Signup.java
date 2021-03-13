@@ -2,6 +2,7 @@ package com.example.text_to_speech;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -10,9 +11,13 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
+import com.android.volley.Network;
+import com.android.volley.NetworkError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
+import com.android.volley.ServerError;
+import com.android.volley.TimeoutError;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
@@ -26,6 +31,7 @@ import java.util.Map;
 public class Signup extends AppCompatActivity {
     EditText username,password,email;
     Button signup;
+    ProgressDialog dialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,23 +44,36 @@ public class Signup extends AppCompatActivity {
 
         signup = (Button) findViewById(R.id.button3); // Defining the button by ID
 
+        dialog = new ProgressDialog(this);
+
         signup.setOnClickListener(v -> register());  //setonclicklistiner --> when button clicked do the function " register() function"
     }
 
     private void register(){
+
+        dialog.setTitle("Creating your account");
+        dialog.setMessage("Please wait....");
+        dialog.show();
+
         String Username = username.getText().toString(); // When the user filled the data in the edittexts, we are taking the text from edittext
         String pass = password.getText().toString();    // then converting it to strings
         String Email = email.getText().toString();
 
         if(Username.isEmpty() || pass.isEmpty() || Email.isEmpty()){
             if(Username.isEmpty()){
-                username.setError("fill in");     //checking if the edittext are not empty, if one of them or all all empty, we are setting an error
+                username.setError("fill in");
+                username.requestFocus();
+                dialog.dismiss();          //checking if the edittext are not empty, if one of them or all all empty, we are setting an error
             }                                    //on edittexts to notify him filed must not be empty
             if(pass.isEmpty()){
                 password.setError("fill in");
+                password.requestFocus();
+                dialog.dismiss();
             }
             if(Email.isEmpty()){
                 email.setError("fill in");
+                email.requestFocus();
+                dialog.dismiss();
             }
 
         } else { // if no fileds are empty, then do the registeration process
@@ -81,6 +100,8 @@ public class Signup extends AppCompatActivity {
                             try {
                                 JSONObject jsonObject = new JSONObject(response);
                                 if (!jsonObject.getBoolean("error")){
+
+                                    dialog.dismiss();
 
                                     //By getting the boolean jsonobject which equals true from php file do the following:
                                     // show a message from php if the user has registered with an existing username from other user "User already register"
@@ -114,8 +135,20 @@ public class Signup extends AppCompatActivity {
                 @Override
                 public void onErrorResponse(VolleyError error) {
                     //When can't access to network, show a message
-                    Toast.makeText(Signup.this,"Can't access to network",Toast.LENGTH_LONG).show();
-                    //Log.i("msg",error.getMessage().toString());
+                    if(error instanceof NetworkError){
+                        dialog.setTitle("Network Error");
+                        dialog.setMessage("Cannot connect to Internet\nPlease check your connection!");
+                        //Toast.makeText(Signup.this,"Cannot connect to Internet\nPlease check your connection!",Toast.LENGTH_LONG).show();
+                    } else if(error instanceof ServerError){
+                        dialog.setTitle("Server Error");
+                        dialog.setMessage("The server could not be found\n Please try again after some time!");
+                       // Toast.makeText(Signup.this,"The server could not be found\n Please try again after some time!",Toast.LENGTH_LONG).show();
+                    }else if(error instanceof TimeoutError){
+                        dialog.setTitle("Timeout Error");
+                        dialog.setMessage("Connection TimeOut! Please check your internet connection!");
+                       //Toast.makeText(Signup.this,"Connection TimeOut! Please check your internet connection",Toast.LENGTH_LONG).show();
+                    }
+
                 }
             })
             {
