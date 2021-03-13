@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -48,21 +47,15 @@ public class Login_page extends AppCompatActivity {
 
         dialog = new ProgressDialog(this);
 
-        signup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Login_page.this, Signup.class);
-                startActivity(intent);
-            }
+        signup.setOnClickListener(view -> {
+            Intent intent = new Intent(Login_page.this, Signup.class);
+            startActivity(intent);
         });
 
         skip = (Button) findViewById(R.id.skiplogin); //delete this
-        skip.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Login_page.this, Levels.class);
-                startActivity(intent);
-            }
+        skip.setOnClickListener(view -> {
+            Intent intent = new Intent(Login_page.this, Levels.class);
+            startActivity(intent);
         });
 
         login.setOnClickListener(v -> Login()); //setonclicklistiner --> when button clicked do the function " login() function"
