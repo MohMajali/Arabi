@@ -22,6 +22,7 @@ import android.speech.SpeechRecognizer;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -32,7 +33,7 @@ public class SingleAlphabet extends AppCompatActivity {
     EditText text ;
     Button button ;
     Button check ;
-    Button sound ;
+    ImageView sound ;
     private static final int RECOGNIZER_RESULT = 1;
 
     private SpeechRecognizer speechRecognizer ;
@@ -112,7 +113,7 @@ public class SingleAlphabet extends AppCompatActivity {
         text = (EditText) findViewById(R.id.text);
         button = (Button) findViewById(R.id.button);
         check = (Button) findViewById(R.id.check);
-        sound = (Button) findViewById(R.id.soundplayer);
+        sound = (ImageView) findViewById(R.id.soundplayer);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -127,6 +128,12 @@ public class SingleAlphabet extends AppCompatActivity {
 //                voicerecogize.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "ar-JO");
 //
 //                startActivityForResult(voicerecogize,RECOGNIZER_RESULT);
+
+                Toast toast = new Toast(SingleAlphabet.this);
+                ImageView imageView = new ImageView(SingleAlphabet.this);
+                imageView.setImageResource(R.drawable.mic);
+                toast.setView(imageView);
+                toast.show();
 
                 speechRecognizer.startListening(speechRecognizerIntent);
                 keeper= "" ;
