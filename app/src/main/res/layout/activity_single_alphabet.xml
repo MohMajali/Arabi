@@ -12,15 +12,14 @@
         android:orientation="vertical"
         android:background="@drawable/alpahbetbanner"
         tools:ignore="MissingConstraints">
-        <TextView
-            android:id="@+id/textView"
+        <ImageView
+            android:id="@+id/alphapic"
             android:layout_gravity="center"
             android:textSize="125dp"
-            android:layout_marginTop="70dp"
-            android:textColor="#ff0000"
-            android:layout_width="155dp"
-            android:layout_height="155dp"
-            android:text="TextView" />
+            android:layout_marginTop="95dp"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -61,7 +60,7 @@
             android:id="@+id/soundplayer"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@drawable/playbutton"
+            android:background="@drawable/playbutton3"
             android:layout_gravity="center"
             />
     </LinearLayout>

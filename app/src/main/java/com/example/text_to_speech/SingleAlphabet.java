@@ -34,6 +34,7 @@ public class SingleAlphabet extends AppCompatActivity {
     Button button ;
     Button check ;
     ImageView sound ;
+    ImageView alpha ;
     private static final int RECOGNIZER_RESULT = 1;
 
     private SpeechRecognizer speechRecognizer ;
@@ -109,11 +110,13 @@ public class SingleAlphabet extends AppCompatActivity {
 
 
 
-        TextView textView =findViewById(R.id.textView);
+//        TextView textView =findViewById(R.id.textView);
         text = (EditText) findViewById(R.id.text);
         button = (Button) findViewById(R.id.button);
         check = (Button) findViewById(R.id.check);
         sound = (ImageView) findViewById(R.id.soundplayer);
+        alpha = (ImageView) findViewById(R.id.alphapic);
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -146,14 +149,17 @@ public class SingleAlphabet extends AppCompatActivity {
         String str1 =sp.getString("thealphabet", "");
         String str2 =sp.getString("thepronunciation", "");
         int str3 =sp.getInt("thesound", -1);
+        int str4 =sp.getInt("thepic", -1 ) ;
         //String str3 =sp.getString("thepronucVibrio", "");
         //String str4 =sp.getString("thepronucslot", "");
         //String str5 =sp.getString("thepronucbraek", "");
 
+        alpha.setImageResource(str4);
 
         final MediaPlayer mediaPlayer = MediaPlayer.create(this, str3);
 
-        textView.setText(str1);
+//        textView.setText(str1);
+
 
         check.setOnClickListener(view -> {
             /*

@@ -7,11 +7,12 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class Alphabet extends AppCompatActivity {
 
-    Button backmain;
+    ImageView backmain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +20,7 @@ public class Alphabet extends AppCompatActivity {
         setContentView(R.layout.activity_alphabet);
 
         SharedPreferences sp ;
-        backmain = (Button)findViewById(R.id.backalphabet);
+        backmain = (ImageView) findViewById(R.id.backalphabet);
         //update 1.1111
         sp = getSharedPreferences("MyUserPrefs", Context.MODE_PRIVATE);
 
@@ -57,6 +58,7 @@ public class Alphabet extends AppCompatActivity {
             String alphabet = "ا" ;
             String pronunciation = "حرف الالف" ;
             int sound = R.raw.chr1 ;
+            int pic = R.drawable.ch1pic ;
            // String pronucVibrio = "اه";
            // String pronucslot = "او" ;
            // String pronucbraek = "اي";
@@ -64,6 +66,7 @@ public class Alphabet extends AppCompatActivity {
             editor.putString("thealphabet",alphabet);
             editor.putString("thepronunciation",pronunciation);
             editor.putInt("thesound",sound);
+            editor.putInt("thepic",pic);
             // editor.putString("thepronucVibrio",pronucVibrio);
            // editor.putString("thepronucslot",pronucslot);
            // editor.putString("thepronucbraek",pronucbraek);
@@ -80,6 +83,7 @@ public class Alphabet extends AppCompatActivity {
             String alphabet = "ب" ;
             String pronunciation = "حرف الباء" ;
             int sound = R.raw.chr2 ;
+            int pic = R.drawable.ch2pic ;
            // String pronucVibrio = "با";
            // String pronucslot = "بو" ;
             //String pronucbraek = "بي";
@@ -87,6 +91,7 @@ public class Alphabet extends AppCompatActivity {
             editor.putString("thealphabet",alphabet);
             editor.putString("thepronunciation",pronunciation);
             editor.putInt("thesound",sound);
+            editor.putInt("thepic",pic);
             //editor.putString("thepronucVibrio",pronucVibrio);
            // editor.putString("thepronucslot",pronucslot);
             //editor.putString("thepronucbraek",pronucbraek);
@@ -105,10 +110,12 @@ public class Alphabet extends AppCompatActivity {
             String alphabet = "ت" ;
             String pronunciation = "حرف التاء" ;
             int sound = R.raw.chr3 ;
+            int pic = R.drawable.ch3pic ;
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("thealphabet",alphabet);
             editor.putString("thepronunciation",pronunciation);
             editor.putInt("thesound",sound);
+            editor.putInt("thepic",pic);
             editor.apply();
 
             Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
@@ -121,10 +128,12 @@ public class Alphabet extends AppCompatActivity {
             String alphabet = "ث" ;
             String pronunciation = "حرف الثاء" ;
             int sound = R.raw.chr4 ;
+            int pic = R.drawable.ch4pic ;
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("thealphabet",alphabet);
             editor.putString("thepronunciation",pronunciation);
             editor.putInt("thesound",sound);
+            editor.putInt("thepic",pic);
             editor.apply();
 
             Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
@@ -137,10 +146,12 @@ public class Alphabet extends AppCompatActivity {
             String alphabet = "ج" ;
             String pronunciation = "حرف الجيم" ;
             int sound = R.raw.chr5 ;
+            int pic = R.drawable.ch5pic ;
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("thealphabet",alphabet);
             editor.putString("thepronunciation",pronunciation);
             editor.putInt("thesound",sound);
+            editor.putInt("thepic",pic);
             editor.apply();
 
             Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
@@ -153,10 +164,12 @@ public class Alphabet extends AppCompatActivity {
             String alphabet = "ح" ;
             String pronunciation = "حرف الحاء" ;
             int sound = R.raw.chr6 ;
+            int pic = R.drawable.ch6pic ;
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("thealphabet",alphabet);
             editor.putString("thepronunciation",pronunciation);
             editor.putInt("thesound",sound);
+            editor.putInt("thepic",pic);
             editor.apply();
 
             Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
@@ -169,10 +182,12 @@ public class Alphabet extends AppCompatActivity {
             String alphabet = "خ" ;
             String pronunciation = "حرف الخاء" ;
             int sound = R.raw.chr7 ;
+            int pic = R.drawable.ch7pic ;
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("thealphabet",alphabet);
             editor.putString("thepronunciation",pronunciation);
             editor.putInt("thesound",sound);
+            editor.putInt("thepic",pic);
             editor.apply();
 
             Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
@@ -185,10 +200,12 @@ public class Alphabet extends AppCompatActivity {
             String alphabet = "د" ;
             String pronunciation = "حرف الدال" ;
             int sound = R.raw.chr8 ;
+            int pic = R.drawable.ch8pic ;
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("thealphabet",alphabet);
             editor.putString("thepronunciation",pronunciation);
             editor.putInt("thesound",sound);
+            editor.putInt("thepic",pic);
             editor.apply();
 
             Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
@@ -201,10 +218,12 @@ public class Alphabet extends AppCompatActivity {
             String alphabet = "ذ" ;
             String pronunciation = "حرف الذال" ;
             int sound = R.raw.chr9 ;
+            int pic = R.drawable.ch9pic ;
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("thealphabet",alphabet);
             editor.putString("thepronunciation",pronunciation);
             editor.putInt("thesound",sound);
+            editor.putInt("thepic",pic);
             editor.apply();
 
             Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
@@ -217,10 +236,12 @@ public class Alphabet extends AppCompatActivity {
             String alphabet = "ر" ;
             String pronunciation = "حرف الراء" ;
             int sound = R.raw.chr10 ;
+            int pic = R.drawable.ch10pic ;
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("thealphabet",alphabet);
             editor.putString("thepronunciation",pronunciation);
             editor.putInt("thesound",sound);
+            editor.putInt("thepic",pic);
             editor.apply();
 
             Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
@@ -233,10 +254,12 @@ public class Alphabet extends AppCompatActivity {
             String alphabet = "ز" ;
             String pronunciation = "حرف الزاي" ;
             int sound = R.raw.chr11 ;
+            int pic = R.drawable.ch11pic ;
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("thealphabet",alphabet);
             editor.putString("thepronunciation",pronunciation);
             editor.putInt("thesound",sound);
+            editor.putInt("thepic",pic);
             editor.apply();
 
             Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
@@ -249,10 +272,12 @@ public class Alphabet extends AppCompatActivity {
             String alphabet = "س" ;
             String pronunciation = "حرف السين" ;
             int sound = R.raw.chr12 ;
+            int pic = R.drawable.ch12pic ;
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("thealphabet",alphabet);
             editor.putString("thepronunciation",pronunciation);
             editor.putInt("thesound",sound);
+            editor.putInt("thepic",pic);
             editor.apply();
 
             Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
@@ -265,10 +290,12 @@ public class Alphabet extends AppCompatActivity {
             String alphabet = "ش" ;
             String pronunciation = "حرف الشين" ;
             int sound = R.raw.chr13 ;
+            int pic = R.drawable.ch13pic ;
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("thealphabet",alphabet);
             editor.putString("thepronunciation",pronunciation);
             editor.putInt("thesound",sound);
+            editor.putInt("thepic",pic);
             editor.apply();
 
             Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
@@ -281,10 +308,12 @@ public class Alphabet extends AppCompatActivity {
             String alphabet = "ص" ;
             String pronunciation = "حرف الصاد" ;
             int sound = R.raw.chr14 ;
+            int pic = R.drawable.ch14pic ;
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("thealphabet",alphabet);
             editor.putString("thepronunciation",pronunciation);
             editor.putInt("thesound",sound);
+            editor.putInt("thepic",pic);
             editor.apply();
 
             Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
@@ -297,10 +326,12 @@ public class Alphabet extends AppCompatActivity {
             String alphabet = "ض" ;
             String pronunciation = "حرف الضاد" ;
             int sound = R.raw.chr15 ;
+            int pic = R.drawable.ch5pic ;
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("thealphabet",alphabet);
             editor.putString("thepronunciation",pronunciation);
             editor.putInt("thesound",sound);
+            editor.putInt("thepic",pic);
             editor.apply();
 
             Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
@@ -313,10 +344,12 @@ public class Alphabet extends AppCompatActivity {
             String alphabet = "ط" ;
             String pronunciation = "حرف الطاء" ;
             int sound = R.raw.chr16 ;
+            int pic = R.drawable.ch16pic ;
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("thealphabet",alphabet);
             editor.putString("thepronunciation",pronunciation);
             editor.putInt("thesound",sound);
+            editor.putInt("thepic",pic);
             editor.apply();
 
             Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
@@ -329,10 +362,12 @@ public class Alphabet extends AppCompatActivity {
             String alphabet = "ظ" ;
             String pronunciation = "حرف الظاد" ;
             int sound = R.raw.chr17 ;
+            int pic = R.drawable.ch17pic ;
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("thealphabet",alphabet);
             editor.putString("thepronunciation",pronunciation);
             editor.putInt("thesound",sound);
+            editor.putInt("thepic",pic);
             editor.apply();
 
             Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
@@ -345,10 +380,12 @@ public class Alphabet extends AppCompatActivity {
             String alphabet = "ع" ;
             String pronunciation = "حرف العين" ;
             int sound = R.raw.chr18 ;
+            int pic = R.drawable.ch18pic ;
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("thealphabet",alphabet);
             editor.putString("thepronunciation",pronunciation);
             editor.putInt("thesound",sound);
+            editor.putInt("thepic",pic);
             editor.apply();
 
             Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
@@ -361,10 +398,12 @@ public class Alphabet extends AppCompatActivity {
             String alphabet = "غ" ;
             String pronunciation = "حرف الغين" ;
             int sound = R.raw.chr19 ;
+            int pic = R.drawable.ch19pic ;
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("thealphabet",alphabet);
             editor.putString("thepronunciation",pronunciation);
             editor.putInt("thesound",sound);
+            editor.putInt("thepic",pic);
             editor.apply();
 
             Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
@@ -377,10 +416,12 @@ public class Alphabet extends AppCompatActivity {
             String alphabet = "ف" ;
             String pronunciation = "حرف الفاء" ;
             int sound = R.raw.chr20 ;
+            int pic = R.drawable.ch20pic ;
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("thealphabet",alphabet);
             editor.putString("thepronunciation",pronunciation);
             editor.putInt("thesound",sound);
+            editor.putInt("thepic",pic);
             editor.apply();
 
             Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
@@ -393,10 +434,12 @@ public class Alphabet extends AppCompatActivity {
             String alphabet = "ق" ;
             String pronunciation = "حرف القاف" ;
             int sound = R.raw.chr21 ;
+            int pic = R.drawable.ch21pic ;
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("thealphabet",alphabet);
             editor.putString("thepronunciation",pronunciation);
             editor.putInt("thesound",sound);
+            editor.putInt("thepic",pic);
             editor.apply();
 
             Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
@@ -409,10 +452,12 @@ public class Alphabet extends AppCompatActivity {
             String alphabet = "ك" ;
             String pronunciation = "حرف الكاف" ;
             int sound = R.raw.chr22 ;
+            int pic = R.drawable.ch22pic ;
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("thealphabet",alphabet);
             editor.putString("thepronunciation",pronunciation);
             editor.putInt("thesound",sound);
+            editor.putInt("thepic",pic);
             editor.apply();
 
             Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
@@ -425,10 +470,12 @@ public class Alphabet extends AppCompatActivity {
             String alphabet = "ل" ;
             String pronunciation = "حرف اللام" ;
             int sound = R.raw.chr23 ;
+            int pic = R.drawable.ch23pic ;
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("thealphabet",alphabet);
             editor.putString("thepronunciation",pronunciation);
             editor.putInt("thesound",sound);
+            editor.putInt("thepic",pic);
             editor.apply();
 
             Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
@@ -441,10 +488,12 @@ public class Alphabet extends AppCompatActivity {
             String alphabet = "م" ;
             String pronunciation = "حرف الميم" ;
             int sound = R.raw.chr24 ;
+            int pic = R.drawable.ch24pic ;
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("thealphabet",alphabet);
             editor.putString("thepronunciation",pronunciation);
             editor.putInt("thesound",sound);
+            editor.putInt("thepic",pic);
             editor.apply();
 
             Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
@@ -457,10 +506,12 @@ public class Alphabet extends AppCompatActivity {
             String alphabet = "ن" ;
             String pronunciation = "حرف النون" ;
             int sound = R.raw.chr25 ;
+            int pic = R.drawable.ch25pic ;
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("thealphabet",alphabet);
             editor.putString("thepronunciation",pronunciation);
             editor.putInt("thesound",sound);
+            editor.putInt("thepic",pic);
             editor.apply();
 
             Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
@@ -473,10 +524,12 @@ public class Alphabet extends AppCompatActivity {
             String alphabet = "ه" ;
             String pronunciation = "حرف الهاء" ;
             int sound = R.raw.chr26 ;
+            int pic = R.drawable.ch26pic ;
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("thealphabet",alphabet);
             editor.putString("thepronunciation",pronunciation);
             editor.putInt("thesound",sound);
+            editor.putInt("thepic",pic);
             editor.apply();
 
             Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
@@ -489,10 +542,12 @@ public class Alphabet extends AppCompatActivity {
             String alphabet = "و" ;
             String pronunciation = "حرف الواو" ;
             int sound = R.raw.chr27 ;
+            int pic = R.drawable.ch27pic ;
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("thealphabet",alphabet);
             editor.putString("thepronunciation",pronunciation);
             editor.putInt("thesound",sound);
+            editor.putInt("thepic",pic);
             editor.apply();
 
             Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
@@ -505,10 +560,12 @@ public class Alphabet extends AppCompatActivity {
             String alphabet = "ي" ;
             String pronunciation = "حرف الياء" ;
             int sound = R.raw.chr28 ;
+            int pic = R.drawable.ch28pic ;
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("thealphabet",alphabet);
             editor.putString("thepronunciation",pronunciation);
             editor.putInt("thesound",sound);
+            editor.putInt("thepic",pic);
             editor.apply();
 
             Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
