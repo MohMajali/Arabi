@@ -17,7 +17,7 @@
         <activity android:name=".Levels" />
         <activity android:name=".Quiz_alph" />
         <activity android:name=".SingleAlphabet" />
-        <activity android:name=".Alphabet" />
+        <activity android:name=".Level1" />
         <activity android:name=".Login_page">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

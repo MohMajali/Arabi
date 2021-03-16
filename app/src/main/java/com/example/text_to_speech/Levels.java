@@ -28,7 +28,7 @@ public class Levels extends AppCompatActivity {
         lvlone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Levels.this, Alphabet.class);
+                Intent intent = new Intent(Levels.this, Level1.class);
                 startActivity(intent);
             }
         });

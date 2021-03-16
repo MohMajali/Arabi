@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Alphabet"
+    tools:context=".Level1"
     android:background="@drawable/alphabetlayout">
 
 <TextView
@@ -325,7 +325,7 @@
             android:id="@+id/backalphabet"
             android:background="@drawable/backbutton"
             android:layout_width="90dp"
-            android:layout_height="70dp"
+            android:layout_height="60dp"
             android:text="back-alphabet" />
     </LinearLayout>
 

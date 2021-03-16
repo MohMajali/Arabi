@@ -123,7 +123,7 @@ public class Signup extends AppCompatActivity {
                                     //let user in
                                     finish();
                                     //move to alphabet activity
-                                    startActivity(new Intent(Signup.this, Alphabet.class));
+                                    startActivity(new Intent(Signup.this, Level1.class));
                                 }else {
                                     Toast.makeText(Signup.this,jsonObject.getString("message"),Toast.LENGTH_LONG).show();
                                 }

@@ -10,14 +10,14 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class Alphabet extends AppCompatActivity {
+public class Level1 extends AppCompatActivity {
 
     ImageView backmain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_alphabet);
+        setContentView(R.layout.activity_level1);
 
         SharedPreferences sp ;
         backmain = (ImageView) findViewById(R.id.backalphabet);
@@ -72,9 +72,9 @@ public class Alphabet extends AppCompatActivity {
            // editor.putString("thepronucbraek",pronucbraek);
             editor.apply();
 
-            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
+            Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
 
         });
@@ -97,9 +97,9 @@ public class Alphabet extends AppCompatActivity {
             //editor.putString("thepronucbraek",pronucbraek);
             editor.apply();
 
-            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
+            Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
 
 
@@ -118,9 +118,9 @@ public class Alphabet extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
+            Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -136,9 +136,9 @@ public class Alphabet extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
+            Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -154,9 +154,9 @@ public class Alphabet extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
+            Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -172,9 +172,9 @@ public class Alphabet extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
+            Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -190,9 +190,9 @@ public class Alphabet extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
+            Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -208,9 +208,9 @@ public class Alphabet extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
+            Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -226,9 +226,9 @@ public class Alphabet extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
+            Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -244,9 +244,9 @@ public class Alphabet extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
+            Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -262,9 +262,9 @@ public class Alphabet extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
+            Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -280,9 +280,9 @@ public class Alphabet extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
+            Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -298,9 +298,9 @@ public class Alphabet extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
+            Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -316,9 +316,9 @@ public class Alphabet extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
+            Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -334,9 +334,9 @@ public class Alphabet extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
+            Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -352,9 +352,9 @@ public class Alphabet extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
+            Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -370,9 +370,9 @@ public class Alphabet extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
+            Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -388,9 +388,9 @@ public class Alphabet extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
+            Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -406,9 +406,9 @@ public class Alphabet extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
+            Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -424,9 +424,9 @@ public class Alphabet extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
+            Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -442,9 +442,9 @@ public class Alphabet extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
+            Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -460,9 +460,9 @@ public class Alphabet extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
+            Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -478,9 +478,9 @@ public class Alphabet extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
+            Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -496,9 +496,9 @@ public class Alphabet extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
+            Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -514,9 +514,9 @@ public class Alphabet extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
+            Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -532,9 +532,9 @@ public class Alphabet extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
+            Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -550,9 +550,9 @@ public class Alphabet extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
+            Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
@@ -568,14 +568,14 @@ public class Alphabet extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Alphabet.this,"done",Toast.LENGTH_SHORT).show();
+            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
-            Intent intent = new Intent(Alphabet.this, SingleAlphabet.class);
+            Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
         backmain.setOnClickListener(view -> {
-            Intent intent = new Intent(Alphabet.this, Levels.class);
+            Intent intent = new Intent(Level1.this, Levels.class);
             startActivity(intent);
         });
     }
