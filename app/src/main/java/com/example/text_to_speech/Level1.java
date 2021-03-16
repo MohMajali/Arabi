@@ -326,7 +326,7 @@ public class Level1 extends AppCompatActivity {
             String alphabet = "ض" ;
             String pronunciation = "حرف الضاد" ;
             int sound = R.raw.chr15 ;
-            int pic = R.drawable.ch5pic ;
+            int pic = R.drawable.ch15pic ;
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("thealphabet",alphabet);
             editor.putString("thepronunciation",pronunciation);
