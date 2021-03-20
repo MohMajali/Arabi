@@ -3,7 +3,7 @@
     package="com.example.text_to_speech">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
         android:allowBackup="true"
@@ -13,7 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Texttospeech"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Signup"></activity>
+        <activity android:name=".Level2"></activity>
+        <activity android:name=".Level3" />
+        <activity android:name=".Signup" />
         <activity android:name=".Levels" />
         <activity android:name=".Quiz_alph" />
         <activity android:name=".SingleAlphabet" />

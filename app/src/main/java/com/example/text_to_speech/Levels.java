@@ -11,7 +11,7 @@ import android.widget.ImageView;
 public class Levels extends AppCompatActivity {
 
     Button nextAlphabet , quizAlph , login, signup;
-    ImageView lvlone ;
+    ImageView lvlone,lvltwo,lvlthree ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,11 +24,29 @@ public class Levels extends AppCompatActivity {
 //        signup = (Button) findViewById(R.id.sign);
 
         lvlone = (ImageView)findViewById(R.id.lvlone);
+        lvltwo = (ImageView) findViewById(R.id.lvltwo);
+        lvlthree = (ImageView) findViewById(R.id.lvlthree);
 
         lvlone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Levels.this, Level1.class);
+                startActivity(intent);
+            }
+        });
+
+        lvlthree.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Levels.this,Level3.class);
+                startActivity(intent);
+            }
+        });
+
+        lvltwo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Levels.this,Level2.class);
                 startActivity(intent);
             }
         });
