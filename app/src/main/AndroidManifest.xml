@@ -13,7 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Texttospeech"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Level2"></activity>
+        <activity android:name=".Words"></activity>
+        <activity android:name=".SingleWord" />
+        <activity android:name=".Level2" />
         <activity android:name=".Level3" />
         <activity android:name=".Signup" />
         <activity android:name=".Levels" />
