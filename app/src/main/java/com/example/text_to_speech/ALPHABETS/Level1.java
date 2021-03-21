@@ -1,4 +1,4 @@
-package com.example.text_to_speech;
+package com.example.text_to_speech.ALPHABETS;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,9 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import com.example.text_to_speech.LEVELS.Levels;
+import com.example.text_to_speech.R;
 
 public class Level1 extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.example.text_to_speech;
+package com.example.text_to_speech.QUIZ;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
@@ -12,6 +12,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.text_to_speech.LEVELS.Levels;
+import com.example.text_to_speech.R;
+
 import java.util.ArrayList;
 import java.util.Random;
 

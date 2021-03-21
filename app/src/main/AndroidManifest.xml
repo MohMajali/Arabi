@@ -13,16 +13,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Texttospeech"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Words"></activity>
-        <activity android:name=".SingleWord" />
-        <activity android:name=".Level2" />
-        <activity android:name=".Level3" />
-        <activity android:name=".Signup" />
-        <activity android:name=".Levels" />
-        <activity android:name=".Quiz_alph" />
-        <activity android:name=".SingleAlphabet" />
-        <activity android:name=".Level1" />
-        <activity android:name=".Login_page">
+        <activity android:name=".NUMBERS.SingleNumber"></activity>
+        <activity android:name=".COLORS.SingleColor" />
+        <activity android:name=".NUMBERS.Numbers" />
+        <activity android:name=".COLORS.Colors" />
+        <activity android:name=".WORDS.Words" />
+        <activity android:name=".WORDS.SingleWord" />
+        <activity android:name=".LEVELS.Level2" />
+        <activity android:name=".LEVELS.Level3" />
+        <activity android:name=".PROCESS.Signup" />
+        <activity android:name=".LEVELS.Levels" />
+        <activity android:name=".QUIZ.Quiz_alph" />
+        <activity android:name=".ALPHABETS.SingleAlphabet" />
+        <activity android:name=".ALPHABETS.Level1" />
+        <activity android:name=".PROCESS.Login_page">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

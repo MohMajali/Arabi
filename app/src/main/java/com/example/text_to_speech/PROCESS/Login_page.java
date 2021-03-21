@@ -1,11 +1,10 @@
-package com.example.text_to_speech;
+package com.example.text_to_speech.PROCESS;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -20,6 +19,10 @@ import com.android.volley.TimeoutError;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.text_to_speech.LEVELS.Levels;
+import com.example.text_to_speech.R;
+import com.example.text_to_speech.STORAGE.sharedprefmanager;
+import com.example.text_to_speech.STORAGE.user;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -80,7 +83,7 @@ public class Login_page extends AppCompatActivity {
                     // show a message from php if the user has logged in successfully "Login successfully"
 
                     //When User logged in successfully get the data from array called response in php
-                    user user = new user(jsonObject.getInt("userid"), jsonObject.getString("username"),
+                    com.example.text_to_speech.STORAGE.user user = new user(jsonObject.getInt("userid"), jsonObject.getString("username"),
                             jsonObject.getString("email"));
 
                     //store user data inside sharedprefrences

@@ -1,4 +1,4 @@
-package com.example.text_to_speech;
+package com.example.text_to_speech.WORDS;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.example.text_to_speech.R;
 
 public class SingleWord extends AppCompatActivity {
 

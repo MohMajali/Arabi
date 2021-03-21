@@ -4,23 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WORDS.SingleWord"
+    tools:context=".COLORS.SingleColor"
     android:orientation="vertical">
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="speak"
-        android:id="@+id/speaker"/>
+        android:text="fill in"
+        android:id="@+id/colorspeak"/>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/arabic"
-        android:text="Arabic sound"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/english"
-        android:text="English Sound"/>
+        android:id="@+id/sound"
+        android:text="Sound"/>
 
 </LinearLayout>

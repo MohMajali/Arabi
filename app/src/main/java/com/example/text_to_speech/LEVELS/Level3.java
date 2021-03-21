@@ -1,12 +1,16 @@
-package com.example.text_to_speech;
+package com.example.text_to_speech.LEVELS;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.text_to_speech.COLORS.Colors;
+import com.example.text_to_speech.NUMBERS.Numbers;
+import com.example.text_to_speech.R;
+import com.example.text_to_speech.WORDS.Words;
 
 public class Level3 extends AppCompatActivity {
 
@@ -24,8 +28,16 @@ public class Level3 extends AppCompatActivity {
         words.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Level3.this,Words.class));
+                startActivity(new Intent(Level3.this, Words.class));
             }
+        });
+
+        colors.setOnClickListener(v -> {
+            startActivity(new Intent(Level3.this, Colors.class));
+        });
+
+        numbers.setOnClickListener(v -> {
+            startActivity(new Intent(Level3.this, Numbers.class));
         });
     }
 }
