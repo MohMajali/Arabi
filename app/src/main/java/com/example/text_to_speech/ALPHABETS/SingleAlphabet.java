@@ -27,7 +27,7 @@ import java.util.ArrayList;
 
 public class SingleAlphabet extends AppCompatActivity {
     EditText text ;
-    Button button ;
+    Button talk ;
     Button check ;
     ImageView sound ;
     ImageView alpha ;
@@ -108,12 +108,12 @@ public class SingleAlphabet extends AppCompatActivity {
 
 //        TextView textView =findViewById(R.id.textView);
         text = (EditText) findViewById(R.id.text);
-        button = (Button) findViewById(R.id.button);
+        talk = (Button) findViewById(R.id.Talk);
         check = (Button) findViewById(R.id.check);
         sound = (ImageView) findViewById(R.id.soundplayer);
         alpha = (ImageView) findViewById(R.id.alphapic);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        talk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 ////                Intent text  = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);

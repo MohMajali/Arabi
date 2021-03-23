@@ -43,7 +43,7 @@
             android:text="كلامك هنا" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/Talk"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

@@ -5,8 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".WORDS.Words"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/alphabetlayout">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="كلمات ترحيبية"
+        android:textSize="50dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="60dp"
+        />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

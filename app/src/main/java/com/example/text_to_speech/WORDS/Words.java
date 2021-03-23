@@ -193,8 +193,8 @@ public class Words extends AppCompatActivity {
         });
 
         welcome.setOnClickListener(v -> {
-            String word = "اهلا و سهلا" ;
-            String pronunciation = "اهلا و سهلا" ;
+            String word = "اهلا وسهلا" ;
+            String pronunciation = "اهلا وسهلا" ;
             int SoundEnglish = R.raw.welcome ;
             int SoundArabic = R.raw.welcomearabic ;
             int SoundBoy = R.raw.welcomeboy;
