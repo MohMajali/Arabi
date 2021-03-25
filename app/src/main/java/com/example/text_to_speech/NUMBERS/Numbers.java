@@ -34,8 +34,8 @@ public class Numbers extends AppCompatActivity {
         ten = findViewById(R.id.ten10);
 
         one.setOnClickListener(v -> {
-            String word = "1" ;
-            String pronunciation = "1" ;
+            String word = "واحد" ;
+            String pronunciation = "واحد" ;
             int SoundNum = R.raw.learnnumber1 ;
             // int pic = R.drawable.ch1pic ;
 
@@ -54,8 +54,8 @@ public class Numbers extends AppCompatActivity {
         });
 
         two.setOnClickListener(v -> {
-            String word = "2" ;
-            String pronunciation = "2" ;
+            String word = "اثنين" ;
+            String pronunciation = "اثنين" ;
             int SoundNum = R.raw.learnnumber2 ;
             // int pic = R.drawable.ch1pic ;
 
@@ -74,8 +74,8 @@ public class Numbers extends AppCompatActivity {
         });
 
         three.setOnClickListener(v -> {
-            String word = "3" ;
-            String pronunciation = "3" ;
+            String word = "ثلاثه" ;
+            String pronunciation = "ثلاثه" ;
             int SoundNum = R.raw.learnnumber3 ;
             // int pic = R.drawable.ch1pic ;
 
@@ -94,8 +94,8 @@ public class Numbers extends AppCompatActivity {
         });
 
         four.setOnClickListener(v -> {
-            String word = "4" ;
-            String pronunciation = "4" ;
+            String word = "اربعه" ;
+            String pronunciation = "اربعه" ;
             int SoundNum = R.raw.learnnumber4 ;
             // int pic = R.drawable.ch1pic ;
 
@@ -114,8 +114,8 @@ public class Numbers extends AppCompatActivity {
         });
 
         five.setOnClickListener(v -> {
-            String word = "5" ;
-            String pronunciation = "5" ;
+            String word = "خمسه" ;
+            String pronunciation = "خمسه" ;
             int SoundNum = R.raw.learnnumber5 ;
             // int pic = R.drawable.ch1pic ;
 
@@ -134,8 +134,8 @@ public class Numbers extends AppCompatActivity {
         });
 
         six.setOnClickListener(v -> {
-            String word = "6" ;
-            String pronunciation = "6" ;
+            String word = "سته" ;
+            String pronunciation = "سته" ;
             int SoundNum = R.raw.learnnumber6 ;
             // int pic = R.drawable.ch1pic ;
 
@@ -154,8 +154,8 @@ public class Numbers extends AppCompatActivity {
         });
 
         sev.setOnClickListener(v -> {
-            String word = "7" ;
-            String pronunciation = "7" ;
+            String word = "سبعه" ;
+            String pronunciation = "سبعه" ;
             int SoundNum = R.raw.learnnumber7 ;
             // int pic = R.drawable.ch1pic ;
 
@@ -174,8 +174,8 @@ public class Numbers extends AppCompatActivity {
         });
 
         eig.setOnClickListener(v -> {
-            String word = "8" ;
-            String pronunciation = "8" ;
+            String word = "ثمانيه" ;
+            String pronunciation = "ثمانيه" ;
             int SoundNum = R.raw.learnnumber8 ;
             // int pic = R.drawable.ch1pic ;
 
@@ -194,8 +194,8 @@ public class Numbers extends AppCompatActivity {
         });
 
         nine.setOnClickListener(v -> {
-            String word = "9" ;
-            String pronunciation = "9" ;
+            String word = "تسعه" ;
+            String pronunciation = "تسعه" ;
             int SoundNum = R.raw.learnnumber9 ;
             // int pic = R.drawable.ch1pic ;
 
@@ -214,8 +214,8 @@ public class Numbers extends AppCompatActivity {
         });
 
         ten.setOnClickListener(v -> {
-            String word = "10" ;
-            String pronunciation = "10" ;
+            String word = "عشره" ;
+            String pronunciation = "عشره" ;
             int SoundNum = R.raw.learnnumber10 ;
             // int pic = R.drawable.ch1pic ;
 

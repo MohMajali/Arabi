@@ -5,54 +5,73 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".COLORS.Colors"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/alphabetlayout">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="الألوان"
+        android:textSize="50dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="60dp"
+        />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:text="Red"
-        android:id="@+id/red"/>
+        android:id="@+id/red"
+        android:layout_marginTop="60dp"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Blue"
+        android:layout_gravity="center"
         android:id="@+id/blue"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Black"
+        android:layout_gravity="center"
         android:id="@+id/black"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Brown"
+        android:layout_gravity="center"
         android:id="@+id/brown"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Green"
+        android:layout_gravity="center"
         android:id="@+id/green"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Orange"
+        android:layout_gravity="center"
         android:id="@+id/orange"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="White"
+        android:layout_gravity="center"
         android:id="@+id/white"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Yallow"
+        android:layout_gravity="center"
         android:id="@+id/yallow"/>
 
 </LinearLayout>
