@@ -5,15 +5,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LEVELS.Level3"
-    android:background="@drawable/lvl3background">
+    >
 
     <LinearLayout
-        android:layout_width="350dp"
-        android:layout_height="400dp"
-        android:layout_marginTop="200dp"
-        android:orientation="vertical"
+
+        android:id="@+id/first"
+        android:layout_width="569dp"
+        android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
-        android:id="@+id/inner_layout">
+        android:orientation="vertical"
+        android:background="@drawable/lvl3background">
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/lvl3banner">-->
+
+<!--        </ImageView>-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/lvl3blue">-->
+
+<!--        </ImageView>-->
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:src="@drawable/lvl3yellow">-->
+
+        <!--        </ImageView>-->
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:src="@drawable/lvl3pink">-->
+
+        <!--        </ImageView>-->
+
 
         <Button
             android:id="@+id/words"
@@ -21,32 +51,38 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_above="@+id/colors"
-            android:textColor="@color/black"
-            android:textSize="30dp"
             android:layout_centerHorizontal="true"
-            android:text="Words" />
+            android:layout_gravity="center"
+            android:layout_marginTop="300dp"
+            android:text="Words"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
 
         <Button
-            android:layout_width="wrap_content"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
             android:id="@+id/colors"
-            android:textSize="30dp"
-            android:text="Colors"
-            android:layout_centerHorizontal="true"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_above="@+id/numbers"
-            />
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="Colors"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
 
         <Button
-            android:layout_width="wrap_content"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
             android:id="@+id/numbers"
-            android:textSize="30dp"
-            android:text="Numbers"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"/>
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="Numbers"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
     </LinearLayout>
 </RelativeLayout>
