@@ -29,15 +29,15 @@ import java.util.ArrayList;
 
 public class SingleNumber extends AppCompatActivity {
 
-    EditText text ;
-    Button talk ;
-    Button check ;
-    TextView textView ;
+    EditText text;
+    Button talk;
+    Button check;
+    TextView textView;
     private static final int RECOGNIZER_RESULT = 1;
     MediaPlayer mediaPlayer;
 
-    private SpeechRecognizer speechRecognizer ;
-    private Intent speechRecognizerIntent ;
+    private SpeechRecognizer speechRecognizer;
+    private Intent speechRecognizerIntent;
     String keeper = "";
 
     ImageView sound;
@@ -51,21 +51,22 @@ public class SingleNumber extends AppCompatActivity {
         textView = findViewById(R.id.numbertext);
         sound = findViewById(R.id.sound);
 
-        SharedPreferences sp =getApplicationContext().getSharedPreferences("MyUserPrefs", Context.MODE_PRIVATE);
-        String str1 =sp.getString("TheNumber", "");
-        String str2 =sp.getString("ThePronunciation", "");
-        int str3 =sp.getInt("TheSoundNum", -1);
+        SharedPreferences sp = getApplicationContext().getSharedPreferences("MyUserPrefs", Context.MODE_PRIVATE);
+        String str1 = sp.getString("TheNumber", "");
+        String str2 = sp.getString("ThePronunciation", "");
+        String str4 = sp.getString("TheNum", "");
+        int str3 = sp.getInt("TheSoundNum", -1);
 
         textView = findViewById(R.id.numbertext);
         sound = findViewById(R.id.numbersound);
 
         sound.setOnClickListener(v -> {
-            mediaPlayer = MediaPlayer.create(this,str3);
+            mediaPlayer = MediaPlayer.create(this, str3);
             mediaPlayer.start();
         });
         textView.setText(str1);
 
-        checkVoiceCommandPermission();
+
         speechRecognizer = SpeechRecognizer.createSpeechRecognizer(SingleNumber.this);
         speechRecognizerIntent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
         speechRecognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
@@ -164,7 +165,7 @@ public class SingleNumber extends AppCompatActivity {
                 Toast.makeText(activity_singleAlphabet.this,"correct",Toast.LENGTH_SHORT).show();
 
             }*/
-            if (text.getText().toString().equals(str2)) {
+            if (text.getText().toString().equals(str2) || text.getText().toString().equals(str4)) {
 
                 Toast.makeText(SingleNumber.this, "correct", Toast.LENGTH_SHORT).show();
             } else {
@@ -174,32 +175,4 @@ public class SingleNumber extends AppCompatActivity {
 
 
     }
-    private void checkVoiceCommandPermission(){
-
-        if((ContextCompat.checkSelfPermission(SingleNumber.this, Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED)){
-
-            Toast.makeText(SingleNumber.this,"You are already got permission",Toast.LENGTH_LONG).show();
-        } else {
-            ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.RECORD_AUDIO}, 1 );
-        }
-
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-
-        if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
-            if(ContextCompat.checkSelfPermission(this,Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED){
-                Toast.makeText(SingleNumber.this,"You got permission",Toast.LENGTH_LONG).show();
-            }
-        } else {
-            Toast.makeText(SingleNumber.this,"Denied",Toast.LENGTH_LONG).show();
-        }
-    }
-
-
-
-
-
-    }
+}

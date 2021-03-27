@@ -24,7 +24,7 @@ public class sharedprefmanager {
         return mSharedPrefreneManger;
     }
 
-    public void storeUserData(user user){
+    public void storeUserData(User user){
         SharedPreferences sharedPreferences = mContext.getSharedPreferences(FILENAME, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString(USERNAME,user.getUsername());
@@ -52,9 +52,9 @@ public class sharedprefmanager {
 
     }
 
-    public user getUserData(){
+    public User getUserData(){
         SharedPreferences sharedPreferences = mContext.getSharedPreferences(FILENAME, Context.MODE_PRIVATE);
-        user user = new user(sharedPreferences.getInt(ID,-1),sharedPreferences.getString(EMAIL,null)
+        User user = new User(sharedPreferences.getInt(ID,-1),sharedPreferences.getString(EMAIL,null)
                 ,sharedPreferences.getString(USERNAME,null));
         return user;
     }

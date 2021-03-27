@@ -1,9 +1,14 @@
 package com.example.text_to_speech.PROCESS;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
+import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -21,8 +26,9 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.text_to_speech.LEVELS.Levels;
 import com.example.text_to_speech.R;
+import com.example.text_to_speech.STORAGE.User;
 import com.example.text_to_speech.STORAGE.sharedprefmanager;
-import com.example.text_to_speech.STORAGE.user;
+import com.example.text_to_speech.STORAGE.User;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -32,7 +38,7 @@ import java.util.Map;
 
 public class Login_page extends AppCompatActivity {
 
-    EditText user , pass;
+    EditText usertxt , pass;
     Button login;
     Button signup ;
     Button skip;
@@ -42,11 +48,13 @@ public class Login_page extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_page);
 
-        user = (EditText) findViewById(R.id.username);// Defining the edittexts by their IDS
+        usertxt = (EditText) findViewById(R.id.username);// Defining the edittexts by their IDS
         pass = (EditText) findViewById(R.id.password);
 
         login = (Button) findViewById(R.id.login); // Defining the button by ID
         signup = (Button) findViewById(R.id.signup);
+
+        checkVoiceCommandPermission();
 
         dialog = new ProgressDialog(this);
 
@@ -83,7 +91,7 @@ public class Login_page extends AppCompatActivity {
                     // show a message from php if the user has logged in successfully "Login successfully"
 
                     //When User logged in successfully get the data from array called response in php
-                    com.example.text_to_speech.STORAGE.user user = new user(jsonObject.getInt("userid"), jsonObject.getString("username"),
+                    User user = new User(jsonObject.getInt("userid"), jsonObject.getString("username"),
                             jsonObject.getString("email"));
 
                     //store user data inside sharedprefrences
@@ -131,11 +139,35 @@ public class Login_page extends AppCompatActivity {
             @Override
             protected Map<String,String> getParams() throws AuthFailureError{
                 Map<String,String> params = new HashMap<String, String>();
-                params.put("username",user.getText().toString());
+                params.put("username",usertxt.getText().toString());
                 params.put("password", pass.getText().toString());
                 return params;
             }
         };
         rq.add(stringRequest);
+    }
+
+    private void checkVoiceCommandPermission(){
+
+        if((ContextCompat.checkSelfPermission(Login_page.this, Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED)){
+
+            Toast.makeText(Login_page.this,"You are already got permission",Toast.LENGTH_LONG).show();
+        } else {
+            ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.RECORD_AUDIO}, 1 );
+        }
+
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+            if(ContextCompat.checkSelfPermission(this,Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED){
+                Toast.makeText(Login_page.this,"You got permission",Toast.LENGTH_LONG).show();
+            }
+        } else {
+            Toast.makeText(Login_page.this,"Denied",Toast.LENGTH_LONG).show();
+        }
     }
 }

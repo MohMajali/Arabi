@@ -23,8 +23,9 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.text_to_speech.ALPHABETS.Level1;
 import com.example.text_to_speech.R;
+import com.example.text_to_speech.STORAGE.User;
 import com.example.text_to_speech.STORAGE.sharedprefmanager;
-import com.example.text_to_speech.STORAGE.user;
+import com.example.text_to_speech.STORAGE.User;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -118,7 +119,7 @@ public class Signup extends AppCompatActivity {
                                     JSONObject jsonObjectUser =  jsonObject.getJSONObject("user");
 
                                     //By calling the class called user by making new object then getting the data to put in the user data(refer to user class)
-                                    user user = new user(jsonObjectUser.getInt("userid"), jsonObjectUser.getString("username"),
+                                    User user = new User(jsonObjectUser.getInt("userid"), jsonObjectUser.getString("username"),
                                             jsonObjectUser.getString("email"));
 
                                     //store the data in sharedprefernces

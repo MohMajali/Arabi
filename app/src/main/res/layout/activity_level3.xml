@@ -5,84 +5,85 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LEVELS.Level3"
+    android:id="@+id/wholelayout"
     >
 
-    <LinearLayout
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/uppder_layout"
+        android:background="@drawable/lvl3banner">
+    </RelativeLayout>
 
-        android:id="@+id/first"
-        android:layout_width="569dp"
-        android:layout_height="match_parent"
-        android:layout_centerHorizontal="true"
-        android:orientation="vertical"
-        android:background="@drawable/lvl3background">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uppder_layout"
+        android:layout_marginTop="-20dp">
 
-<!--        <ImageView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:src="@drawable/lvl3banner">-->
-
-<!--        </ImageView>-->
-
-<!--        <ImageView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:src="@drawable/lvl3blue">-->
-
-<!--        </ImageView>-->
-
-        <!--        <ImageView-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:src="@drawable/lvl3yellow">-->
-
-        <!--        </ImageView>-->
-
-        <!--        <ImageView-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:src="@drawable/lvl3pink">-->
-
-        <!--        </ImageView>-->
-
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:id="@+id/blue_layout"
+        android:background="@drawable/lvl3blue">
 
         <Button
-            android:id="@+id/words"
-            style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/colors"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center"
-            android:layout_marginTop="300dp"
+            android:id="@+id/words"
             android:text="Words"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:textSize="30dp"
             android:textColor="@color/black"
-            android:textSize="30dp" />
+            android:gravity="center"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/pink_layout"
+        android:layout_below="@id/blue_layout"
+        android:layout_marginTop="-40dp"
+        android:background="@drawable/lvl3pink">
+
 
         <Button
             android:id="@+id/colors"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/numbers"
             android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
             android:layout_gravity="center"
-            android:layout_marginTop="50dp"
             android:text="Colors"
             android:textColor="@color/black"
             android:textSize="30dp" />
 
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/yellow_layout"
+        android:layout_below="@+id/pink_layout"
+        android:background="@drawable/lvl3yellow"
+        android:layout_marginTop="-45dp">
+
+
         <Button
-            android:id="@+id/numbers"
+            android:id="@+id/number"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
             android:layout_gravity="center"
-            android:layout_marginTop="50dp"
             android:text="Numbers"
             android:textColor="@color/black"
             android:textSize="30dp" />
-
-    </LinearLayout>
+    </RelativeLayout>
+    </RelativeLayout>
 </RelativeLayout>

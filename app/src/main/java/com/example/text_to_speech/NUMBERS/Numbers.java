@@ -195,6 +195,7 @@ public class Numbers extends AppCompatActivity {
 
         nine.setOnClickListener(v -> {
             String word = "تسعه" ;
+            String num = "9";
             String pronunciation = "تسعه" ;
             int SoundNum = R.raw.learnnumber9 ;
             // int pic = R.drawable.ch1pic ;
@@ -202,6 +203,7 @@ public class Numbers extends AppCompatActivity {
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("TheNumber",word);
             editor.putString("ThePronunciation",pronunciation);
+            editor.putString("TheNum",num);
             editor.putInt("TheSoundNum",SoundNum);
             //editor.putInt("thepic",pic);
 
@@ -216,12 +218,14 @@ public class Numbers extends AppCompatActivity {
         ten.setOnClickListener(v -> {
             String word = "عشره" ;
             String pronunciation = "عشره" ;
+            String num = "10";
             int SoundNum = R.raw.learnnumber10 ;
             // int pic = R.drawable.ch1pic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("TheNumber",word);
             editor.putString("ThePronunciation",pronunciation);
+            editor.putString("TheNum",num);
             editor.putInt("TheSoundNum",SoundNum);
             //editor.putInt("thepic",pic);
 

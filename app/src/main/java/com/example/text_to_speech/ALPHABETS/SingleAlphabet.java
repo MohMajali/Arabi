@@ -42,7 +42,7 @@ public class SingleAlphabet extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_single_alphabet);
 
-        checkVoiceCommandPermission();
+
         speechRecognizer =  SpeechRecognizer.createSpeechRecognizer(SingleAlphabet.this);
         speechRecognizerIntent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
         speechRecognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
@@ -113,9 +113,8 @@ public class SingleAlphabet extends AppCompatActivity {
         sound = (ImageView) findViewById(R.id.soundplayer);
         alpha = (ImageView) findViewById(R.id.alphapic);
 
-        talk.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        talk.setOnClickListener(v ->  {
+
 ////                Intent text  = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
 ////                text.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
 ////                text.putExtra(RecognizerIntent.EXTRA_PROMPT,"speech to text");
@@ -137,7 +136,7 @@ public class SingleAlphabet extends AppCompatActivity {
                 speechRecognizer.startListening(speechRecognizerIntent);
                 keeper= "" ;
 
-            }
+
         });
 
 
@@ -171,12 +170,11 @@ public class SingleAlphabet extends AppCompatActivity {
             }
         });
 
-        sound.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        sound.setOnClickListener(v ->  {
+
                 mediaPlayer.start();
                 Toast.makeText(SingleAlphabet.this,str3,Toast.LENGTH_SHORT).show();
-            }
+
         });
     }
 //    @Override
@@ -188,28 +186,4 @@ public class SingleAlphabet extends AppCompatActivity {
 //
 //        super.onActivityResult(requestCode, resultCode, data);
 
-
-    private void checkVoiceCommandPermission(){
-
-            if((ContextCompat.checkSelfPermission(SingleAlphabet.this, Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED)){
-
-                Toast.makeText(SingleAlphabet.this,"You are already got permission",Toast.LENGTH_LONG).show();
-            } else {
-                ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.RECORD_AUDIO}, 1 );
-            }
-
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-
-        if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
-            if(ContextCompat.checkSelfPermission(this,Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED){
-                Toast.makeText(SingleAlphabet.this,"You got permission",Toast.LENGTH_LONG).show();
-            }
-        } else {
-            Toast.makeText(SingleAlphabet.this,"Denied",Toast.LENGTH_LONG).show();
-        }
-    }
 }

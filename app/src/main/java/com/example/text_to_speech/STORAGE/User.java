@@ -1,13 +1,13 @@
 package com.example.text_to_speech.STORAGE;
 
-public class user {
+public class User {
     int userid;
     String username,email;
 
     /*
     Using getter and setter, to get the user data from jsonobject, then set it.
      */
-    public user(int userid,String username , String email){
+    public User(int userid,String username , String email){
         this.userid = userid;
         this.username = username;
         this.email = email;

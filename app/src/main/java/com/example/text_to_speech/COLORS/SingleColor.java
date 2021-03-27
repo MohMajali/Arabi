@@ -62,7 +62,7 @@ public class SingleColor extends AppCompatActivity {
             mediaPlayer.start();
         });
 
-        checkVoiceCommandPermission();
+
         speechRecognizer = SpeechRecognizer.createSpeechRecognizer(SingleColor.this);
         speechRecognizerIntent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
         speechRecognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
@@ -169,28 +169,5 @@ public class SingleColor extends AppCompatActivity {
         });
 
 
-    }
-    private void checkVoiceCommandPermission(){
-
-        if((ContextCompat.checkSelfPermission(SingleColor.this, Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED)){
-
-            Toast.makeText(SingleColor.this,"You are already got permission",Toast.LENGTH_LONG).show();
-        } else {
-            ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.RECORD_AUDIO}, 1 );
-        }
-
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-
-        if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
-            if(ContextCompat.checkSelfPermission(this,Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED){
-                Toast.makeText(SingleColor.this,"You got permission",Toast.LENGTH_LONG).show();
-            }
-        } else {
-            Toast.makeText(SingleColor.this,"Denied",Toast.LENGTH_LONG).show();
-        }
     }
 }

@@ -1,14 +1,21 @@
 package com.example.text_to_speech.LEVELS;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.example.text_to_speech.ALPHABETS.Level1;
+import com.example.text_to_speech.NUMBERS.SingleNumber;
 import com.example.text_to_speech.R;
 
 public class Levels extends AppCompatActivity {
@@ -29,6 +36,8 @@ public class Levels extends AppCompatActivity {
         lvlone = (ImageView)findViewById(R.id.lvlone);
         lvltwo = (ImageView) findViewById(R.id.lvltwo);
         lvlthree = (ImageView) findViewById(R.id.lvlthree);
+
+
 
         lvlone.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,5 +82,7 @@ public class Levels extends AppCompatActivity {
 //        startActivity(intent);
 //    });
     }
+
+
 
 }
