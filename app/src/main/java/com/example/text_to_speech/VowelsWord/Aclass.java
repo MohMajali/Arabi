@@ -36,7 +36,7 @@ public class Aclass extends AppCompatActivity {
             String AWord = "بابا" ;
             String pronunciation = "بابا" ;
             int sound = R.raw.dad ;
-            int pic = R.drawable.baba ;
+            int pic = R.drawable.dadpic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("AWord",AWord);
@@ -58,7 +58,7 @@ public class Aclass extends AppCompatActivity {
             String AWord = "ماما" ;
             String pronunciation = "ماما" ;
             int sound = R.raw.mama ;
-            int pic = R.drawable.mama ;
+            int pic = R.drawable.mompic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("AWord",AWord);
@@ -79,8 +79,7 @@ public class Aclass extends AppCompatActivity {
             String AWord = "باب" ;
             String pronunciation = "باب" ;
             int sound = R.raw.door ;
-            int pic = R.drawable.bab
-                    ;
+            int pic = R.drawable.doorpic;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("AWord",AWord);
@@ -100,7 +99,7 @@ public class Aclass extends AppCompatActivity {
             String AWord = "غزال" ;
             String pronunciation = "غزال" ;
             int sound = R.raw.ghazal ;
-            int pic = R.drawable.ghazal;
+            int pic = R.drawable.deerpic;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("AWord",AWord);
@@ -120,7 +119,7 @@ public class Aclass extends AppCompatActivity {
             String AWord = "رمان" ;
             String pronunciation = "رمان" ;
             int sound = R.raw.roman ;
-            int pic = R.drawable.roman;
+            int pic = R.drawable.pomegranate;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("AWord",AWord);

@@ -7,18 +7,66 @@
     tools:context=".VowelsWord.Singlevowelword"
     android:orientation="vertical">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/avoice"
-        android:text="sound"
-        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:background="@drawable/wordsbanner"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:id="@+id/aword"
+            android:layout_gravity="center"
+            android:layout_marginTop="110dp"
+            android:layout_width="wrap_content"
+            android:layout_height="135dp"
+            />
+    </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/fillin"
-        android:text="Fill in"
-        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="199dp"
+        tools:layout_editor_absoluteY="275dp">
+
+
+        <EditText
+            android:id="@+id/text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="كلامك هنا" />
+
+        <Button
+            android:id="@+id/Talk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="تحدث"
+            android:textSize="25dp"/>
+        <Button
+            android:id="@+id/check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="تحقق من الأجابة"
+            android:textSize="25dp"/>
+
+
+        <ImageView
+            android:id="@+id/avoice"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/playbutton3"
+            android:layout_gravity="center"
+            />
+
+
+    </LinearLayout>
+
+
 
 </LinearLayout>
