@@ -36,7 +36,7 @@ public class wawLetter extends AppCompatActivity {
             String wawWord = "عصفور" ;
             String pronunciation = "عصفور" ;
             int sound = R.raw.bird;
-            int pic = R.drawable.bird;
+            int pic = R.drawable.birdpic;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("AWord",wawWord);
@@ -57,7 +57,7 @@ public class wawLetter extends AppCompatActivity {
             String wawWord = "ليمون" ;
             String pronunciation = "ليمون" ;
             int sound = R.raw.lemon;
-            int pic = R.drawable.laymon;
+            int pic = R.drawable.lemonpic;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("AWord",wawWord);
@@ -78,7 +78,7 @@ public class wawLetter extends AppCompatActivity {
             String wawWord = "زيتون" ;
             String pronunciation = "زيتون" ;
             int sound = R.raw.zayton;
-            int pic = R.drawable.zayton;
+            int pic = R.drawable.olivepic;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("AWord",wawWord);
@@ -99,7 +99,7 @@ public class wawLetter extends AppCompatActivity {
             String wawWord = "توت" ;
             String pronunciation = "توت" ;
             int sound = R.raw.tot;
-            int pic = R.drawable.tot;
+            int pic = R.drawable.raspberrypic;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("AWord",wawWord);
@@ -119,7 +119,7 @@ public class wawLetter extends AppCompatActivity {
             String wawWord = "موز" ;
             String pronunciation = "موز" ;
             int sound = R.raw.moz;
-            int pic = R.drawable.moz;
+            int pic = R.drawable.bananapic;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("AWord",wawWord);
