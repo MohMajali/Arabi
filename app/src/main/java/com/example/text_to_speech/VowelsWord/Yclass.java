@@ -34,7 +34,7 @@ public class Yclass extends AppCompatActivity {
             String wawWord = "حليب" ;
             String pronunciation = "حليب" ;
             int sound = R.raw.milk;
-            int pic = R.drawable.milk;
+            int pic = R.drawable.milkpic;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("AWord",wawWord);
@@ -55,7 +55,7 @@ public class Yclass extends AppCompatActivity {
             String wawWord = "كرسي" ;
             String pronunciation = "كرسي" ;
             int sound = R.raw.korsi;
-            int pic = R.drawable.korsi;
+            int pic = R.drawable.chairpic;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("AWord",wawWord);
@@ -76,7 +76,7 @@ public class Yclass extends AppCompatActivity {
             String wawWord = "فيل" ;
             String pronunciation = "فيل" ;
             int sound = R.raw.feel;
-            int pic = R.drawable.feel;
+            int pic = R.drawable.elephantpic;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("AWord",wawWord);
@@ -97,7 +97,7 @@ public class Yclass extends AppCompatActivity {
             String wawWord = "ريش" ;
             String pronunciation = "ريش" ;
             int sound = R.raw.reesh;
-            int pic = R.drawable.reesh;
+            int pic = R.drawable.featherpic;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("AWord",wawWord);
@@ -117,7 +117,7 @@ public class Yclass extends AppCompatActivity {
             String wawWord = "بيت" ;
             String pronunciation = "بيت" ;
             int sound = R.raw.baet;
-            int pic = R.drawable.baet;
+            int pic = R.drawable.homepic;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("AWord",wawWord);
