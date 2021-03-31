@@ -5,37 +5,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".VowelsWord.Yclass"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/alphabetlayout"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="كلمات حرف العلة ياء"
+        android:textSize="50dp"
+        android:textColor="@color/black"
+        />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/milk"
-        android:text="Milk"/>
+        android:text="Milk حليب"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/korsi"
-        android:text="Chair"/>
+        android:text="Chair كرسي"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/feel"
-        android:text="Elephant"/>
+        android:text="Elephant فيل"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/reesh"
-        android:text="Feather"/>
+        android:text="Feather ريش"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/baet"
-        android:text="Home"/>
+        android:text="Home البيت"/>
 
 
 

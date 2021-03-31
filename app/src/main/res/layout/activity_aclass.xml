@@ -5,41 +5,52 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".VowelsWord.Aclass"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/alphabetlayout"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="كلمات حرف العلة الألف"
+        android:textSize="50dp"
+        android:textColor="@color/black"
+        />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/dad"
-        android:text="بابا"
+        android:text="Father بابا"
         />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/mama"
-        android:text="ماما"
+        android:text="ماما Mother"
         />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/door"
-        android:text="باب"
+        android:text="Door باب"
         />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/ghazal"
-        android:text="غزال"
+        android:text="Dear غزال"
         />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/roman"
-        android:text="رمان"
+        android:text="رمان Pomegranate"
         />
 
 </LinearLayout>

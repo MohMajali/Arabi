@@ -5,40 +5,69 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".VowelsWord.wawLetter"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/alphabetlayout"
+    android:gravity="center"
+    >
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="كلمات حرف العلة واو"
+        android:textSize="50dp"
+        android:textColor="@color/black"
+        />
+
+
+    <Button
         android:id="@+id/bird"
-        android:text="Bird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bird عصفور"
+        android:textSize="25dp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="@color/black"
         />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/lemon"
-        android:text="Lemon"
+        android:text="Lemon ليمون"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+
         />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tot"
-        android:text="Toot"
+        android:text="توت Berry"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+
         />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/zayton"
-        android:text="Zayton"
+        android:text="زيتون olive"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="@color/black"
+        android:textSize="25dp"
         />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/moz"
-        android:text="Banana"
+        android:text="Banana موز"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="@color/black"
+        android:textSize="25dp"
         />
 </LinearLayout>
