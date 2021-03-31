@@ -18,16 +18,29 @@
         android:textColor="@color/black"
         />
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp">
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/dad"
         android:text="Father بابا"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
         />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
         android:id="@+id/mama"
         android:text="ماما Mother"
         />
@@ -35,6 +48,9 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
         android:id="@+id/door"
         android:text="Door باب"
         />
@@ -42,6 +58,9 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
         android:id="@+id/ghazal"
         android:text="Dear غزال"
         />
@@ -49,8 +68,13 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
         android:id="@+id/roman"
         android:text="رمان Pomegranate"
         />
+
+    </LinearLayout>
 
 </LinearLayout>

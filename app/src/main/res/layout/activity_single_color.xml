@@ -48,14 +48,20 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="تحدث"
-            android:textSize="25dp"/>
+            android:textSize="25dp"
+            android:background="@drawable/custom_button"
+            app:backgroundTint="@color/yellow"
+            android:textColor="@color/black"/>
         <Button
             android:id="@+id/check"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="تحقق من الأجابة"
-            android:textSize="25dp"/>
+            android:textSize="25dp"
+            android:background="@drawable/custom_button"
+            app:backgroundTint="@color/yellow"
+            android:textColor="@color/black"/>
 
 
         <ImageView

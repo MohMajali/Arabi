@@ -17,11 +17,21 @@
         android:textColor="@color/black"
         android:layout_marginTop="60dp"
         />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp">
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/one1"
         android:text="1"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
         android:layout_gravity="center"
         />
 
@@ -29,6 +39,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/two2"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
         android:layout_gravity="center"
         android:text="2"/>
 
@@ -36,6 +49,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/three3"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
         android:layout_gravity="center"
         android:text="3"/>
 
@@ -43,6 +59,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/four4"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
         android:layout_gravity="center"
         android:text="4"/>
 
@@ -50,6 +69,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/five5"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
         android:layout_gravity="center"
         android:text="5"/>
 
@@ -57,6 +79,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/six6"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
         android:layout_gravity="center"
         android:text="6"/>
 
@@ -64,6 +89,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/seven7"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
         android:layout_gravity="center"
         android:text="7"/>
 
@@ -71,6 +99,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/eight8"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
         android:layout_gravity="center"
         android:text="8"/>
 
@@ -78,6 +109,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/nine9"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
         android:layout_gravity="center"
         android:text="9"/>
 
@@ -85,7 +119,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/ten10"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
         android:layout_gravity="center"
         android:text="10"/>
+
+    </LinearLayout>
 
 </LinearLayout>

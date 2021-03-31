@@ -21,53 +21,59 @@
 
     <Button
         android:id="@+id/bird"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
         android:text="Bird عصفور"
-        android:textSize="25dp"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:textColor="@color/black"
-        />
+        android:textSize="25dp"
+        app:backgroundTint="@color/yellow" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/lemon"
+        app:backgroundTint="@color/yellow"
         android:text="Lemon ليمون"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:textColor="@color/black"
         android:textSize="25dp"
-
+        android:background="@drawable/custom_button"
         />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:backgroundTint="@color/yellow"
         android:id="@+id/tot"
         android:text="توت Berry"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:textColor="@color/black"
         android:textSize="25dp"
-
+        android:background="@drawable/custom_button"
         />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:backgroundTint="@color/yellow"
         android:id="@+id/zayton"
         android:text="زيتون olive"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:textColor="@color/black"
         android:textSize="25dp"
+        android:background="@drawable/custom_button"
         />
 
     <Button
+        android:id="@+id/moz"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/moz"
+        android:background="@drawable/custom_button"
         android:text="Banana موز"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:textColor="@color/black"
         android:textSize="25dp"
-        />
+        app:backgroundTint="@color/yellow" />
 </LinearLayout>

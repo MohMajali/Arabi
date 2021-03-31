@@ -17,36 +17,58 @@
         android:textColor="@color/black"
         />
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp">
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/milk"
-        android:text="Milk حليب"/>
+        android:text="Milk حليب"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@color/yellow"
+        android:textColor="@color/black"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/korsi"
-        android:text="Chair كرسي"/>
+        android:text="Chair كرسي"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@color/yellow"
+        android:textColor="@color/black"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/feel"
-        android:text="Elephant فيل"/>
+        android:text="Elephant فيل"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@color/yellow"
+        android:textColor="@color/black"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/reesh"
-        android:text="Feather ريش"/>
+        android:text="Feather ريش"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@color/yellow"
+        android:textColor="@color/black"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/baet"
-        android:text="Home البيت"/>
+        android:text="Home البيت"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@color/yellow"
+        android:textColor="@color/black"/>
 
-
+    </LinearLayout>
 
 </LinearLayout>

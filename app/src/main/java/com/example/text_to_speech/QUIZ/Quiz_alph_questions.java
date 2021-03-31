@@ -1,7 +1,10 @@
 package com.example.text_to_speech.QUIZ;
 
+import android.content.Intent;
 import android.view.View;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Random;
 
 public class Quiz_alph_questions {
@@ -70,16 +73,13 @@ public class Quiz_alph_questions {
 
     };
     public String getQuestion(int a){
-
-
         String question = mQuestions[a];
-        return question ;
-
+        return question;
     }
-    public String getCorrectAnswer(int a){
-        String answer = myCorrectAnswer[a];
-        return answer ;
 
+    public String getCorrectAnswer(int a) {
+        String correct = myCorrectAnswer[a];
+        return correct;
     }
 
 

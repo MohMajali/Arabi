@@ -56,7 +56,10 @@
                 android:layout_marginLeft="35dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:hint="username" />
+                android:hint="username"
+                android:background="@drawable/custom_button"
+                app:backgroundTint="@color/yellow"
+                android:textColor="@color/black"/>
 
             <EditText
                 android:id="@+id/pass"
@@ -64,6 +67,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="35dp"
                 android:ems="10"
+                android:background="@drawable/custom_button"
+                app:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
                 android:inputType="textPersonName"
                 android:hint="password" />
 
@@ -72,6 +78,9 @@
                 android:layout_width="230dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="35dp"
+                android:background="@drawable/custom_button"
+                app:backgroundTint="@color/yellow"
+                android:textColor="@color/black"
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:hint="email" />
@@ -81,7 +90,10 @@
                 android:layout_width="230dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="35dp"
-                android:text="signup" />
+                android:text="signup"
+                android:background="@drawable/custom_button"
+                app:backgroundTint="@color/yellow"
+                android:textColor="@color/black"/>
         </LinearLayout>
 
 

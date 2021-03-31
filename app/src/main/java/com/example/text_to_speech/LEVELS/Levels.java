@@ -16,11 +16,12 @@ import android.widget.Toast;
 
 import com.example.text_to_speech.ALPHABETS.Level1;
 import com.example.text_to_speech.NUMBERS.SingleNumber;
+import com.example.text_to_speech.QUIZ.Quiz_alph;
 import com.example.text_to_speech.R;
 
 public class Levels extends AppCompatActivity {
 
-    Button nextAlphabet , quizAlph , login, signup;
+    Button quiz;
     ImageView lvlone,lvltwo,lvlthree ;
 
     @Override
@@ -37,7 +38,12 @@ public class Levels extends AppCompatActivity {
         lvltwo = (ImageView) findViewById(R.id.lvltwo);
         lvlthree = (ImageView) findViewById(R.id.lvlthree);
 
+        quiz = findViewById(R.id.quiz);
 
+        quiz.setOnClickListener(v -> {
+
+            startActivity(new Intent(this, Quiz_alph.class));
+        });
 
         lvlone.setOnClickListener(new View.OnClickListener() {
             @Override

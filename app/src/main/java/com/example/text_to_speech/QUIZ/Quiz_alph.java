@@ -17,6 +17,7 @@ import com.example.text_to_speech.LEVELS.Levels;
 import com.example.text_to_speech.R;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Random;
 
 public class Quiz_alph extends AppCompatActivity {
@@ -28,17 +29,17 @@ public class Quiz_alph extends AppCompatActivity {
     TextView youranswer;
 
     int max = 28;
+    int counter = 28 ;
 
     private static final int RECOGNIZER_RESULT = 1;
 
     private Quiz_alph_questions mQuestions = new Quiz_alph_questions();
-
     private String mAnswer ;
     private int mScore = 0 ;
     private int mQuestionLength = mQuestions.mQuestions.length;
 
     Random r ;
-    int counter = 28 ;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,19 +48,17 @@ public class Quiz_alph extends AppCompatActivity {
 
         r = new Random();
 
-
-
-
         answer = (Button)findViewById(R.id.answer);
         nextqestion = (Button)findViewById(R.id.nextquestion);
 
         question = (TextView)findViewById(R.id.question);
         score = (TextView)findViewById(R.id.score);
+
         youranswer = (TextView)findViewById(R.id.youranswer);
 
         score.setText("Score = "+mScore);
 
-        updateQuestion(r.nextInt(mQuestionLength));
+        updateQuestion(r.nextInt(mQuestionLength) + 1);
 
         answer.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,11 +79,11 @@ public class Quiz_alph extends AppCompatActivity {
                 if(youranswer.getText().toString().equals(mAnswer)&& counter!=0){
                     mScore++;
                     score.setText("Score = "+mScore);
-                    updateQuestion(r.nextInt(mQuestionLength));
+                    updateQuestion(r.nextInt(mQuestionLength + 1));
                     Toast.makeText(Quiz_alph.this,"Correct",Toast.LENGTH_SHORT).show();
                     counter--;
                 }else if(!youranswer.getText().toString().equals(mAnswer)&& counter!=0){
-                    updateQuestion(r.nextInt(mQuestionLength));
+                    updateQuestion(r.nextInt(mQuestionLength) + 1);
                     Toast.makeText(Quiz_alph.this,"False",Toast.LENGTH_SHORT).show();
                     counter--;
                 }else{
@@ -99,12 +98,15 @@ public class Quiz_alph extends AppCompatActivity {
 
     private void updateQuestion(int num){
 
+       // question.setText(mQuestions.getQuestion(num));
 
+       // mAnswer = mQuestions.getCorrectAnswer(num);
 
-            question.setText(mQuestions.getQuestion(num));
+        Long seed = System.nanoTime();
+        //Collections.shuffle(question.setText(mQuestions.getQuestion(num)) , new Random(seed));
 
-            mAnswer = mQuestions.getCorrectAnswer(num);
         }
+
 
     private void quizFinished(){
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Quiz_alph.this);

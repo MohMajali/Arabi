@@ -43,13 +43,19 @@
             android:layout_marginTop="50dp"
             android:ems="10"
             android:hint="UserName"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:background="@drawable/custom_button"
+            app:backgroundTint="@color/yellow"
+            android:textColor="@color/black"/>
 
         <EditText
             android:id="@+id/password"
             android:layout_width="230dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="35dp"
+            android:background="@drawable/custom_button"
+            app:backgroundTint="@color/yellow"
+            android:textColor="@color/black"
             android:ems="10"
             android:hint="Password"
             android:inputType="textPersonName" />
@@ -62,7 +68,9 @@
             android:layout_marginLeft="35dp"
             android:layout_marginTop="3dp"
             android:text="Login"
-            android:textColor="#283057" />
+            android:background="@drawable/custom_button"
+            app:backgroundTint="@color/yellow"
+            android:textColor="@color/black"/>
 
         <Button
             android:id="@+id/signup"
@@ -72,7 +80,9 @@
             android:layout_marginLeft="178dp"
             android:layout_marginTop="-48dp"
             android:text="signup"
-            android:textColor="#283057" />
+            android:background="@drawable/custom_button"
+            app:backgroundTint="@color/yellow"
+            android:textColor="@color/black" />
 
         <Button
             android:id="@+id/skiplogin"

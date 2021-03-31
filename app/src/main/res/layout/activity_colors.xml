@@ -17,61 +17,85 @@
         android:textColor="@color/black"
         android:layout_marginTop="60dp"
         />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp">
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:text="Red"
         android:id="@+id/red"
-        android:layout_marginTop="60dp"/>
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@color/yellow"
+        android:textColor="@color/black"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
         android:text="Blue"
-        android:layout_gravity="center"
         android:id="@+id/blue"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
         android:text="Black"
-        android:layout_gravity="center"
         android:id="@+id/black"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
         android:text="Brown"
-        android:layout_gravity="center"
         android:id="@+id/brown"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
         android:text="Green"
-        android:layout_gravity="center"
         android:id="@+id/green"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
         android:text="Orange"
-        android:layout_gravity="center"
         android:id="@+id/orange"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
         android:text="White"
-        android:layout_gravity="center"
         android:id="@+id/white"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
         android:text="Yallow"
-        android:layout_gravity="center"
         android:id="@+id/yallow"/>
+
+    </LinearLayout>
 
 </LinearLayout>
