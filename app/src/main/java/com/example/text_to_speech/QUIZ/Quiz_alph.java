@@ -4,10 +4,12 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ClipData;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -19,6 +21,7 @@ import com.example.text_to_speech.R;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
+import java.util.Set;
 
 public class Quiz_alph extends AppCompatActivity {
 
@@ -28,17 +31,19 @@ public class Quiz_alph extends AppCompatActivity {
     TextView score;
     TextView youranswer;
 
-    int max = 28;
+    int max = 0;
     int counter = 28 ;
 
     private static final int RECOGNIZER_RESULT = 1;
 
-    private Quiz_alph_questions mQuestions = new Quiz_alph_questions();
-    private String mAnswer ;
-    private int mScore = 0 ;
-    private int mQuestionLength = mQuestions.mQuestions.length;
+    Quiz_alph_questions mQuestions;
+     String mAnswer ;
+     int mScore = 0 ;
+     int mQuestionLength;
 
-    Random r ;
+   // Random r ;
+
+    ArrayList<Item> QuestionList;
 
 
     @Override
@@ -46,7 +51,7 @@ public class Quiz_alph extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_alph);
 
-        r = new Random();
+        //r = new Random();
 
         answer = (Button)findViewById(R.id.answer);
         nextqestion = (Button)findViewById(R.id.nextquestion);
@@ -56,9 +61,21 @@ public class Quiz_alph extends AppCompatActivity {
 
         youranswer = (TextView)findViewById(R.id.youranswer);
 
+        mQuestions = new Quiz_alph_questions();
+        mQuestionLength = mQuestions.mQuestions.length;
+
         score.setText("Score = "+mScore);
 
-        updateQuestion(r.nextInt(mQuestionLength) + 1);
+        QuestionList = new ArrayList<>();
+
+
+        for(int i = 0; i < mQuestionLength; i++){
+            QuestionList.add(new Item(mQuestions.getQuestion(i) , mQuestions.getCorrectAnswer(i)));
+        }
+
+        Collections.shuffle(QuestionList);
+
+        SetQuestion(max);
 
         answer.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,34 +93,33 @@ public class Quiz_alph extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if(youranswer.getText().toString().equals(mAnswer)&& counter!=0){
+                if(youranswer.getText().toString().equals(mAnswer) && counter != 0){
+                    max++;
                     mScore++;
+                    counter--;
                     score.setText("Score = "+mScore);
-                    updateQuestion(r.nextInt(mQuestionLength + 1));
-                    Toast.makeText(Quiz_alph.this,"Correct",Toast.LENGTH_SHORT).show();
+                    if(max < mQuestionLength) {
+                        SetQuestion(max);
+                    } else {
+                        quizFinished();
+                    }
+                } else {
+                    max++;
                     counter--;
-                }else if(!youranswer.getText().toString().equals(mAnswer)&& counter!=0){
-                    updateQuestion(r.nextInt(mQuestionLength) + 1);
-                    Toast.makeText(Quiz_alph.this,"False",Toast.LENGTH_SHORT).show();
-                    counter--;
-                }else{
-                   // quizFinished();
-                    Intent intent = new Intent(Quiz_alph.this, Levels.class);
-                    startActivity(intent);
-                    Toast.makeText(Quiz_alph.this,"Finish",Toast.LENGTH_SHORT).show();
+                    if(max < mQuestionLength){
+                        SetQuestion(max);
+                    } else {
+                        quizFinished();
+                    }
                 }
             }
         });
     }
 
-    private void updateQuestion(int num){
+    private void SetQuestion(int num){
 
-       // question.setText(mQuestions.getQuestion(num));
-
-       // mAnswer = mQuestions.getCorrectAnswer(num);
-
-        Long seed = System.nanoTime();
-        //Collections.shuffle(question.setText(mQuestions.getQuestion(num)) , new Random(seed));
+        question.setText(QuestionList.get(num).getQuestion());
+        mAnswer = QuestionList.get(num).getAnswer();
 
         }
 
