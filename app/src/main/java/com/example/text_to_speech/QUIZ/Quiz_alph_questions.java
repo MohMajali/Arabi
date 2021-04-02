@@ -73,13 +73,11 @@ public class Quiz_alph_questions {
 
     };
     public String getQuestion(int a){
-        String question = mQuestions[a];
-        return question;
+        return mQuestions[a];
     }
 
     public String getCorrectAnswer(int a) {
-        String correct = myCorrectAnswer[a];
-        return correct;
+        return myCorrectAnswer[a];
     }
 
 
