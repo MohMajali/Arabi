@@ -26,72 +26,78 @@
 
 
     <LinearLayout
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="10dp"
         android:layout_width="200dp"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="185dp"
             android:layout_height="wrap_content"
             android:id="@+id/greetings"
             android:text="Greetings"
             android:background="@drawable/custom_button"
-            app:backgroundTint="@color/yellow"
+            app:backgroundTint="@null"
             android:textColor="@color/black"/>
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_width="185dp"
             android:layout_height="wrap_content"
             android:id="@+id/peace"
             android:text="Peace be with you"
             android:background="@drawable/custom_button"
-            app:backgroundTint="@color/yellow"
+            app:backgroundTint="@null"
             android:textColor="@color/black"/>
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_width="185dp"
             android:layout_height="wrap_content"
             android:id="@+id/same"
             android:text="Same to you"
             android:background="@drawable/custom_button"
-            app:backgroundTint="@color/yellow"
+            app:backgroundTint="@null"
             android:textColor="@color/black"/>
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_width="185dp"
             android:layout_height="wrap_content"
             android:id="@+id/how"
             android:text="How are you"
             android:background="@drawable/custom_button"
-            app:backgroundTint="@color/yellow"
+            app:backgroundTint="@null"
             android:textColor="@color/black"/>
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_width="185dp"
             android:layout_height="wrap_content"
             android:id="@+id/good"
             android:text="Fine, Thanks god"
             android:background="@drawable/custom_button"
-            app:backgroundTint="@color/yellow"
+            app:backgroundTint="@null"
             android:textColor="@color/black"/>
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_width="185dp"
             android:layout_height="wrap_content"
             android:id="@+id/morning"
             android:text="Good morning"
             android:background="@drawable/custom_button"
-            app:backgroundTint="@color/yellow"
+            app:backgroundTint="@null"
             android:textColor="@color/black"/>
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_width="185dp"
             android:layout_height="wrap_content"
             android:id="@+id/evening"
             android:text="Good Evening"
             android:background="@drawable/custom_button"
-            app:backgroundTint="@color/yellow"
+            app:backgroundTint="@null"
             android:textColor="@color/black"/>
 
 
@@ -105,66 +111,72 @@
             android:orientation="vertical">
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="185dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/welcome"
                 android:text="Welcome"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"/>
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_width="185dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/come"
                 android:text="Please, come in"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"/>
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_width="185dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/thank"
                 android:text="Thank you"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"/>
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_width="185dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/nothing"
                 android:text="For nothing"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"/>
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_width="185dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/bye"
                 android:text="Good bye"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"/>
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_width="185dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/bye_bye"
                 android:text="Bye Bye"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"/>
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_width="185dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/hello"
                 android:text="Hello"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"
                 />
         </LinearLayout>

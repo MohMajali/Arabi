@@ -37,7 +37,7 @@
                 android:layout_weight="1"
                 android:text="ث"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"
                  />
 
@@ -49,14 +49,14 @@
                 android:layout_weight="1"
                 android:text="ت"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"/>
 
             <Button
                 android:id="@+id/two"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -67,7 +67,7 @@
                 android:id="@+id/one"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -76,6 +76,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:paddingTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -84,7 +85,7 @@
                 android:id="@+id/eight"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -95,7 +96,7 @@
                 android:id="@+id/seven"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -106,7 +107,7 @@
                 android:id="@+id/six"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -117,7 +118,7 @@
                 android:id="@+id/five"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -126,6 +127,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:paddingTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -134,7 +136,7 @@
                 android:id="@+id/twelve"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -145,7 +147,7 @@
                 android:id="@+id/eleven"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -156,7 +158,7 @@
                 android:id="@+id/ten"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -167,7 +169,7 @@
                 android:id="@+id/nine"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -176,6 +178,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:paddingTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -184,7 +187,7 @@
                 android:id="@+id/sixteen"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -195,7 +198,7 @@
                 android:id="@+id/fifteen"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -206,7 +209,7 @@
                 android:id="@+id/fourteen"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -217,7 +220,7 @@
                 android:id="@+id/thirteen"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -226,6 +229,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:paddingTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -234,7 +238,7 @@
                 android:id="@+id/twenty"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -245,7 +249,7 @@
                 android:id="@+id/nineteen"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -256,7 +260,7 @@
                 android:id="@+id/eighteen"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -267,7 +271,7 @@
                 android:id="@+id/seventeen"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -276,6 +280,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:paddingTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -284,7 +289,7 @@
                 android:id="@+id/twenty_four"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -295,7 +300,7 @@
                 android:id="@+id/twenty_three"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -306,7 +311,7 @@
                 android:id="@+id/twenty_two"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -317,7 +322,7 @@
                 android:id="@+id/twenty_one"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -326,6 +331,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:paddingTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -334,7 +340,7 @@
                 android:id="@+id/twenty_eight"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -345,7 +351,7 @@
                 android:id="@+id/twenty_seven"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -356,7 +362,7 @@
                 android:id="@+id/twenty_six"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -367,7 +373,7 @@
                 android:id="@+id/twenty_five"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
+                app:backgroundTint="@null"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -375,14 +381,14 @@
                 android:text="ن" />
         </LinearLayout>
 
-        <ImageView
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="270dp"
-            android:id="@+id/backalphabet"
-            android:background="@drawable/backbutton"
-            android:layout_width="90dp"
-            android:layout_height="60dp"
-            android:text="back-alphabet" />
+<!--        <ImageView-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:layout_marginLeft="270dp"-->
+<!--            android:id="@+id/backalphabet"-->
+<!--            android:background="@drawable/backbutton"-->
+<!--            android:layout_width="90dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:text="back-alphabet" />-->
     </LinearLayout>
 
 </RelativeLayout>

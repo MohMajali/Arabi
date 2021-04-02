@@ -101,7 +101,7 @@ public class Quiz_alph extends AppCompatActivity {
                     if(max < mQuestionLength) {
                         SetQuestion(max);
                     } else {
-                        quizFinished();
+//                        quizFinished();
                     }
                 } else {
                     max++;
@@ -109,8 +109,22 @@ public class Quiz_alph extends AppCompatActivity {
                     if(max < mQuestionLength){
                         SetQuestion(max);
                     } else {
-                        quizFinished();
+//                        quizFinished();
                     }
+                }
+                if(counter == 0){
+//                    quizFinished();
+
+                    AlertDialog.Builder alert = new AlertDialog.Builder(Quiz_alph.this);
+                    alert.setTitle("Mark").setMessage("Your result is: "+mScore +"\n" + "Your Are good").setPositiveButton("ok", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                        finish();
+                        }
+                    });
+                    alert.create().show();
+
+
                 }
             }
         });

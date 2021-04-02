@@ -30,68 +30,75 @@
         android:text="Red"
         android:id="@+id/red"
         android:background="@drawable/custom_button"
-        app:backgroundTint="@color/yellow"
+        app:backgroundTint="@null"
         android:textColor="@color/black"/>
 
     <Button
+        android:layout_marginTop="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/custom_button"
-        app:backgroundTint="@color/yellow"
+        app:backgroundTint="@null"
         android:textColor="@color/black"
         android:text="Blue"
         android:id="@+id/blue"/>
 
     <Button
+        android:layout_marginTop="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/custom_button"
-        app:backgroundTint="@color/yellow"
+        app:backgroundTint="@null"
         android:textColor="@color/black"
         android:text="Black"
         android:id="@+id/black"/>
 
     <Button
+        android:layout_marginTop="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/custom_button"
-        app:backgroundTint="@color/yellow"
+        app:backgroundTint="@null"
         android:textColor="@color/black"
         android:text="Brown"
         android:id="@+id/brown"/>
 
     <Button
+        android:layout_marginTop="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/custom_button"
-        app:backgroundTint="@color/yellow"
+        app:backgroundTint="@null"
         android:textColor="@color/black"
         android:text="Green"
         android:id="@+id/green"/>
 
     <Button
+        android:layout_marginTop="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/custom_button"
-        app:backgroundTint="@color/yellow"
+        app:backgroundTint="@null"
         android:textColor="@color/black"
         android:text="Orange"
         android:id="@+id/orange"/>
 
     <Button
+        android:layout_marginTop="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/custom_button"
-        app:backgroundTint="@color/yellow"
+        app:backgroundTint="@null"
         android:textColor="@color/black"
         android:text="White"
         android:id="@+id/white"/>
 
     <Button
+        android:layout_marginTop="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/custom_button"
-        app:backgroundTint="@color/yellow"
+        app:backgroundTint="@null"
         android:textColor="@color/black"
         android:text="Yallow"
         android:id="@+id/yallow"/>

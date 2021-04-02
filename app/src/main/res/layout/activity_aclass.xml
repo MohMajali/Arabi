@@ -9,13 +9,14 @@
     android:background="@drawable/alphabetlayout"
     >
 
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:text="كلمات حرف العلة الألف"
         android:textSize="50dp"
         android:textColor="@color/black"
+        android:layout_marginTop="70dp"
         />
 
     <LinearLayout
@@ -26,53 +27,63 @@
         android:layout_marginTop="30dp">
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
+        android:textSize="25dp"
         android:layout_height="wrap_content"
         android:id="@+id/dad"
         android:text="Father بابا"
         android:background="@drawable/custom_button"
-        app:backgroundTint="@color/yellow"
+        app:backgroundTint="@null"
         android:textColor="@color/black"
         />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:textSize="25dp"
         android:background="@drawable/custom_button"
-        app:backgroundTint="@color/yellow"
+        app:backgroundTint="@null"
         android:textColor="@color/black"
         android:id="@+id/mama"
         android:text="ماما Mother"
         />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:textSize="25dp"
         android:background="@drawable/custom_button"
-        app:backgroundTint="@color/yellow"
+        app:backgroundTint="@null"
         android:textColor="@color/black"
         android:id="@+id/door"
         android:text="Door باب"
         />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:textSize="25dp"
         android:background="@drawable/custom_button"
-        app:backgroundTint="@color/yellow"
+        app:backgroundTint="@null"
         android:textColor="@color/black"
         android:id="@+id/ghazal"
         android:text="Dear غزال"
         />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:textSize="18dp"
         android:background="@drawable/custom_button"
-        app:backgroundTint="@color/yellow"
+        app:backgroundTint="@null"
         android:textColor="@color/black"
         android:id="@+id/roman"
         android:text="رمان Pomegranate"
+        android:textAllCaps="false"
         />
 
     </LinearLayout>

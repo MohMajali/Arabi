@@ -50,9 +50,10 @@
             android:text="تحدث"
             android:textSize="25dp"
             android:background="@drawable/custom_button"
-            app:backgroundTint="@color/yellow"
+            app:backgroundTint="@null"
             android:textColor="@color/black"/>
         <Button
+            android:layout_marginTop="10dp"
             android:id="@+id/check"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -60,11 +61,12 @@
             android:text="تحقق من الأجابة"
             android:textSize="25dp"
             android:background="@drawable/custom_button"
-            app:backgroundTint="@color/yellow"
+            app:backgroundTint="@null"
             android:textColor="@color/black"/>
 
 
         <ImageView
+            android:layout_marginTop="10dp"
             android:id="@+id/numbersound"
             android:layout_width="50dp"
             android:layout_height="50dp"

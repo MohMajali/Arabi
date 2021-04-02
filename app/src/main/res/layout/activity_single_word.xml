@@ -50,9 +50,10 @@
             android:text="تحدث"
             android:textSize="25dp"
             android:background="@drawable/custom_button"
-            app:backgroundTint="@color/yellow"
+            app:backgroundTint="@null"
             android:textColor="@color/black"/>
         <Button
+            android:layout_marginTop="10dp"
             android:id="@+id/check"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -60,10 +61,11 @@
             android:text="تحقق من الأجابة"
             android:textSize="25dp"
             android:background="@drawable/custom_button"
-            app:backgroundTint="@color/yellow"
+            app:backgroundTint="@null"
             android:textColor="@color/black"/>
 
         <LinearLayout
+            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -73,8 +75,6 @@
                 android:layout_height="wrap_content"
                 android:text="Sound In Arabic"
                 android:textSize="40dp"
-                android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
                 android:textColor="@color/black"
                 />
 
@@ -88,6 +88,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -95,8 +96,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sound In english"
-                android:background="@drawable/custom_button"
-                app:backgroundTint="@color/yellow"
                 android:textColor="@color/black"
                 android:textSize="40dp"
                 />

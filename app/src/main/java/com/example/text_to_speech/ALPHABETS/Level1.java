@@ -15,7 +15,7 @@ import com.example.text_to_speech.R;
 
 public class Level1 extends AppCompatActivity {
 
-    ImageView backmain;
+//    ImageView backmain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,7 @@ public class Level1 extends AppCompatActivity {
         setContentView(R.layout.activity_level1);
 
         SharedPreferences sp ;
-        backmain = (ImageView) findViewById(R.id.backalphabet);
+//        backmain = (ImageView) findViewById(R.id.backalphabet);
         //update 1.1111
         sp = getSharedPreferences("MyUserPrefs", Context.MODE_PRIVATE);
 
@@ -577,9 +577,9 @@ public class Level1 extends AppCompatActivity {
             startActivity(intent);
         });
 
-        backmain.setOnClickListener(view -> {
-            Intent intent = new Intent(Level1.this, Levels.class);
-            startActivity(intent);
-        });
+//        backmain.setOnClickListener(view -> {
+//            Intent intent = new Intent(Level1.this, Levels.class);
+//            startActivity(intent);
+//        });
     }
 }

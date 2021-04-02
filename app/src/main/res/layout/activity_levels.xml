@@ -8,7 +8,7 @@
     tools:context=".LEVELS.Levels">
 
     <LinearLayout
-        android:layout_marginTop="420dp"
+        android:layout_marginTop="400dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -16,30 +16,84 @@
         tools:layout_editor_absoluteY="245dp">
 
 
-        <ImageView
+        <Button
+            android:layout_marginTop="10dp"
             android:id="@+id/lvlone"
-            android:layout_width="219dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            app:srcCompat="@drawable/lvlone" />
-        <ImageView
-            android:id="@+id/lvltwo"
-            android:layout_gravity="center"
-            android:layout_width="221dp"
-            android:layout_height="50dp"
-            app:srcCompat="@drawable/lvltwo" />
-        <ImageView
-            android:id="@+id/lvlthree"
-            android:layout_gravity="center"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="220dp"
             android:layout_height="50dp"
-            app:srcCompat="@drawable/lvlthree" />
+            android:background="@drawable/custom_button2"
+            android:text="المستوى الاول level 1"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_gravity="center"
+            app:backgroundTint="@color/yellow" />
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/lvltwo"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_button2"
+            android:text="المستوى الثاني level 2"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_gravity="center"
+            app:backgroundTint="#adc7ff" />
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/lvlthree"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_button2"
+            android:text="المستوى الثالث level 3"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_gravity="center"
+            app:backgroundTint="#fe9494" />
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Quiz"
-            android:id="@+id/quiz"/>
+            android:layout_marginTop="5dp"
+            android:id="@+id/quiz"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_button2"
+            android:text="أخبتر نفسك"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_gravity="center"
+            app:backgroundTint="#84dccf" />
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/lvlone"-->
+<!--            android:layout_width="219dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            app:srcCompat="@drawable/lvlone" />-->
+<!--        <ImageView-->
+<!--            android:id="@+id/lvltwo"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_width="221dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            app:srcCompat="@drawable/lvltwo" />-->
+<!--        <ImageView-->
+<!--            android:id="@+id/lvlthree"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_width="220dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            app:srcCompat="@drawable/lvlthree" />-->
+
+<!--        <ImageView-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_width="220dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:text="Quiz"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:id="@+id/quiz"-->
+<!--            android:src="@drawable/quizpic"/>-->
 
 <!--        <Button-->
 <!--            android:id="@+id/nextAlphabet"-->

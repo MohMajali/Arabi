@@ -21,8 +21,7 @@ import com.example.text_to_speech.R;
 
 public class Levels extends AppCompatActivity {
 
-    Button quiz;
-    ImageView lvlone,lvltwo,lvlthree ;
+    Button lvlone,lvltwo,lvlthree ,quiz;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,9 +33,9 @@ public class Levels extends AppCompatActivity {
 //        login = (Button) findViewById(R.id.login);
 //        signup = (Button) findViewById(R.id.sign);
 
-        lvlone = (ImageView)findViewById(R.id.lvlone);
-        lvltwo = (ImageView) findViewById(R.id.lvltwo);
-        lvlthree = (ImageView) findViewById(R.id.lvlthree);
+        lvlone = (Button) findViewById(R.id.lvlone);
+        lvltwo = (Button) findViewById(R.id.lvltwo);
+        lvlthree = (Button) findViewById(R.id.lvlthree);
 
         quiz = findViewById(R.id.quiz);
 

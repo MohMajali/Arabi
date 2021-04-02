@@ -31,11 +31,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/words"
-            android:text="Words"
+            android:text="Welcome words كلمات الترحيبية"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             style="@style/Widget.AppCompat.Button.Borderless"
-            android:textSize="30dp"
+            android:textSize="25dp"
             android:textColor="@color/black"
             android:gravity="center"/>
     </RelativeLayout>
@@ -58,7 +58,7 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_gravity="center"
-            android:text="Colors"
+            android:text="Colors الألوان"
             android:textColor="@color/black"
             android:textSize="30dp" />
 
@@ -81,7 +81,7 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:layout_gravity="center"
-            android:text="Numbers"
+            android:text="Numbers الأرقام"
             android:textColor="@color/black"
             android:textSize="30dp" />
     </RelativeLayout>

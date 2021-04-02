@@ -44,8 +44,7 @@
             android:ems="10"
             android:hint="UserName"
             android:inputType="textPersonName"
-            android:background="@drawable/custom_button"
-            app:backgroundTint="@color/yellow"
+            android:textColorHint="@color/black"
             android:textColor="@color/black"/>
 
         <EditText
@@ -53,9 +52,8 @@
             android:layout_width="230dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="35dp"
-            android:background="@drawable/custom_button"
-            app:backgroundTint="@color/yellow"
             android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:ems="10"
             android:hint="Password"
             android:inputType="textPersonName" />
@@ -63,25 +61,25 @@
         <Button
             android:id="@+id/login"
             style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="wrap_content"
+            android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="35dp"
             android:layout_marginTop="3dp"
             android:text="Login"
             android:background="@drawable/custom_button"
-            app:backgroundTint="@color/yellow"
+            app:backgroundTint="@null"
             android:textColor="@color/black"/>
 
         <Button
             android:id="@+id/signup"
             style="@style/Widget.AppCompat.Button.Borderless"
-            android:layout_width="wrap_content"
+            android:layout_width="110dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="178dp"
+            android:layout_marginLeft="152dp"
             android:layout_marginTop="-48dp"
             android:text="signup"
             android:background="@drawable/custom_button"
-            app:backgroundTint="@color/yellow"
+            app:backgroundTint="@null"
             android:textColor="@color/black" />
 
         <Button
