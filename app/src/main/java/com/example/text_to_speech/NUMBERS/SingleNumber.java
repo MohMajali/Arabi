@@ -54,7 +54,8 @@ public class SingleNumber extends AppCompatActivity {
         SharedPreferences sp = getApplicationContext().getSharedPreferences("MyUserPrefs", Context.MODE_PRIVATE);
         String str1 = sp.getString("TheNumber", "");
         String str2 = sp.getString("ThePronunciation", "");
-        String str4 = sp.getString("TheNum", "");
+        String str4 = sp.getString("ThePronunciation2", "");
+//        String str4 = sp.getString("TheNum", "");
         int str3 = sp.getInt("TheSoundNum", -1);
 
         textView = findViewById(R.id.numbertext);

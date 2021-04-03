@@ -143,6 +143,7 @@ public class SingleAlphabet extends AppCompatActivity {
         SharedPreferences sp =getApplicationContext().getSharedPreferences("MyUserPrefs", Context.MODE_PRIVATE);
         String str1 =sp.getString("thealphabet", "");
         String str2 =sp.getString("thepronunciation", "");
+        String str5 =sp.getString("thepronunciation2", "");
         int str3 =sp.getInt("thesound", -1);
         int str4 =sp.getInt("thepic", -1 ) ;
         //String str3 =sp.getString("thepronucVibrio", "");
@@ -162,7 +163,7 @@ public class SingleAlphabet extends AppCompatActivity {
                 Toast.makeText(activity_singleAlphabet.this,"correct",Toast.LENGTH_SHORT).show();
 
             }*/
-            if(text.getText().toString().equals(str2)){
+            if(text.getText().toString().equals(str2) || text.getText().toString().equals(str5)){
 
                 Toast.makeText(SingleAlphabet.this,"correct",Toast.LENGTH_SHORT).show();
             }else{

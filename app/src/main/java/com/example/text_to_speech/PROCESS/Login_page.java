@@ -39,9 +39,7 @@ import java.util.Map;
 public class Login_page extends AppCompatActivity {
 
     EditText usertxt , pass;
-    Button login;
-    Button signup ;
-    Button skip;
+    Button login ,signup ,skip;
     ProgressDialog dialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,12 +52,12 @@ public class Login_page extends AppCompatActivity {
         login = (Button) findViewById(R.id.login); // Defining the button by ID
         signup = (Button) findViewById(R.id.signup);
 
-        checkVoiceCommandPermission();
+        checkVoiceCommandPermission(); // Function to cheack voice command permissions
 
         dialog = new ProgressDialog(this);
 
         signup.setOnClickListener(view -> {
-            Intent intent = new Intent(Login_page.this, Signup.class);
+            Intent intent = new Intent(Login_page.this, Signup.class); // To jump from page to page
             startActivity(intent);
         });
 
@@ -72,7 +70,7 @@ public class Login_page extends AppCompatActivity {
         login.setOnClickListener(v -> Login()); //setonclicklistiner --> when button clicked do the function " login() function"
     }
 
-    private void Login(){
+    private void Login(){ //the function to activate login
 
         dialog.setTitle("Log In");
         dialog.setMessage("Please wait....");
@@ -147,7 +145,7 @@ public class Login_page extends AppCompatActivity {
         rq.add(stringRequest);
     }
 
-    private void checkVoiceCommandPermission(){
+    private void checkVoiceCommandPermission(){ //the Function to check voice permissions
 
         if((ContextCompat.checkSelfPermission(Login_page.this, Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED)){
 

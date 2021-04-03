@@ -36,8 +36,7 @@ public class Levels extends AppCompatActivity {
         lvlone = (Button) findViewById(R.id.lvlone);
         lvltwo = (Button) findViewById(R.id.lvltwo);
         lvlthree = (Button) findViewById(R.id.lvlthree);
-
-        quiz = findViewById(R.id.quiz);
+        quiz = (Button) findViewById(R.id.quiz);
 
         quiz.setOnClickListener(v -> {
 
