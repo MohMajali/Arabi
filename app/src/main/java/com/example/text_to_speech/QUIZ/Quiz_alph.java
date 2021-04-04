@@ -98,31 +98,44 @@ public class Quiz_alph extends AppCompatActivity {
                     mScore++;
                     counter--;
                     score.setText("Score = "+mScore);
-                    if(max < mQuestionLength) {
+                    if(max < QuestionList.size()) {
                         SetQuestion(max);
-                    } else {
+                        Log.i("NUMBERRR", String.valueOf(max));
+                    } else if(max == 27) {
 //                        quizFinished();
                     }
                 } else {
                     max++;
                     counter--;
-                    if(max < mQuestionLength){
+                    if(max < QuestionList.size()){
                         SetQuestion(max);
-                    } else {
+                        Log.i("NUMBERRR", String.valueOf(max));
+                    } else if(max == 27) {
 //                        quizFinished();
                     }
                 }
                 if(counter == 0){
 //                    quizFinished();
 
-                    AlertDialog.Builder alert = new AlertDialog.Builder(Quiz_alph.this);
-                    alert.setTitle("Mark").setMessage("Your result is: "+mScore +"\n" + "Your Are good").setPositiveButton("ok", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                        finish();
-                        }
-                    });
-                    alert.create().show();
+
+                    if(mScore >= 14) {
+                        AlertDialog.Builder alert = new AlertDialog.Builder(Quiz_alph.this);
+                        alert.setTitle("Mark").setMessage("Your result is: " + mScore + "\n" + "You are good").setPositiveButton("ok", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                finish();
+                            }
+                        });
+                        alert.create().show();
+                    } else {
+                        AlertDialog.Builder alert = new AlertDialog.Builder(Quiz_alph.this);
+                        alert.setTitle("Mark").setMessage("Your result is: " + mScore + "\n" + "Retry Again").setPositiveButton("ok", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                finish();
+                            }
+                        });
+                        alert.create().show();}
 
 
                 }

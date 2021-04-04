@@ -13,11 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Texttospeech"
         android:usesCleartextTraffic="true">
-        <activity android:name=".VowelsWord.Singlevowelword"></activity>
+        <activity android:name=".VowelsWord.Singlevowelword" />
         <activity android:name=".VowelsWord.Yclass" />
         <activity android:name=".VowelsWord.wawLetter" />
         <activity android:name=".VowelsWord.Aclass" />
-        <activity android:name=".VowelsLetter" />
         <activity android:name=".NUMBERS.SingleNumber" />
         <activity android:name=".COLORS.SingleColor" />
         <activity android:name=".NUMBERS.Numbers" />

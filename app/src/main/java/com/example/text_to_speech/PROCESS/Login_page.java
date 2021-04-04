@@ -9,9 +9,11 @@ import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -40,6 +42,7 @@ public class Login_page extends AppCompatActivity {
 
     EditText usertxt , pass;
     Button login ,signup ,skip;
+    ImageView imageView;
     ProgressDialog dialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +54,10 @@ public class Login_page extends AppCompatActivity {
 
         login = (Button) findViewById(R.id.login); // Defining the button by ID
         signup = (Button) findViewById(R.id.signup);
+
+        imageView = findViewById(R.id.img_fad);
+        imageView.animate().alpha(0).setDuration(5000);
+
 
         checkVoiceCommandPermission(); // Function to cheack voice command permissions
 
