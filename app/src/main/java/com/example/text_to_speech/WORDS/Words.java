@@ -127,8 +127,8 @@ public class Words extends AppCompatActivity {
         });
 
         good.setOnClickListener(v -> {
-            String word = "بخير الحمدلله" ;
-            String pronunciation = "بخير الحمدلله" ;
+            String word = "بخير" ;
+            String pronunciation = "بخير" ;
             int SoundEnglish = R.raw.fine_thanks_god ;
             int SoundArabic = R.raw.goodarabic ;
             // int pic = R.drawable.ch1pic ;
@@ -287,8 +287,8 @@ public class Words extends AppCompatActivity {
         });
 
         bye.setOnClickListener(v -> {
-            String word = "مع السلامة" ;
-            String pronunciation = "مع السلامة" ;
+            String word = "مع السلامه" ;
+            String pronunciation = "مع السلامه" ;
             int SoundEnglish = R.raw.good_bye ;
             int SoundArabic = R.raw.goodbyearabic ;
             // int pic = R.drawable.ch1pic ;

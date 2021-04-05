@@ -32,7 +32,7 @@
         android:orientation="vertical">
 
         <Button
-            android:layout_width="185dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/greetings"
             android:text="Greetings"
@@ -42,7 +42,7 @@
 
         <Button
             android:layout_marginTop="5dp"
-            android:layout_width="185dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/peace"
             android:text="Peace be with you"
@@ -52,7 +52,7 @@
 
         <Button
             android:layout_marginTop="5dp"
-            android:layout_width="185dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/same"
             android:text="Same to you"
@@ -62,7 +62,7 @@
 
         <Button
             android:layout_marginTop="5dp"
-            android:layout_width="185dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/how"
             android:text="How are you"
@@ -72,7 +72,7 @@
 
         <Button
             android:layout_marginTop="5dp"
-            android:layout_width="185dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/good"
             android:text="Fine, Thanks god"
@@ -82,7 +82,7 @@
 
         <Button
             android:layout_marginTop="5dp"
-            android:layout_width="185dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/morning"
             android:text="Good morning"
@@ -92,7 +92,7 @@
 
         <Button
             android:layout_marginTop="5dp"
-            android:layout_width="185dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/evening"
             android:text="Good Evening"

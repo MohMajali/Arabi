@@ -33,8 +33,8 @@ public class Colors extends AppCompatActivity {
         orange = findViewById(R.id.orange);
 
         red.setOnClickListener(v -> {
-            String word = "أحمر" ;
-            String pronunciation = "أحمر" ;
+            String word = "احمر" ;
+            String pronunciation = "احمر" ;
             int Sound = R.raw.red ;
             // int pic = R.drawable.ch1pic ;
 
@@ -53,8 +53,8 @@ public class Colors extends AppCompatActivity {
         });
 
         black.setOnClickListener(v -> {
-            String word = "أسود" ;
-            String pronunciation = "أسود" ;
+            String word = "اسود" ;
+            String pronunciation = "اسود" ;
             int Sound = R.raw.black ;
             // int pic = R.drawable.ch1pic ;
 
@@ -73,8 +73,8 @@ public class Colors extends AppCompatActivity {
         });
 
         blue.setOnClickListener(v -> {
-            String word = "أزرق" ;
-            String pronunciation = "أزرق" ;
+            String word = "ازرق" ;
+            String pronunciation = "ازرق" ;
             int Sound = R.raw.blue ;
             // int pic = R.drawable.ch1pic ;
 
@@ -113,8 +113,8 @@ public class Colors extends AppCompatActivity {
         });
 
         green.setOnClickListener(v -> {
-            String word = "أخضر" ;
-            String pronunciation = "أخضر" ;
+            String word = "اخضر" ;
+            String pronunciation = "اخضر" ;
             int Sound = R.raw.green ;
             // int pic = R.drawable.ch1pic ;
 
@@ -133,8 +133,8 @@ public class Colors extends AppCompatActivity {
         });
 
         yallow.setOnClickListener(v -> {
-            String word = "أصفر" ;
-            String pronunciation = "أصفر" ;
+            String word = "اصفر" ;
+            String pronunciation = "اصفر" ;
             int Sound = R.raw.yallow ;
             // int pic = R.drawable.ch1pic ;
 
@@ -153,8 +153,8 @@ public class Colors extends AppCompatActivity {
         });
 
         white.setOnClickListener(v -> {
-            String word = "أبيض" ;
-            String pronunciation = "أبيض" ;
+            String word = "ابيض" ;
+            String pronunciation = "ابيض" ;
             int Sound = R.raw.white ;
             // int pic = R.drawable.ch1pic ;
 
