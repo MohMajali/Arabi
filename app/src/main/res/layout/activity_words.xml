@@ -22,13 +22,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:layout_marginTop="30dp">
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center">
 
 
     <LinearLayout
-        android:layout_marginLeft="10dp"
-        android:layout_width="200dp"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <Button
@@ -106,12 +106,13 @@
     </LinearLayout>
 
         <LinearLayout
-            android:layout_width="200dp"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
 
             <Button
-                android:layout_width="185dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/welcome"
                 android:text="Welcome"
@@ -121,7 +122,7 @@
 
             <Button
                 android:layout_marginTop="5dp"
-                android:layout_width="185dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/come"
                 android:text="Please, come in"
@@ -131,7 +132,7 @@
 
             <Button
                 android:layout_marginTop="5dp"
-                android:layout_width="185dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/thank"
                 android:text="Thank you"
@@ -141,7 +142,7 @@
 
             <Button
                 android:layout_marginTop="5dp"
-                android:layout_width="185dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/nothing"
                 android:text="For nothing"
@@ -151,7 +152,7 @@
 
             <Button
                 android:layout_marginTop="5dp"
-                android:layout_width="185dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/bye"
                 android:text="Good bye"
@@ -161,7 +162,7 @@
 
             <Button
                 android:layout_marginTop="5dp"
-                android:layout_width="185dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/bye_bye"
                 android:text="Bye Bye"
@@ -171,7 +172,7 @@
 
             <Button
                 android:layout_marginTop="5dp"
-                android:layout_width="185dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/hello"
                 android:text="Hello"

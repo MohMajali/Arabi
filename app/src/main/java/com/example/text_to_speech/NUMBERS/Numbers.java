@@ -212,7 +212,7 @@ public class Numbers extends AppCompatActivity {
         nine.setOnClickListener(v -> {
             String word = "تسعه" ;
 //            String num = "9";
-            String pronunciation = "تسعه" ;
+            String pronunciation = "رقم تسعه" ;
             String pronunciation2 = "9" ;
             int SoundNum = R.raw.learnnumber9 ;
             // int pic = R.drawable.ch1pic ;
@@ -235,7 +235,7 @@ public class Numbers extends AppCompatActivity {
 
         ten.setOnClickListener(v -> {
             String word = "عشره" ;
-            String pronunciation = "عشره" ;
+            String pronunciation = " رقم عشره" ;
             String pronunciation2 = "10" ;
 //            String num = "10";
             int SoundNum = R.raw.learnnumber10 ;
