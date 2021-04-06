@@ -4,48 +4,79 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".QUIZ.Quiz_alph">
+    tools:context=".QUIZ.Quiz_alph"
+    android:background="@color/white">
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:background="@drawable/alpahbetbanner"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_gravity="center"
+            android:textSize="35dp"
+            android:id="@+id/question"
+            android:textColor="#FF0000"
+            android:text="question"
+            android:layout_marginTop="130dp"
+            android:layout_width="155dp"
+            android:layout_height="50dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="300dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="199dp"
         tools:layout_editor_absoluteY="275dp">
 
-        <TextView
-            android:id="@+id/question"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="question"
-            android:textSize="50dp"
-            android:textColor="@color/black"/>
 
         <EditText
-            android:id="@+id/score"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="score" />
-
-        <EditText
-            android:id="@+id/youranswer"
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:layout_gravity="center"
+            android:gravity="center"
             android:inputType="textPersonName"
-            android:text="answer" />
+            android:id="@+id/youranswer"
+            />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="score"
+            android:id="@+id/score"
+            />
 
         <Button
             android:id="@+id/answer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="answer" />
+            android:layout_gravity="center"
+            android:text="تحدث"
+            android:textSize="25dp"
+            android:background="@drawable/custom_button"
+            app:backgroundTint="@null"
+            android:textColor="@color/black"/>
         <Button
+            android:layout_marginTop="10dp"
             android:id="@+id/nextquestion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Next Question" />
+            android:layout_gravity="center"
+            android:text="Next Question"
+            android:textSize="25dp"
+            android:background="@drawable/custom_button"
+            app:backgroundTint="@null"
+            android:textColor="@color/black"/>
+
 
     </LinearLayout>
+
 </RelativeLayout>

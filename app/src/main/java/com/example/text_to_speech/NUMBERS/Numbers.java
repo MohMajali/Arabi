@@ -41,7 +41,7 @@ public class Numbers extends AppCompatActivity {
             // int pic = R.drawable.ch1pic ;
 
             SharedPreferences.Editor editor = sp.edit();
-            editor.putString("TheColor",word);
+            editor.putString("TheNumber",word);
             editor.putString("ThePronunciation",pronunciation);
             editor.putString("ThePronunciation2",pronunciation2);
             editor.putInt("TheSoundNum",SoundNum);

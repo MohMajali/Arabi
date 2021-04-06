@@ -8,13 +8,17 @@ import android.content.ClipData;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.speech.RecognitionListener;
 import android.speech.RecognizerIntent;
+import android.speech.SpeechRecognizer;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.text_to_speech.ALPHABETS.SingleAlphabet;
 import com.example.text_to_speech.LEVELS.Levels;
 import com.example.text_to_speech.R;
 
@@ -31,10 +35,15 @@ public class Quiz_alph extends AppCompatActivity {
     TextView score;
     TextView youranswer;
 
+
     int max = 0;
     int counter = 28 ;
 
     private static final int RECOGNIZER_RESULT = 1;
+
+    private SpeechRecognizer speechRecognizer ;
+    private Intent  speechRecognizerIntent ;
+    String keeper = "";
 
     Quiz_alph_questions mQuestions;
      String mAnswer ;
@@ -52,6 +61,13 @@ public class Quiz_alph extends AppCompatActivity {
         setContentView(R.layout.activity_quiz_alph);
 
         //r = new Random();
+
+
+        speechRecognizer =  SpeechRecognizer.createSpeechRecognizer(Quiz_alph.this);
+        speechRecognizerIntent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+        speechRecognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
+        speechRecognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "ar-JO");
+        //Locale.getDefault()
 
         answer = (Button)findViewById(R.id.answer);
         nextqestion = (Button)findViewById(R.id.nextquestion);
@@ -77,23 +93,78 @@ public class Quiz_alph extends AppCompatActivity {
 
         SetQuestion(max);
 
+
+        speechRecognizer.setRecognitionListener(new RecognitionListener() {
+            @Override
+            public void onReadyForSpeech(Bundle bundle) {
+
+            }
+
+            @Override
+            public void onBeginningOfSpeech() {
+
+            }
+
+            @Override
+            public void onRmsChanged(float v) {
+
+            }
+
+            @Override
+            public void onBufferReceived(byte[] bytes) {
+
+            }
+
+            @Override
+            public void onEndOfSpeech() {
+
+            }
+
+            @Override
+            public void onError(int i) {
+
+            }
+
+            @Override
+            public void onResults(Bundle bundle) {
+                ArrayList<String> matchesFound = bundle.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
+
+                if(matchesFound!=null){
+                    keeper =matchesFound.get(0);
+                    Toast.makeText(Quiz_alph.this, "Result = " + keeper, Toast.LENGTH_SHORT).show();
+                    youranswer.setText(keeper);
+                }
+            }
+
+            @Override
+            public void onPartialResults(Bundle bundle) {
+
+            }
+
+            @Override
+            public void onEvent(int i, Bundle bundle) {
+
+            }
+        });
+
         answer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent voicerecogize = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+                Toast toast = new Toast(Quiz_alph.this);
+                ImageView imageView = new ImageView(Quiz_alph.this);
+                imageView.setImageResource(R.drawable.mic);
+                toast.setView(imageView);
+                toast.show();
 
-                voicerecogize.putExtra(RecognizerIntent.EXTRA_CALLING_PACKAGE, getClass().getPackage().getName());
-                voicerecogize.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);// spilling
-                voicerecogize.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "ar-JO");
-
-                startActivityForResult(voicerecogize,RECOGNIZER_RESULT);
+                speechRecognizer.startListening(speechRecognizerIntent);
+                keeper= "" ;
             }
         });
         nextqestion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                if(youranswer.getText().toString().equals(mAnswer) && counter != 0){
+                if(youranswer.getText().toString().equals(mAnswer) && counter != 0 ||youranswer.getText().toString().equals(question.getText().toString())&& counter != 0 ){
                     max++;
                     mScore++;
                     counter--;
