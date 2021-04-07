@@ -40,7 +40,9 @@
             android:ems="10"
             android:layout_gravity="center"
             android:gravity="center"
+            android:textColor="@color/black"
             android:inputType="textPersonName"
+            android:text="كلامك هنا"
             android:id="@+id/youranswer"
             />
         <EditText

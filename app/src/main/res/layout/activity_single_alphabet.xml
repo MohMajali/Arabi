@@ -19,7 +19,7 @@
             android:textSize="125dp"
             android:layout_marginTop="95dp"
             android:layout_width="135dp"
-            android:layout_height="135dp"
+            android:layout_height="120dp"
             />
     </LinearLayout>
 
@@ -39,6 +39,7 @@
             android:ems="10"
             android:layout_gravity="center"
             android:gravity="center"
+            android:textColor="@color/black"
             android:inputType="textPersonName"
             android:text="كلامك هنا" />
 
