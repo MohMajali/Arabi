@@ -55,7 +55,6 @@ public class SingleNumber extends AppCompatActivity {
         String str1 = sp.getString("TheNumber", "");
         String str2 = sp.getString("ThePronunciation", "");
         String str4 = sp.getString("ThePronunciation2", "");
-//        String str4 = sp.getString("TheNum", "");
         int str3 = sp.getInt("TheSoundNum", -1);
 
         textView = findViewById(R.id.numbertext);
@@ -112,7 +111,7 @@ public class SingleNumber extends AppCompatActivity {
 
                 if (matchesFound != null) {
                     keeper = matchesFound.get(0);
-                    Toast.makeText(SingleNumber.this, "Result = " + keeper, Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(SingleNumber.this, "Result = " + keeper, Toast.LENGTH_SHORT).show();
                     text.setText(keeper);
                 }
             }
@@ -135,17 +134,6 @@ public class SingleNumber extends AppCompatActivity {
         talk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-////                Intent text  = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-////                text.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
-////                text.putExtra(RecognizerIntent.EXTRA_PROMPT,"speech to text");
-////                startActivityForResult(text,RECOGNIZER_RESULT);
-//                Intent voicerecogize = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-//
-//                voicerecogize.putExtra(RecognizerIntent.EXTRA_CALLING_PACKAGE, getClass().getPackage().getName());
-//                voicerecogize.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);// spilling
-//                voicerecogize.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "ar-JO");
-//
-//                startActivityForResult(voicerecogize,RECOGNIZER_RESULT);
 
                 Toast toast = new Toast(SingleNumber.this);
                 ImageView imageView = new ImageView(SingleNumber.this);
@@ -161,16 +149,20 @@ public class SingleNumber extends AppCompatActivity {
 
 
         check.setOnClickListener(view -> {
-            /*
-            if(text.getText().toString().equals(str3+" "+str4+" "+str5)){
-                Toast.makeText(activity_singleAlphabet.this,"correct",Toast.LENGTH_SHORT).show();
 
-            }*/
             if (text.getText().toString().equals(str2) || text.getText().toString().equals(str4)) {
 
-                Toast.makeText(SingleNumber.this, "correct", Toast.LENGTH_SHORT).show();
+                Toast toast = new Toast(SingleNumber.this);
+                ImageView imageView = new ImageView(SingleNumber.this);
+                imageView.setImageResource(R.drawable.good);
+                toast.setView(imageView);
+                toast.show();
             } else {
-                Toast.makeText(SingleNumber.this, "false", Toast.LENGTH_SHORT).show();
+                Toast toast = new Toast(SingleNumber.this);
+                ImageView imageView = new ImageView(SingleNumber.this);
+                imageView.setImageResource(R.drawable.bad);
+                toast.setView(imageView);
+                toast.show();
             }
         });
 

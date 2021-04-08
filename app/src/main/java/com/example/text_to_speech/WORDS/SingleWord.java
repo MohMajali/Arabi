@@ -24,6 +24,7 @@ import android.widget.Toast;
 
 import com.example.text_to_speech.ALPHABETS.SingleAlphabet;
 import com.example.text_to_speech.R;
+import com.example.text_to_speech.VowelsWord.Singlevowelword;
 
 import java.util.ArrayList;
 
@@ -54,14 +55,9 @@ public class SingleWord extends AppCompatActivity {
         String str2 =sp.getString("ThePronunciation", "");
         int str3 =sp.getInt("TheSoundEnglish", -1);
         int str4 = sp.getInt("TheSoundArabic",-1);
-       // int str4 =sp.getInt("thepic", -1 ) ;
-        //String str3 =sp.getString("thepronucVibrio", "");
-        //String str4 =sp.getString("thepronucslot", "");
-        //String str5 =sp.getString("thepronucbraek", "");
 
         textView.setText(str1);
 
-       // final MediaPlayer mediaPlayer = MediaPlayer.create(this, str3);
 
 
         arabic.setOnClickListener(v -> {
@@ -118,7 +114,7 @@ public class SingleWord extends AppCompatActivity {
 
                 if(matchesFound!=null){
                     keeper =matchesFound.get(0);
-                    Toast.makeText(SingleWord.this, "Result = " + keeper, Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(SingleWord.this, "Result = " + keeper, Toast.LENGTH_SHORT).show();
                     text.setText(keeper);
                 }
             }
@@ -137,7 +133,6 @@ public class SingleWord extends AppCompatActivity {
 
 
 
-//        TextView textView =findViewById(R.id.textView);
         text = (EditText) findViewById(R.id.text);
         talk = (Button) findViewById(R.id.Talk);
         check = (Button) findViewById(R.id.check);
@@ -146,17 +141,7 @@ public class SingleWord extends AppCompatActivity {
         talk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-////                Intent text  = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-////                text.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
-////                text.putExtra(RecognizerIntent.EXTRA_PROMPT,"speech to text");
-////                startActivityForResult(text,RECOGNIZER_RESULT);
-//                Intent voicerecogize = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-//
-//                voicerecogize.putExtra(RecognizerIntent.EXTRA_CALLING_PACKAGE, getClass().getPackage().getName());
-//                voicerecogize.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);// spilling
-//                voicerecogize.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "ar-JO");
-//
-//                startActivityForResult(voicerecogize,RECOGNIZER_RESULT);
+
 
                 Toast toast = new Toast(SingleWord.this);
                 ImageView imageView = new ImageView(SingleWord.this);
@@ -172,27 +157,23 @@ public class SingleWord extends AppCompatActivity {
 
 
 
-        //String str3 =sp.getString("thepronucVibrio", "");
-        //String str4 =sp.getString("thepronucslot", "");
-        //String str5 =sp.getString("thepronucbraek", "");
-
-
         final MediaPlayer mediaPlayer = MediaPlayer.create(this, str3);
 
-//        textView.setText(str1);
-
-
         check.setOnClickListener(view -> {
-            /*
-            if(text.getText().toString().equals(str3+" "+str4+" "+str5)){
-                Toast.makeText(activity_singleAlphabet.this,"correct",Toast.LENGTH_SHORT).show();
 
-            }*/
             if(text.getText().toString().equals(str2)){
 
-                Toast.makeText(SingleWord.this,"correct",Toast.LENGTH_SHORT).show();
+                Toast toast = new Toast(SingleWord.this);
+                ImageView imageView = new ImageView(SingleWord.this);
+                imageView.setImageResource(R.drawable.good);
+                toast.setView(imageView);
+                toast.show();
             }else{
-                Toast.makeText(SingleWord.this,"false",Toast.LENGTH_SHORT).show();
+                Toast toast = new Toast(SingleWord.this);
+                ImageView imageView = new ImageView(SingleWord.this);
+                imageView.setImageResource(R.drawable.bad);
+                toast.setView(imageView);
+                toast.show();
             }
         });
 

@@ -87,7 +87,7 @@ public class SingleAlphabet extends AppCompatActivity {
 
                 if(matchesFound!=null){
                     keeper =matchesFound.get(0);
-                    Toast.makeText(SingleAlphabet.this, "Result = " + keeper, Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(SingleAlphabet.this, "Result = " + keeper, Toast.LENGTH_SHORT).show();
                     text.setText(keeper);
                 }
             }
@@ -104,9 +104,6 @@ public class SingleAlphabet extends AppCompatActivity {
         });
 
 
-
-
-//        TextView textView =findViewById(R.id.textView);
         text = (EditText) findViewById(R.id.text);
         talk = (Button) findViewById(R.id.Talk);
         check = (Button) findViewById(R.id.check);
@@ -114,18 +111,6 @@ public class SingleAlphabet extends AppCompatActivity {
         alpha = (ImageView) findViewById(R.id.alphapic);
 
         talk.setOnClickListener(v ->  {
-
-////                Intent text  = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-////                text.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
-////                text.putExtra(RecognizerIntent.EXTRA_PROMPT,"speech to text");
-////                startActivityForResult(text,RECOGNIZER_RESULT);
-//                Intent voicerecogize = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-//
-//                voicerecogize.putExtra(RecognizerIntent.EXTRA_CALLING_PACKAGE, getClass().getPackage().getName());
-//                voicerecogize.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);// spilling
-//                voicerecogize.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "ar-JO");
-//
-//                startActivityForResult(voicerecogize,RECOGNIZER_RESULT);
 
                 Toast toast = new Toast(SingleAlphabet.this);
                 ImageView imageView = new ImageView(SingleAlphabet.this);
@@ -146,28 +131,29 @@ public class SingleAlphabet extends AppCompatActivity {
         String str5 =sp.getString("thepronunciation2", "");
         int str3 =sp.getInt("thesound", -1);
         int str4 =sp.getInt("thepic", -1 ) ;
-        //String str3 =sp.getString("thepronucVibrio", "");
-        //String str4 =sp.getString("thepronucslot", "");
-        //String str5 =sp.getString("thepronucbraek", "");
+
 
         alpha.setImageResource(str4);
 
         final MediaPlayer mediaPlayer = MediaPlayer.create(this, str3);
 
-//        textView.setText(str1);
 
 
         check.setOnClickListener(view -> {
-            /*
-            if(text.getText().toString().equals(str3+" "+str4+" "+str5)){
-                Toast.makeText(activity_singleAlphabet.this,"correct",Toast.LENGTH_SHORT).show();
 
-            }*/
             if(text.getText().toString().equals(str2) || text.getText().toString().equals(str5)){
 
-                Toast.makeText(SingleAlphabet.this,"correct",Toast.LENGTH_SHORT).show();
+                Toast toast = new Toast(SingleAlphabet.this);
+                ImageView imageView = new ImageView(SingleAlphabet.this);
+                imageView.setImageResource(R.drawable.good);
+                toast.setView(imageView);
+                toast.show();
             }else{
-                Toast.makeText(SingleAlphabet.this,"false",Toast.LENGTH_SHORT).show();
+                Toast toast = new Toast(SingleAlphabet.this);
+                ImageView imageView = new ImageView(SingleAlphabet.this);
+                imageView.setImageResource(R.drawable.bad);
+                toast.setView(imageView);
+                toast.show();
             }
         });
 
@@ -178,13 +164,5 @@ public class SingleAlphabet extends AppCompatActivity {
 
         });
     }
-//    @Override
-//    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-//        if(requestCode==RECOGNIZER_RESULT && resultCode == RESULT_OK){
-//            ArrayList<String> matches = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
-//            text.setText(matches.get(0));
-//        }
-//
-//        super.onActivityResult(requestCode, resultCode, data);
 
 }

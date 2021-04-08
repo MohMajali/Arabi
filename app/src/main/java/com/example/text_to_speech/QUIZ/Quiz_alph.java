@@ -50,7 +50,6 @@ public class Quiz_alph extends AppCompatActivity {
      int mScore = 0 ;
      int mQuestionLength;
 
-   // Random r ;
 
     ArrayList<Item> QuestionList;
 
@@ -60,7 +59,6 @@ public class Quiz_alph extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_alph);
 
-        //r = new Random();
 
 
         speechRecognizer =  SpeechRecognizer.createSpeechRecognizer(Quiz_alph.this);
@@ -131,7 +129,7 @@ public class Quiz_alph extends AppCompatActivity {
 
                 if(matchesFound!=null){
                     keeper =matchesFound.get(0);
-                    Toast.makeText(Quiz_alph.this, "Result = " + keeper, Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(Quiz_alph.this, "Result = " + keeper, Toast.LENGTH_SHORT).show();
                     youranswer.setText(keeper);
                 }
             }

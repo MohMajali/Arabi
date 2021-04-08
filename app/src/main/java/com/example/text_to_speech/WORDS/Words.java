@@ -42,18 +42,14 @@ public class Words extends AppCompatActivity {
             String pronunciation = "التحيات" ;
             int SoundEnglish = R.raw.greetings ;
             int SoundArabic = R.raw.greetingarabic;
-           // int pic = R.drawable.ch1pic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("TheWorld",word);
             editor.putString("ThePronunciation",pronunciation);
             editor.putInt("TheSoundEnglish",SoundEnglish);
             editor.putInt("TheSoundArabic",SoundArabic);
-            //editor.putInt("thepic",pic);
 
             editor.apply();
-
-            Toast.makeText(Words.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Words.this, SingleWord.class);
             startActivity(intent);
@@ -64,18 +60,14 @@ public class Words extends AppCompatActivity {
             String pronunciation = "السلام عليكم" ;
             int SoundEnglish = R.raw.peace_be_with_you ;
             int SoundArabic = R.raw.peaceuponarabic ;
-            // int pic = R.drawable.ch1pic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("TheWorld",word);
             editor.putString("ThePronunciation",pronunciation);
             editor.putInt("TheSoundEnglish",SoundEnglish);
             editor.putInt("TheSoundArabic",SoundArabic);
-            //editor.putInt("thepic",pic);
 
             editor.apply();
-
-            Toast.makeText(Words.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Words.this, SingleWord.class);
             startActivity(intent);
@@ -94,11 +86,8 @@ public class Words extends AppCompatActivity {
             editor.putString("ThePronunciation",pronunciation);
             editor.putInt("TheSoundEnglish",SoundEnglish);
             editor.putInt("TheSoundArabic",SoundArabic);
-            //editor.putInt("thepic",pic);
 
             editor.apply();
-
-            Toast.makeText(Words.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Words.this, SingleWord.class);
             startActivity(intent);
@@ -109,18 +98,14 @@ public class Words extends AppCompatActivity {
             String pronunciation = "كيف حالك" ;
             int SoundEnglish = R.raw.how_are_you ;
             int SoundArabic = R.raw.howareyouarabic ;
-            // int pic = R.drawable.ch1pic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("TheWorld",word);
             editor.putString("ThePronunciation",pronunciation);
             editor.putInt("TheSoundEnglish",SoundEnglish);
             editor.putInt("TheSoundArabic",SoundArabic);
-            //editor.putInt("thepic",pic);
 
             editor.apply();
-
-            Toast.makeText(Words.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Words.this, SingleWord.class);
             startActivity(intent);
@@ -131,18 +116,14 @@ public class Words extends AppCompatActivity {
             String pronunciation = "بخير" ;
             int SoundEnglish = R.raw.fine_thanks_god ;
             int SoundArabic = R.raw.goodarabic ;
-            // int pic = R.drawable.ch1pic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("TheWorld",word);
             editor.putString("ThePronunciation",pronunciation);
             editor.putInt("TheSoundEnglish",SoundEnglish);
             editor.putInt("TheSoundArabic",SoundArabic);
-            //editor.putInt("thepic",pic);
 
             editor.apply();
-
-            Toast.makeText(Words.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Words.this, SingleWord.class);
             startActivity(intent);
@@ -153,18 +134,14 @@ public class Words extends AppCompatActivity {
             String pronunciation = "صباح الخير" ;
             int SoundEnglish = R.raw.good_morning ;
             int SoundArabic = R.raw.goodmorningarabic ;
-            // int pic = R.drawable.ch1pic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("TheWorld",word);
             editor.putString("ThePronunciation",pronunciation);
             editor.putInt("TheSoundEnglish",SoundEnglish);
             editor.putInt("TheSoundArabic",SoundArabic);
-            //editor.putInt("thepic",pic);
 
             editor.apply();
-
-            Toast.makeText(Words.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Words.this, SingleWord.class);
             startActivity(intent);
@@ -175,18 +152,14 @@ public class Words extends AppCompatActivity {
             String pronunciation = "مساء الخير" ;
             int SoundEnglish = R.raw.good_evening ;
             int SoundArabic = R.raw.goodeveningarabic ;
-            // int pic = R.drawable.ch1pic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("TheWorld",word);
             editor.putString("ThePronunciation",pronunciation);
             editor.putInt("TheSoundEnglish",SoundEnglish);
             editor.putInt("TheSoundArabic",SoundArabic);
-            //editor.putInt("thepic",pic);
 
             editor.apply();
-
-            Toast.makeText(Words.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Words.this, SingleWord.class);
             startActivity(intent);
@@ -199,7 +172,6 @@ public class Words extends AppCompatActivity {
             int SoundArabic = R.raw.welcomearabic ;
             int SoundBoy = R.raw.welcomeboy;
             int SoundGirl = R.raw.welcomegirl;
-            // int pic = R.drawable.ch1pic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("TheWorld",word);
@@ -208,11 +180,8 @@ public class Words extends AppCompatActivity {
             editor.putInt("TheSoundArabic",SoundArabic);
             editor.putInt("TheSoundBoy",SoundBoy);
             editor.putInt("TheSoundGirl",SoundGirl);
-            //editor.putInt("thepic",pic);
 
             editor.apply();
-
-            Toast.makeText(Words.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Words.this, SingleWord.class);
             startActivity(intent);
@@ -224,7 +193,6 @@ public class Words extends AppCompatActivity {
             int SoundEnglish = R.raw.please_come_in ;
             int SoundArabic = R.raw.comeinarabic ;
             int SoundGirl = R.raw.comeingirl;
-            // int pic = R.drawable.ch1pic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("TheWorld",word);
@@ -232,11 +200,8 @@ public class Words extends AppCompatActivity {
             editor.putInt("TheSoundEnglish",SoundEnglish);
             editor.putInt("TheSoundArabic",SoundArabic);
             editor.putInt("TheSoundGirl",SoundGirl);
-            //editor.putInt("thepic",pic);
 
             editor.apply();
-
-            Toast.makeText(Words.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Words.this, SingleWord.class);
             startActivity(intent);
@@ -247,18 +212,14 @@ public class Words extends AppCompatActivity {
             String pronunciation = "شكرا" ;
             int SoundEnglish = R.raw.thank_you ;
             int SoundArabic = R.raw.thankyouarabic ;
-            // int pic = R.drawable.ch1pic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("TheWorld",word);
             editor.putString("ThePronunciation",pronunciation);
             editor.putInt("TheSoundEnglish",SoundEnglish);
             editor.putInt("TheSoundArabic",SoundArabic);
-            //editor.putInt("thepic",pic);
 
             editor.apply();
-
-            Toast.makeText(Words.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Words.this, SingleWord.class);
             startActivity(intent);
@@ -269,18 +230,14 @@ public class Words extends AppCompatActivity {
             String pronunciation = "عفوا" ;
             int SoundEnglish = R.raw.for_nothing ;
             int SoundArabic = R.raw.fornothingarabic ;
-            // int pic = R.drawable.ch1pic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("TheWorld",word);
             editor.putString("ThePronunciation",pronunciation);
             editor.putInt("TheSoundEnglish",SoundEnglish);
             editor.putInt("TheSoundArabic",SoundArabic);
-            //editor.putInt("thepic",pic);
 
             editor.apply();
-
-            Toast.makeText(Words.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Words.this, SingleWord.class);
             startActivity(intent);
@@ -291,18 +248,14 @@ public class Words extends AppCompatActivity {
             String pronunciation = "مع السلامه" ;
             int SoundEnglish = R.raw.good_bye ;
             int SoundArabic = R.raw.goodbyearabic ;
-            // int pic = R.drawable.ch1pic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("TheWorld",word);
             editor.putString("ThePronunciation",pronunciation);
             editor.putInt("TheSoundEnglish",SoundEnglish);
             editor.putInt("TheSoundArabic",SoundArabic);
-            //editor.putInt("thepic",pic);
 
             editor.apply();
-
-            Toast.makeText(Words.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Words.this, SingleWord.class);
             startActivity(intent);
@@ -313,18 +266,14 @@ public class Words extends AppCompatActivity {
             String pronunciation = "في امان الله" ;
             int SoundEnglish = R.raw.bye_bye ;
             int SoundArabic = R.raw.byebyearabic ;
-            // int pic = R.drawable.ch1pic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("TheWorld",word);
             editor.putString("ThePronunciation",pronunciation);
             editor.putInt("TheSoundEnglish",SoundEnglish);
             editor.putInt("TheSoundArabic",SoundArabic);
-            //editor.putInt("thepic",pic);
 
             editor.apply();
-
-            Toast.makeText(Words.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Words.this, SingleWord.class);
             startActivity(intent);
@@ -335,18 +284,14 @@ public class Words extends AppCompatActivity {
             String pronunciation = "مرحبا" ;
             int SoundEnglish = R.raw.hello ;
             int SoundArabic = R.raw.helloarabic ;
-            // int pic = R.drawable.ch1pic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("TheWorld",word);
             editor.putString("ThePronunciation",pronunciation);
             editor.putInt("TheSoundEnglish",SoundEnglish);
             editor.putInt("TheSoundArabic",SoundArabic);
-            //editor.putInt("thepic",pic);
 
             editor.apply();
-
-            Toast.makeText(Words.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Words.this, SingleWord.class);
             startActivity(intent);

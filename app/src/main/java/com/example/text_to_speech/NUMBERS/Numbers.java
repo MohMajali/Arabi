@@ -38,18 +38,14 @@ public class Numbers extends AppCompatActivity {
             String pronunciation = "واحد" ;
             String pronunciation2 = "1" ;
             int SoundNum = R.raw.learnnumber1 ;
-            // int pic = R.drawable.ch1pic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("TheNumber",word);
             editor.putString("ThePronunciation",pronunciation);
             editor.putString("ThePronunciation2",pronunciation2);
             editor.putInt("TheSoundNum",SoundNum);
-            //editor.putInt("thepic",pic);
 
             editor.apply();
-
-            Toast.makeText(Numbers.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Numbers.this, SingleNumber.class);
             startActivity(intent);
@@ -60,18 +56,14 @@ public class Numbers extends AppCompatActivity {
             String pronunciation = "اثنين" ;
             String pronunciation2 = "2" ;
             int SoundNum = R.raw.learnnumber2 ;
-            // int pic = R.drawable.ch1pic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("TheNumber",word);
             editor.putString("ThePronunciation",pronunciation);
             editor.putString("ThePronunciation2",pronunciation2);
             editor.putInt("TheSoundNum",SoundNum);
-            //editor.putInt("thepic",pic);
 
             editor.apply();
-
-            Toast.makeText(Numbers.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Numbers.this, SingleNumber.class);
             startActivity(intent);
@@ -82,18 +74,14 @@ public class Numbers extends AppCompatActivity {
             String pronunciation = "ثلاثه" ;
             String pronunciation2 = "3" ;
             int SoundNum = R.raw.learnnumber3 ;
-            // int pic = R.drawable.ch1pic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("TheNumber",word);
             editor.putString("ThePronunciation",pronunciation);
             editor.putString("ThePronunciation2",pronunciation2);
             editor.putInt("TheSoundNum",SoundNum);
-            //editor.putInt("thepic",pic);
 
             editor.apply();
-
-            Toast.makeText(Numbers.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Numbers.this, SingleNumber.class);
             startActivity(intent);
@@ -104,18 +92,14 @@ public class Numbers extends AppCompatActivity {
             String pronunciation = "اربعه" ;
             String pronunciation2 = "4" ;
             int SoundNum = R.raw.learnnumber4 ;
-            // int pic = R.drawable.ch1pic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("TheNumber",word);
             editor.putString("ThePronunciation",pronunciation);
             editor.putString("ThePronunciation2",pronunciation2);
             editor.putInt("TheSoundNum",SoundNum);
-            //editor.putInt("thepic",pic);
 
             editor.apply();
-
-            Toast.makeText(Numbers.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Numbers.this, SingleNumber.class);
             startActivity(intent);
@@ -126,18 +110,14 @@ public class Numbers extends AppCompatActivity {
             String pronunciation = "خمسه" ;
             String pronunciation2 = "5" ;
             int SoundNum = R.raw.learnnumber5 ;
-            // int pic = R.drawable.ch1pic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("TheNumber",word);
             editor.putString("ThePronunciation",pronunciation);
             editor.putString("ThePronunciation2",pronunciation2);
             editor.putInt("TheSoundNum",SoundNum);
-            //editor.putInt("thepic",pic);
 
             editor.apply();
-
-            Toast.makeText(Numbers.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Numbers.this, SingleNumber.class);
             startActivity(intent);
@@ -148,18 +128,14 @@ public class Numbers extends AppCompatActivity {
             String pronunciation = "سته" ;
             String pronunciation2 = "6" ;
             int SoundNum = R.raw.learnnumber6 ;
-            // int pic = R.drawable.ch1pic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("TheNumber",word);
             editor.putString("ThePronunciation",pronunciation);
             editor.putString("ThePronunciation2",pronunciation2);
             editor.putInt("TheSoundNum",SoundNum);
-            //editor.putInt("thepic",pic);
 
             editor.apply();
-
-            Toast.makeText(Numbers.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Numbers.this, SingleNumber.class);
             startActivity(intent);
@@ -170,18 +146,14 @@ public class Numbers extends AppCompatActivity {
             String pronunciation = "سبعه" ;
             String pronunciation2 = "7" ;
             int SoundNum = R.raw.learnnumber7 ;
-            // int pic = R.drawable.ch1pic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("TheNumber",word);
             editor.putString("ThePronunciation",pronunciation);
             editor.putString("ThePronunciation2",pronunciation2);
             editor.putInt("TheSoundNum",SoundNum);
-            //editor.putInt("thepic",pic);
 
             editor.apply();
-
-            Toast.makeText(Numbers.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Numbers.this, SingleNumber.class);
             startActivity(intent);
@@ -192,18 +164,14 @@ public class Numbers extends AppCompatActivity {
             String pronunciation = "ثمانيه" ;
             String pronunciation2 = "8" ;
             int SoundNum = R.raw.learnnumber8 ;
-            // int pic = R.drawable.ch1pic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("TheNumber",word);
             editor.putString("ThePronunciation",pronunciation);
             editor.putString("ThePronunciation2",pronunciation2);
             editor.putInt("TheSoundNum",SoundNum);
-            //editor.putInt("thepic",pic);
 
             editor.apply();
-
-            Toast.makeText(Numbers.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Numbers.this, SingleNumber.class);
             startActivity(intent);
@@ -215,7 +183,6 @@ public class Numbers extends AppCompatActivity {
             String pronunciation = "رقم تسعه" ;
             String pronunciation2 = "9" ;
             int SoundNum = R.raw.learnnumber9 ;
-            // int pic = R.drawable.ch1pic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("TheNumber",word);
@@ -223,11 +190,8 @@ public class Numbers extends AppCompatActivity {
             editor.putString("ThePronunciation2",pronunciation2);
 //            editor.putString("TheNum",num);
             editor.putInt("TheSoundNum",SoundNum);
-            //editor.putInt("thepic",pic);
 
             editor.apply();
-
-            Toast.makeText(Numbers.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Numbers.this, SingleNumber.class);
             startActivity(intent);
@@ -239,7 +203,6 @@ public class Numbers extends AppCompatActivity {
             String pronunciation2 = "10" ;
 //            String num = "10";
             int SoundNum = R.raw.learnnumber10 ;
-            // int pic = R.drawable.ch1pic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("TheNumber",word);
@@ -247,11 +210,8 @@ public class Numbers extends AppCompatActivity {
             editor.putString("ThePronunciation2",pronunciation2);
 //            editor.putString("TheNum",num);
             editor.putInt("TheSoundNum",SoundNum);
-            //editor.putInt("thepic",pic);
 
             editor.apply();
-
-            Toast.makeText(Numbers.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Numbers.this, SingleNumber.class);
             startActivity(intent);

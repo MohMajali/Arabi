@@ -28,10 +28,6 @@ public class Levels extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_levels);
 
-//        nextAlphabet = (Button) findViewById(R.id.nextAlphabet);
-//        quizAlph = (Button) findViewById(R.id.quiz_alph);
-//        login = (Button) findViewById(R.id.login);
-//        signup = (Button) findViewById(R.id.sign);
 
         lvlone = (Button) findViewById(R.id.lvlone);
         lvltwo = (Button) findViewById(R.id.lvltwo);
@@ -67,24 +63,6 @@ public class Levels extends AppCompatActivity {
             }
         });
 
-//    nextAlphabet.setOnClickListener(view -> {
-//        Intent intent = new Intent(MainActivity.this,activity_alphabet.class);
-//        startActivity(intent);
-//    });
-//    quizAlph.setOnClickListener(view -> {
-//        Intent intent = new Intent(MainActivity.this,Quiz_alph.class);
-//        startActivity(intent);
-//    });
-//
-//    login.setOnClickListener(v -> {
-//      Intent intent = new Intent(MainActivity.this, login_page.class);
-//      startActivity(intent);
-//    });
-//
-//    signup.setOnClickListener(v -> {
-//        Intent intent = new Intent(MainActivity.this, signup.class);
-//        startActivity(intent);
-//    });
     }
 
 

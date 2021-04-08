@@ -22,6 +22,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.text_to_speech.ALPHABETS.SingleAlphabet;
 import com.example.text_to_speech.R;
 import com.example.text_to_speech.WORDS.SingleWord;
 
@@ -106,7 +107,7 @@ public class SingleColor extends AppCompatActivity {
 
                 if (matchesFound != null) {
                     keeper = matchesFound.get(0);
-                    Toast.makeText(SingleColor.this, "Result = " + keeper, Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(SingleColor.this, "Result = " + keeper, Toast.LENGTH_SHORT).show();
                     text.setText(keeper);
                 }
             }
@@ -129,17 +130,6 @@ public class SingleColor extends AppCompatActivity {
         talk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-////                Intent text  = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-////                text.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
-////                text.putExtra(RecognizerIntent.EXTRA_PROMPT,"speech to text");
-////                startActivityForResult(text,RECOGNIZER_RESULT);
-//                Intent voicerecogize = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-//
-//                voicerecogize.putExtra(RecognizerIntent.EXTRA_CALLING_PACKAGE, getClass().getPackage().getName());
-//                voicerecogize.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);// spilling
-//                voicerecogize.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "ar-JO");
-//
-//                startActivityForResult(voicerecogize,RECOGNIZER_RESULT);
 
                 Toast toast = new Toast(SingleColor.this);
                 ImageView imageView = new ImageView(SingleColor.this);
@@ -155,16 +145,20 @@ public class SingleColor extends AppCompatActivity {
 
 
         check.setOnClickListener(view -> {
-            /*
-            if(text.getText().toString().equals(str3+" "+str4+" "+str5)){
-                Toast.makeText(activity_singleAlphabet.this,"correct",Toast.LENGTH_SHORT).show();
 
-            }*/
             if (text.getText().toString().equals(str2)) {
 
-                Toast.makeText(SingleColor.this, "correct", Toast.LENGTH_SHORT).show();
+                Toast toast = new Toast(SingleColor.this);
+                ImageView imageView = new ImageView(SingleColor.this);
+                imageView.setImageResource(R.drawable.good);
+                toast.setView(imageView);
+                toast.show();
             } else {
-                Toast.makeText(SingleColor.this, "false", Toast.LENGTH_SHORT).show();
+                Toast toast = new Toast(SingleColor.this);
+                ImageView imageView = new ImageView(SingleColor.this);
+                imageView.setImageResource(R.drawable.bad);
+                toast.setView(imageView);
+                toast.show();
             }
         });
 

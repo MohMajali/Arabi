@@ -46,8 +46,6 @@ public class Aclass extends AppCompatActivity {
 
             editor.apply();
 
-            Toast.makeText(Aclass.this,"done",Toast.LENGTH_SHORT).show();
-
             Intent intent = new Intent(Aclass.this, Singlevowelword.class);
             startActivity(intent);
 
@@ -68,8 +66,6 @@ public class Aclass extends AppCompatActivity {
 
             editor.apply();
 
-            Toast.makeText(Aclass.this,"done",Toast.LENGTH_SHORT).show();
-
             Intent intent = new Intent(Aclass.this, Singlevowelword.class);
             startActivity(intent);
         });
@@ -89,8 +85,6 @@ public class Aclass extends AppCompatActivity {
 
             editor.apply();
 
-            Toast.makeText(Aclass.this,"done",Toast.LENGTH_SHORT).show();
-
             Intent intent = new Intent(Aclass.this, Singlevowelword.class);
             startActivity(intent);
         });
@@ -109,8 +103,6 @@ public class Aclass extends AppCompatActivity {
 
             editor.apply();
 
-            Toast.makeText(Aclass.this,"done",Toast.LENGTH_SHORT).show();
-
             Intent intent = new Intent(Aclass.this, Singlevowelword.class);
             startActivity(intent);
         });
@@ -128,8 +120,6 @@ public class Aclass extends AppCompatActivity {
             editor.putInt("APic",pic);
 
             editor.apply();
-
-            Toast.makeText(Aclass.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Aclass.this, Singlevowelword.class);
             startActivity(intent);

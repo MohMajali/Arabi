@@ -31,7 +31,7 @@
         android:id="@+id/red"
         android:background="@drawable/custom_button"
         app:backgroundTint="@null"
-        android:textColor="@color/black"/>
+        android:textColor="#FF0000"/>
 
     <Button
         android:layout_marginTop="5dp"
@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/custom_button"
         app:backgroundTint="@null"
-        android:textColor="@color/black"
+        android:textColor="#0000FF"
         android:text="Blue"
         android:id="@+id/blue"/>
 
@@ -59,7 +59,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/custom_button"
         app:backgroundTint="@null"
-        android:textColor="@color/black"
+        android:textColor="#A52A2A"
         android:text="Brown"
         android:id="@+id/brown"/>
 
@@ -69,7 +69,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/custom_button"
         app:backgroundTint="@null"
-        android:textColor="@color/black"
+        android:textColor="#228B22"
         android:text="Green"
         android:id="@+id/green"/>
 
@@ -79,7 +79,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/custom_button"
         app:backgroundTint="@null"
-        android:textColor="@color/black"
+        android:textColor="#FFA500"
         android:text="Orange"
         android:id="@+id/orange"/>
 
@@ -89,7 +89,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/custom_button"
         app:backgroundTint="@null"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:text="White"
         android:id="@+id/white"/>
 

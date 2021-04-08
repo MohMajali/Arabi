@@ -15,7 +15,6 @@ import com.example.text_to_speech.R;
 
 public class Level1 extends AppCompatActivity {
 
-//    ImageView backmain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,8 +22,7 @@ public class Level1 extends AppCompatActivity {
         setContentView(R.layout.activity_level1);
 
         SharedPreferences sp ;
-//        backmain = (ImageView) findViewById(R.id.backalphabet);
-        //update 1.1111
+
         sp = getSharedPreferences("MyUserPrefs", Context.MODE_PRIVATE);
 
         Button one = (Button)findViewById(R.id.one);
@@ -63,21 +61,14 @@ public class Level1 extends AppCompatActivity {
             String pronunciation2 = "الف" ;
             int sound = R.raw.chr1 ;
             int pic = R.drawable.ch1pic ;
-           // String pronucVibrio = "اه";
-           // String pronucslot = "او" ;
-           // String pronucbraek = "اي";
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("thealphabet",alphabet);
             editor.putString("thepronunciation",pronunciation);
             editor.putString("thepronunciation2",pronunciation2);
             editor.putInt("thesound",sound);
             editor.putInt("thepic",pic);
-            // editor.putString("thepronucVibrio",pronucVibrio);
-           // editor.putString("thepronucslot",pronucslot);
-           // editor.putString("thepronucbraek",pronucbraek);
-            editor.apply();
 
-            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
+            editor.apply();
 
             Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
@@ -90,21 +81,16 @@ public class Level1 extends AppCompatActivity {
             String pronunciation2 = "باء" ;
             int sound = R.raw.chr2 ;
             int pic = R.drawable.ch2pic ;
-           // String pronucVibrio = "با";
-           // String pronucslot = "بو" ;
-            //String pronucbraek = "بي";
+
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("thealphabet",alphabet);
             editor.putString("thepronunciation",pronunciation);
             editor.putString("thepronunciation2",pronunciation2);
             editor.putInt("thesound",sound);
             editor.putInt("thepic",pic);
-            //editor.putString("thepronucVibrio",pronucVibrio);
-           // editor.putString("thepronucslot",pronucslot);
-            //editor.putString("thepronucbraek",pronucbraek);
+
             editor.apply();
 
-            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
@@ -127,8 +113,6 @@ public class Level1 extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
-
             Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
@@ -145,8 +129,6 @@ public class Level1 extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.putInt("thepic",pic);
             editor.apply();
-
-            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
@@ -166,8 +148,6 @@ public class Level1 extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
-
             Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
@@ -185,8 +165,6 @@ public class Level1 extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.putInt("thepic",pic);
             editor.apply();
-
-            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
@@ -206,8 +184,6 @@ public class Level1 extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
-
             Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
@@ -225,8 +201,6 @@ public class Level1 extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.putInt("thepic",pic);
             editor.apply();
-
-            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
@@ -246,8 +220,6 @@ public class Level1 extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
-
             Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
@@ -264,8 +236,6 @@ public class Level1 extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.putInt("thepic",pic);
             editor.apply();
-
-            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
@@ -285,8 +255,6 @@ public class Level1 extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
-
             Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
@@ -304,8 +272,6 @@ public class Level1 extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.putInt("thepic",pic);
             editor.apply();
-
-            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
@@ -325,8 +291,6 @@ public class Level1 extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
-
             Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
@@ -344,8 +308,6 @@ public class Level1 extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.putInt("thepic",pic);
             editor.apply();
-
-            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
@@ -365,8 +327,6 @@ public class Level1 extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
-
             Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
@@ -384,8 +344,6 @@ public class Level1 extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.putInt("thepic",pic);
             editor.apply();
-
-            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
@@ -405,8 +363,6 @@ public class Level1 extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
-
             Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
@@ -424,8 +380,6 @@ public class Level1 extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.putInt("thepic",pic);
             editor.apply();
-
-            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
@@ -445,8 +399,6 @@ public class Level1 extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
-
             Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
@@ -464,8 +416,6 @@ public class Level1 extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.putInt("thepic",pic);
             editor.apply();
-
-            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
@@ -485,8 +435,6 @@ public class Level1 extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
-
             Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
@@ -504,8 +452,6 @@ public class Level1 extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.putInt("thepic",pic);
             editor.apply();
-
-            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
@@ -525,8 +471,6 @@ public class Level1 extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
-
             Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
@@ -544,8 +488,6 @@ public class Level1 extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.putInt("thepic",pic);
             editor.apply();
-
-            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
@@ -565,8 +507,6 @@ public class Level1 extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
-
             Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
@@ -584,8 +524,6 @@ public class Level1 extends AppCompatActivity {
             editor.putInt("thesound",sound);
             editor.putInt("thepic",pic);
             editor.apply();
-
-            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
@@ -605,8 +543,6 @@ public class Level1 extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
-
             Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
@@ -625,15 +561,9 @@ public class Level1 extends AppCompatActivity {
             editor.putInt("thepic",pic);
             editor.apply();
 
-            Toast.makeText(Level1.this,"done",Toast.LENGTH_SHORT).show();
-
             Intent intent = new Intent(Level1.this, SingleAlphabet.class);
             startActivity(intent);
         });
 
-//        backmain.setOnClickListener(view -> {
-//            Intent intent = new Intent(Level1.this, Levels.class);
-//            startActivity(intent);
-//        });
     }
 }

@@ -43,7 +43,6 @@ public class Singlevowelword extends AppCompatActivity {
         setContentView(R.layout.activity_singlevowelword);
 
         imageView = findViewById(R.id.aword);
-//        textView = findViewById(R.id.aword);
         sound = findViewById(R.id.avoice);
 
         SharedPreferences sp =getApplicationContext().getSharedPreferences("MyUserPrefs", Context.MODE_PRIVATE);
@@ -56,7 +55,6 @@ public class Singlevowelword extends AppCompatActivity {
             MediaPlayer mediaPlayer = MediaPlayer.create(this,str3);
             mediaPlayer.start();
         });
-//        textView.setText(str1);
         imageView.setImageResource(str4);
 
         speechRecognizer = SpeechRecognizer.createSpeechRecognizer(Singlevowelword.this);
@@ -103,7 +101,7 @@ public class Singlevowelword extends AppCompatActivity {
 
                 if (matchesFound != null) {
                     keeper = matchesFound.get(0);
-                    Toast.makeText(Singlevowelword.this, "Result = " + keeper, Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(Singlevowelword.this, "Result = " + keeper, Toast.LENGTH_SHORT).show();
                     text.setText(keeper);
                 }
             }
@@ -126,17 +124,6 @@ public class Singlevowelword extends AppCompatActivity {
         talk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-////                Intent text  = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-////                text.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
-////                text.putExtra(RecognizerIntent.EXTRA_PROMPT,"speech to text");
-////                startActivityForResult(text,RECOGNIZER_RESULT);
-//                Intent voicerecogize = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-//
-//                voicerecogize.putExtra(RecognizerIntent.EXTRA_CALLING_PACKAGE, getClass().getPackage().getName());
-//                voicerecogize.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);// spilling
-//                voicerecogize.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "ar-JO");
-//
-//                startActivityForResult(voicerecogize,RECOGNIZER_RESULT);
 
                 Toast toast = new Toast(Singlevowelword.this);
                 ImageView imageView = new ImageView(Singlevowelword.this);
@@ -152,16 +139,20 @@ public class Singlevowelword extends AppCompatActivity {
 
 
         check.setOnClickListener(view -> {
-            /*
-            if(text.getText().toString().equals(str3+" "+str4+" "+str5)){
-                Toast.makeText(activity_singleAlphabet.this,"correct",Toast.LENGTH_SHORT).show();
 
-            }*/
             if (text.getText().toString().equals(str2) || text.getText().toString().equals(str4)) {
 
-                Toast.makeText(Singlevowelword.this, "correct", Toast.LENGTH_SHORT).show();
+                Toast toast = new Toast(Singlevowelword.this);
+                ImageView imageView = new ImageView(Singlevowelword.this);
+                imageView.setImageResource(R.drawable.good);
+                toast.setView(imageView);
+                toast.show();
             } else {
-                Toast.makeText(Singlevowelword.this, "false", Toast.LENGTH_SHORT).show();
+                Toast toast = new Toast(Singlevowelword.this);
+                ImageView imageView = new ImageView(Singlevowelword.this);
+                imageView.setImageResource(R.drawable.bad);
+                toast.setView(imageView);
+                toast.show();
             }
         });
 

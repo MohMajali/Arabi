@@ -46,8 +46,6 @@ public class wawLetter extends AppCompatActivity {
 
             editor.apply();
 
-            Toast.makeText(wawLetter.this,"done",Toast.LENGTH_SHORT).show();
-
             Intent intent = new Intent(wawLetter.this, Singlevowelword.class);
             startActivity(intent);
         });
@@ -66,8 +64,6 @@ public class wawLetter extends AppCompatActivity {
             editor.putInt("APic",pic);
 
             editor.apply();
-
-            Toast.makeText(wawLetter.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(wawLetter.this, Singlevowelword.class);
             startActivity(intent);
@@ -88,8 +84,6 @@ public class wawLetter extends AppCompatActivity {
 
             editor.apply();
 
-            Toast.makeText(wawLetter.this,"done",Toast.LENGTH_SHORT).show();
-
             Intent intent = new Intent(wawLetter.this, Singlevowelword.class);
             startActivity(intent);
         });
@@ -109,8 +103,6 @@ public class wawLetter extends AppCompatActivity {
 
             editor.apply();
 
-            Toast.makeText(wawLetter.this,"done",Toast.LENGTH_SHORT).show();
-
             Intent intent = new Intent(wawLetter.this, Singlevowelword.class);
             startActivity(intent);
         });
@@ -128,8 +120,6 @@ public class wawLetter extends AppCompatActivity {
             editor.putInt("APic",pic);
 
             editor.apply();
-
-            Toast.makeText(wawLetter.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(wawLetter.this, Singlevowelword.class);
             startActivity(intent);

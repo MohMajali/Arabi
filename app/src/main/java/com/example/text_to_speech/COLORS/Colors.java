@@ -36,17 +36,13 @@ public class Colors extends AppCompatActivity {
             String word = "احمر" ;
             String pronunciation = "احمر" ;
             int Sound = R.raw.red ;
-            // int pic = R.drawable.ch1pic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("TheColor",word);
             editor.putString("ThePronunciation",pronunciation);
             editor.putInt("TheSound",Sound);
-            //editor.putInt("thepic",pic);
 
             editor.apply();
-
-            Toast.makeText(Colors.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Colors.this, SingleColor.class);
             startActivity(intent);
@@ -56,17 +52,13 @@ public class Colors extends AppCompatActivity {
             String word = "اسود" ;
             String pronunciation = "اسود" ;
             int Sound = R.raw.black ;
-            // int pic = R.drawable.ch1pic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("TheColor",word);
             editor.putString("ThePronunciation",pronunciation);
             editor.putInt("TheSound",Sound);
-            //editor.putInt("thepic",pic);
 
             editor.apply();
-
-            Toast.makeText(Colors.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Colors.this, SingleColor.class);
             startActivity(intent);
@@ -76,17 +68,13 @@ public class Colors extends AppCompatActivity {
             String word = "ازرق" ;
             String pronunciation = "ازرق" ;
             int Sound = R.raw.blue ;
-            // int pic = R.drawable.ch1pic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("TheColor",word);
             editor.putString("ThePronunciation",pronunciation);
             editor.putInt("TheSound",Sound);
-            //editor.putInt("thepic",pic);
 
             editor.apply();
-
-            Toast.makeText(Colors.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Colors.this, SingleColor.class);
             startActivity(intent);
@@ -96,17 +84,13 @@ public class Colors extends AppCompatActivity {
             String word = "بني" ;
             String pronunciation = "بني" ;
             int Sound = R.raw.brown ;
-            // int pic = R.drawable.ch1pic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("TheColor",word);
             editor.putString("ThePronunciation",pronunciation);
             editor.putInt("TheSound",Sound);
-            //editor.putInt("thepic",pic);
 
             editor.apply();
-
-            Toast.makeText(Colors.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Colors.this, SingleColor.class);
             startActivity(intent);
@@ -116,17 +100,13 @@ public class Colors extends AppCompatActivity {
             String word = "اخضر" ;
             String pronunciation = "اخضر" ;
             int Sound = R.raw.green ;
-            // int pic = R.drawable.ch1pic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("TheColor",word);
             editor.putString("ThePronunciation",pronunciation);
             editor.putInt("TheSound",Sound);
-            //editor.putInt("thepic",pic);
 
             editor.apply();
-
-            Toast.makeText(Colors.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Colors.this, SingleColor.class);
             startActivity(intent);
@@ -136,17 +116,13 @@ public class Colors extends AppCompatActivity {
             String word = "اصفر" ;
             String pronunciation = "اصفر" ;
             int Sound = R.raw.yallow ;
-            // int pic = R.drawable.ch1pic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("TheColor",word);
             editor.putString("ThePronunciation",pronunciation);
             editor.putInt("TheSound",Sound);
-            //editor.putInt("thepic",pic);
 
             editor.apply();
-
-            Toast.makeText(Colors.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Colors.this, SingleColor.class);
             startActivity(intent);
@@ -156,17 +132,13 @@ public class Colors extends AppCompatActivity {
             String word = "ابيض" ;
             String pronunciation = "ابيض" ;
             int Sound = R.raw.white ;
-            // int pic = R.drawable.ch1pic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("TheColor",word);
             editor.putString("ThePronunciation",pronunciation);
             editor.putInt("TheSound",Sound);
-            //editor.putInt("thepic",pic);
 
             editor.apply();
-
-            Toast.makeText(Colors.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Colors.this, SingleColor.class);
             startActivity(intent);
@@ -176,17 +148,13 @@ public class Colors extends AppCompatActivity {
             String word = "برتقالي" ;
             String pronunciation = "برتقالي" ;
             int Sound = R.raw.orange ;
-            // int pic = R.drawable.ch1pic ;
 
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("TheColor",word);
             editor.putString("ThePronunciation",pronunciation);
             editor.putInt("TheSound",Sound);
-            //editor.putInt("thepic",pic);
 
             editor.apply();
-
-            Toast.makeText(Colors.this,"done",Toast.LENGTH_SHORT).show();
 
             Intent intent = new Intent(Colors.this, SingleColor.class);
             startActivity(intent);
