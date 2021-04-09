@@ -54,8 +54,8 @@ public class sharedprefmanager {
 
     public User getUserData(){
         SharedPreferences sharedPreferences = mContext.getSharedPreferences(FILENAME, Context.MODE_PRIVATE);
-        User user = new User(sharedPreferences.getInt(ID,-1),sharedPreferences.getString(EMAIL,null)
-                ,sharedPreferences.getString(USERNAME,null));
+        User user = new User(sharedPreferences.getInt(ID,-1),sharedPreferences.getString(USERNAME,null)
+                ,sharedPreferences.getString(EMAIL,null));
         return user;
     }
 }

@@ -35,7 +35,7 @@ public class Level1 extends AppCompatActivity {
         Button eight = (Button)findViewById(R.id.eight);
         Button nine = (Button)findViewById(R.id.nine);
         Button ten = (Button)findViewById(R.id.ten);
-        Button eleven = (Button)findViewById(R.id.eleven);
+        Button eleven = (Button)findViewById(R.id.eleven);     //Defining all the buttons by thier IDs from level1 layout
         Button twelve = (Button)findViewById(R.id.twelve);
         Button thirteen = (Button)findViewById(R.id.thirteen);
         Button fourteen = (Button)findViewById(R.id.fourteen);
@@ -54,26 +54,30 @@ public class Level1 extends AppCompatActivity {
         Button twenty_seven = (Button)findViewById(R.id.twenty_seven);
         Button twenty_eight = (Button)findViewById(R.id.twenty_eight);
 
-        one.setOnClickListener(view -> {
+        one.setOnClickListener(view -> {    //when button named one clicked, do the following:
 
             String alphabet = "ا" ;
-            String pronunciation = "حرف الالف" ;
+            String pronunciation = "حرف الالف" ;   // Defining Strings for A alphabet
             String pronunciation2 = "الف" ;
+
             int sound = R.raw.chr1 ;
-            int pic = R.drawable.ch1pic ;
+            int pic = R.drawable.ch1pic ;   // Defining integers take the sound and the photo -- R.raw.ch1 --> From Resources a file called raw, that file has all sounds
+                                                                                               // R.drawable.ch1pic --> From Resources a file called drawable, that file has all photos
             SharedPreferences.Editor editor = sp.edit();
             editor.putString("thealphabet",alphabet);
-            editor.putString("thepronunciation",pronunciation);
-            editor.putString("thepronunciation2",pronunciation2);
+            editor.putString("thepronunciation",pronunciation);    //By using the Sharedprefernces, save all Strings and Integers by giving each a word or symbole to differentiate from others.
+            editor.putString("thepronunciation2",pronunciation2);  //E.X : "thepronunciation" is word given to the string pronunciation
             editor.putInt("thesound",sound);
             editor.putInt("thepic",pic);
 
-            editor.apply();
+            editor.apply(); // save all the strings and integers in sharedpref..
 
             Intent intent = new Intent(Level1.this, SingleAlphabet.class);
-            startActivity(intent);
+            startActivity(intent);  // After saving , jump from this page "Level1" to "SingleAlphabet" class
 
         });
+
+        // What we did in button named one, we do the same processes to all other buttons here, giving them thier own sound and pics, defining the Strings and Integers then jumping
         two.setOnClickListener(view -> {
 
             String alphabet = "ب" ;

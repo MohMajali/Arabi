@@ -67,59 +67,7 @@
             app:backgroundTint="#84dccf" />
 
 
-<!--        <ImageView-->
-<!--            android:id="@+id/lvlone"-->
-<!--            android:layout_width="219dp"-->
-<!--            android:layout_height="50dp"-->
-<!--            android:layout_gravity="center"-->
-<!--            app:srcCompat="@drawable/lvlone" />-->
-<!--        <ImageView-->
-<!--            android:id="@+id/lvltwo"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:layout_width="221dp"-->
-<!--            android:layout_height="50dp"-->
-<!--            app:srcCompat="@drawable/lvltwo" />-->
-<!--        <ImageView-->
-<!--            android:id="@+id/lvlthree"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:layout_width="220dp"-->
-<!--            android:layout_height="50dp"-->
-<!--            app:srcCompat="@drawable/lvlthree" />-->
 
-<!--        <ImageView-->
-<!--            android:layout_marginTop="5dp"-->
-<!--            android:layout_width="220dp"-->
-<!--            android:layout_height="50dp"-->
-<!--            android:text="Quiz"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:id="@+id/quiz"-->
-<!--            android:src="@drawable/quizpic"/>-->
-
-<!--        <Button-->
-<!--            android:id="@+id/nextAlphabet"-->
-<!--            style="@style/Widget.AppCompat.Button.Borderless"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="nextAlphabet"-->
-<!--            android:textColor="@color/black"-->
-<!--            app:rippleColor="#ffe274" />-->
-
-<!--        <Button-->
-<!--            android:id="@+id/quiz_alph"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="quiz alph" />-->
-
-<!--        <Button-->
-<!--            android:id="@+id/login"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Login" />-->
-<!--        <Button-->
-<!--            android:id="@+id/sign"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="signup" />-->
 
     </LinearLayout>
 

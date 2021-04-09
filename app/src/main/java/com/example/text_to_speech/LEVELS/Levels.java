@@ -12,16 +12,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.text_to_speech.ALPHABETS.Level1;
 import com.example.text_to_speech.NUMBERS.SingleNumber;
 import com.example.text_to_speech.QUIZ.Quiz_alph;
 import com.example.text_to_speech.R;
+import com.example.text_to_speech.STORAGE.User;
+import com.example.text_to_speech.STORAGE.sharedprefmanager;
 
 public class Levels extends AppCompatActivity {
 
-    Button lvlone,lvltwo,lvlthree ,quiz;
+    Button lvlone,lvltwo,lvlthree ,quiz;// calling the elements from the Level3 layout we used
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,11 +34,11 @@ public class Levels extends AppCompatActivity {
 
         lvlone = (Button) findViewById(R.id.lvlone);
         lvltwo = (Button) findViewById(R.id.lvltwo);
-        lvlthree = (Button) findViewById(R.id.lvlthree);
+        lvlthree = (Button) findViewById(R.id.lvlthree);     //Defin each element by thier IDs
         quiz = (Button) findViewById(R.id.quiz);
 
         quiz.setOnClickListener(v -> {
-
+            // if button named quiz clicked, jump from Levels class to Quiz_alph class
             startActivity(new Intent(this, Quiz_alph.class));
         });
 
@@ -62,6 +65,8 @@ public class Levels extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
 
     }
 

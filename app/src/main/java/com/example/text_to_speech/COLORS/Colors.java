@@ -13,7 +13,7 @@ import com.example.text_to_speech.R;
 
 public class Colors extends AppCompatActivity {
 
-    Button red , black , blue , brown , green , yallow , white , orange;
+    Button red , black , blue , brown , green , yallow , white , orange;   // calling the elements from the Colors layout we used
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,28 +26,29 @@ public class Colors extends AppCompatActivity {
         red = findViewById(R.id.red);
         black = findViewById(R.id.black);
         blue = findViewById(R.id.blue);
-        brown = findViewById(R.id.brown);
+        brown = findViewById(R.id.brown);    //Defining all the buttons by thier IDs from Colors layout
         green = findViewById(R.id.green);
         yallow = findViewById(R.id.yallow);
         white = findViewById(R.id.white);
         orange = findViewById(R.id.orange);
 
         red.setOnClickListener(v -> {
+            //when button named red clicked, do the following:
             String word = "احمر" ;
             String pronunciation = "احمر" ;
-            int Sound = R.raw.red ;
+            int Sound = R.raw.red ;  // Defining integers take the sound and the photo -- R.raw.red --> From Resources a file called raw, that file has all sounds
 
             SharedPreferences.Editor editor = sp.edit();
-            editor.putString("TheColor",word);
+            editor.putString("TheColor",word);  //E.X : "TheColor" is word given to the string word
             editor.putString("ThePronunciation",pronunciation);
             editor.putInt("TheSound",Sound);
 
-            editor.apply();
+            editor.apply();  // save all the strings and integers in sharedpref..
 
             Intent intent = new Intent(Colors.this, SingleColor.class);
-            startActivity(intent);
+            startActivity(intent);   // After saving , jump from this page "Level1" to "SingleAlphabet" class
         });
-
+        // What we did in button named red, we do the same processes to all other buttons here, giving them thier own sound and pics, defining the Strings and Integers then jumping
         black.setOnClickListener(v -> {
             String word = "اسود" ;
             String pronunciation = "اسود" ;
