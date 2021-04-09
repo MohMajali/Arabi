@@ -9,11 +9,11 @@
     android:isScrollContainer="true"
     >
 
-    <Button
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/profile"
-        android:layout_marginLeft="30dp"
+        android:layout_marginLeft="3dp"
         android:layout_marginTop="20dp"
         android:id="@+id/userinfo"/>
     <LinearLayout

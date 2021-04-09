@@ -8,6 +8,7 @@ import androidx.core.content.ContextCompat;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -28,6 +29,7 @@ public class Levels extends AppCompatActivity {
 
     Button lvlone,lvltwo,lvlthree ,quiz,logout;// calling the elements from the Level3 layout we used
     TextView name , emailtxt;
+    ImageView userinfo ;
 
     User user;
     sharedprefmanager sharedprefmanager;
@@ -39,7 +41,7 @@ public class Levels extends AppCompatActivity {
         user = sharedprefmanager.getInstance(this).getUserData();
         String username = user.getUsername();
         String email = user.getEmail();
-
+        userinfo = (ImageView)findViewById(R.id.userinfo);
         lvlone = (Button) findViewById(R.id.lvlone);
         lvltwo = (Button) findViewById(R.id.lvltwo);
         lvlthree = (Button) findViewById(R.id.lvlthree);     //Defin each element by thier IDs
@@ -80,6 +82,13 @@ public class Levels extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Levels.this, Level2.class);
                 startActivity(intent);
+            }
+        });
+
+        userinfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
             }
         });
 
