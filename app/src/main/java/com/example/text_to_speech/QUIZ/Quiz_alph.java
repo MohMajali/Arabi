@@ -253,16 +253,12 @@ public class Quiz_alph extends AppCompatActivity {
 
                 if (!jsonObject.getBoolean("error")) {
 
-                    Toast.makeText(Quiz_alph.this, jsonObject.getString("message"), Toast.LENGTH_LONG).show();
-                    // show a message from php if the user has logged in successfully "Login successfully"
-
                     //let user in
                     finish();
                     //move to alphabet activity
                     startActivity(new Intent(Quiz_alph.this, Levels.class));
 
                 } else {
-                    Toast.makeText(Quiz_alph.this,jsonObject.getString("message"),Toast.LENGTH_LONG).show();
                 }
             } catch (JSONException e) {
                 e.printStackTrace();

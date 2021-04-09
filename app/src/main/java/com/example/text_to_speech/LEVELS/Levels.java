@@ -14,9 +14,11 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import com.example.text_to_speech.ALPHABETS.Level1;
 import com.example.text_to_speech.NUMBERS.SingleNumber;
+import com.example.text_to_speech.PROCESS.Login_page;
 import com.example.text_to_speech.QUIZ.Quiz_alph;
 import com.example.text_to_speech.R;
 import com.example.text_to_speech.STORAGE.User;
@@ -24,18 +26,33 @@ import com.example.text_to_speech.STORAGE.sharedprefmanager;
 
 public class Levels extends AppCompatActivity {
 
-    Button lvlone,lvltwo,lvlthree ,quiz;// calling the elements from the Level3 layout we used
+    Button lvlone,lvltwo,lvlthree ,quiz,logout;// calling the elements from the Level3 layout we used
+    TextView name , emailtxt;
 
+    User user;
+    sharedprefmanager sharedprefmanager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_levels);
 
+        user = sharedprefmanager.getInstance(this).getUserData();
+        String username = user.getUsername();
+        String email = user.getEmail();
 
         lvlone = (Button) findViewById(R.id.lvlone);
         lvltwo = (Button) findViewById(R.id.lvltwo);
         lvlthree = (Button) findViewById(R.id.lvlthree);     //Defin each element by thier IDs
         quiz = (Button) findViewById(R.id.quiz);
+       // logout = (Button)findViewById(R.id.logout);
+
+        //name = (TextView) findViewById(R.id.user);
+        //emailtxt = (TextView) findViewById(R.id.email);
+
+       // name.setText(username);
+        //emailtxt.setText(email);
+
+
 
         quiz.setOnClickListener(v -> {
             // if button named quiz clicked, jump from Levels class to Quiz_alph class
@@ -66,7 +83,12 @@ public class Levels extends AppCompatActivity {
             }
         });
 
-
+       // logout.setOnClickListener(v -> { // When button named logout , use the sharedprefmanager to call a function called logUserOut to clear all data about the logged in user then
+                                                                                                   // jump to login activity
+           // sharedprefmanager = sharedprefmanager.getInstance(this);
+           // sharedprefmanager.logUserOut();
+            //startActivity(new Intent(Levels.this, Login_page.class));
+      //  });
 
     }
 

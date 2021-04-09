@@ -2,18 +2,25 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:background="@drawable/lvlbackground"
-    tools:context=".LEVELS.Levels">
+    tools:context=".LEVELS.Levels"
+    android:isScrollContainer="true"
+    >
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/profile"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/userinfo"/>
     <LinearLayout
-        android:layout_marginTop="420dp"
+        android:layout_marginTop="370dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="206dp"
-        tools:layout_editor_absoluteY="245dp">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
 
         <Button
@@ -60,13 +67,24 @@
             android:layout_width="220dp"
             android:layout_height="50dp"
             android:background="@drawable/custom_button2"
-            android:text="أخبتر نفسك"
+            android:text="إختبر نفسك"
             android:textColor="@color/black"
             android:textSize="18dp"
             android:layout_gravity="center"
             app:backgroundTint="#84dccf" />
 
-
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/logout"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_button2"
+            android:text="Logout"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_gravity="center"
+            app:backgroundTint="#84dccf" />
 
 
     </LinearLayout>
