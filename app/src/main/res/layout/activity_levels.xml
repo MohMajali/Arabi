@@ -7,6 +7,7 @@
     android:background="@drawable/lvlbackground"
     tools:context=".LEVELS.Levels"
     android:isScrollContainer="true"
+    android:id="@+id/upper_Layout1"
     >
 
     <ImageView
@@ -17,7 +18,7 @@
         android:layout_marginTop="20dp"
         android:id="@+id/userinfo"/>
     <LinearLayout
-        android:layout_marginTop="370dp"
+        android:layout_marginTop="430dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">

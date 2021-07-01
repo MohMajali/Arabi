@@ -95,12 +95,7 @@
             android:text="Skip Login" />
 
     </LinearLayout>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/img_fad"
-            android:scaleType="fitXY"
-            android:src="@drawable/introduction"/>
+
     </RelativeLayout>
 
 </RelativeLayout>

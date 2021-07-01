@@ -185,12 +185,14 @@ public class Quiz_alph extends AppCompatActivity {
                     counter--;
                     score.setText("Score = " + mScore);
                     if (max < QuestionList.size()) {
+                        youranswer.setText("كلامك هنا");
                         SetQuestion(max);
                     }
                 } else {
                     max++;
                     counter--;
                     if (max < QuestionList.size()) {
+                        youranswer.setText("كلامك هنا");
                         SetQuestion(max);
                     }
                 }

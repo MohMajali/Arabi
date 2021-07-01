@@ -1,11 +1,13 @@
 package com.example.text_to_speech.LEVELS;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.media.Image;
@@ -28,7 +30,6 @@ import com.example.text_to_speech.STORAGE.sharedprefmanager;
 public class Levels extends AppCompatActivity {
 
     Button lvlone,lvltwo,lvlthree ,quiz,logout;// calling the elements from the Level3 layout we used
-    TextView name , emailtxt;
     ImageView userinfo ;
 
     User user;
@@ -41,12 +42,14 @@ public class Levels extends AppCompatActivity {
         user = sharedprefmanager.getInstance(this).getUserData();
         String username = user.getUsername();
         String email = user.getEmail();
+
         userinfo = (ImageView)findViewById(R.id.userinfo);
+
         lvlone = (Button) findViewById(R.id.lvlone);
         lvltwo = (Button) findViewById(R.id.lvltwo);
         lvlthree = (Button) findViewById(R.id.lvlthree);     //Defin each element by thier IDs
         quiz = (Button) findViewById(R.id.quiz);
-       // logout = (Button)findViewById(R.id.logout);
+       logout = (Button)findViewById(R.id.logout);
 
         //name = (TextView) findViewById(R.id.user);
         //emailtxt = (TextView) findViewById(R.id.email);
@@ -88,16 +91,22 @@ public class Levels extends AppCompatActivity {
         userinfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                AlertDialog.Builder alert = new AlertDialog.Builder(Levels.this);
+                alert.setTitle("User information").setMessage("Username : " +username + "\n" + "Email : " +email).setPositiveButton("ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                    }
+                });
+                alert.create().show();
             }
         });
 
-       // logout.setOnClickListener(v -> { // When button named logout , use the sharedprefmanager to call a function called logUserOut to clear all data about the logged in user then
+        logout.setOnClickListener(v -> { // When button named logout , use the sharedprefmanager to call a function called logUserOut to clear all data about the logged in user then
                                                                                                    // jump to login activity
-           // sharedprefmanager = sharedprefmanager.getInstance(this);
-           // sharedprefmanager.logUserOut();
-            //startActivity(new Intent(Levels.this, Login_page.class));
-      //  });
+            sharedprefmanager = sharedprefmanager.getInstance(this);
+            sharedprefmanager.logUserOut();
+            startActivity(new Intent(Levels.this, Login_page.class));
+        });
 
     }
 

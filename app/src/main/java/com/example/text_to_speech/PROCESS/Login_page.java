@@ -55,8 +55,8 @@ public class Login_page extends AppCompatActivity {
         login = (Button) findViewById(R.id.login); // Defining the button by ID
         signup = (Button) findViewById(R.id.signup);
 
-        imageView = findViewById(R.id.img_fad);
-        imageView.animate().alpha(0).setDuration(5000);
+       // imageView = findViewById(R.id.img_fad);
+      //  imageView.animate().alpha(0).setDuration(5000);
 
 
         checkVoiceCommandPermission(); // Function to cheack voice command permissions

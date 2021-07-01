@@ -89,7 +89,6 @@ public class SingleAlphabet extends AppCompatActivity {
                 //if the voice catched, put in the arraylist which is called matchesFound, then get the first index in that array and put it in the String called Keeper, then show the Alphabet in the edit text.
                 if(matchesFound!=null){
                     keeper =matchesFound.get(0);
-//                    Toast.makeText(SingleAlphabet.this, "Result = " + keeper, Toast.LENGTH_SHORT).show();
                     text.setText(keeper);
                 }
             }
@@ -166,7 +165,6 @@ public class SingleAlphabet extends AppCompatActivity {
         sound.setOnClickListener(v ->  {
           //When button named sound clicked, start the mediaplayer
                 mediaPlayer.start();
-                Toast.makeText(SingleAlphabet.this,str3,Toast.LENGTH_SHORT).show();
 
         });
     }
